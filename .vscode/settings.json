@@ -1,0 +1,8 @@
+{
+    "editor.renderWhitespace": "selection",
+    "editor.codeActionWidget.showHeaders": true,
+    "editor.definitionLinkOpensInPeek": false,
+    "editor.gotoLocation.alternativeDeclarationCommand": "editor.action.goToReferences",
+    "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.goToReferences",
+    "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.goToReferences"
+}

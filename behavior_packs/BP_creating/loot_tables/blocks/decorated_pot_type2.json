@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "name": "aw:heart",
+                    "type": "item",
+                    "weight": 80
+                },
+                {
+                    "name": "aw:heart",
+                    "type": "item",
+                    "functions": [{ "function": "set_count", "count": 3 }],
+                    "weight": 20
+                }
+            ]
+        }
+    ]
+}

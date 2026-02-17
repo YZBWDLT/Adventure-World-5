@@ -1,0 +1,1 @@
+structure load unlock:house_potion -178 31 146

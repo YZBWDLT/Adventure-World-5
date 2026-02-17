@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "name": "obsidian",
+                    "type": "item",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

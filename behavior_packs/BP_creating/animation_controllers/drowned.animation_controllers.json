@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.drowned.boss": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "75health": "query.max_health == 200 && query.health > 0 && query.health <= 150" }
+                    ]
+                },
+                "25health": {
+                    "on_entry": [ "/execute if score 6_monument_boss data matches 4 if entity @a[x=-170,y=-58,z=160,dx=18,dy=14,dz=18] run function game/6_monument/25health_summon" ]
+                },
+                "50health": {
+                    "on_entry": [ "/execute if score 6_monument_boss data matches 3 if entity @a[x=-170,y=-58,z=160,dx=18,dy=14,dz=18] run function game/6_monument/50health_summon" ],
+                    "transitions": [ { "25health": "query.max_health == 200 && query.health > 0 && query.health <= 50" } ]
+                },
+                "75health": {
+                    "on_entry": [ "/execute if score 6_monument_boss data matches 2 if entity @a[x=-170,y=-58,z=160,dx=18,dy=14,dz=18] run function game/6_monument/75health_summon" ],
+                    "transitions": [ { "50health": "query.max_health == 200 && query.health > 0 && query.health <= 100" } ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "format_version" : "1.10.0",
+    "minecraft:client_entity" : {
+        "description" : {
+            "identifier": "aw:heart_container",
+            "render_controllers" : [ "controller.render.heart" ],
+            "materials": { "default": "entity_alphatest" },
+            "geometry" : { "default": "geometry.heart_container" },
+            "textures" : { "default": "textures/entity/heart_container" },
+            "scripts": { "animate": ["spin"] },
+			"animations": { "spin": "animation.heart.spin" }
+        }
+    }
+}

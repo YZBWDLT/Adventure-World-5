@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:snow_fox",
+            "render_controllers": [ "controller.render.aw_snow_fox" ],
+            "geometry": { "default": "geometry.fox" },
+            "textures": { "default": "textures/entity/fox/arctic_fox" },
+            "materials": { "default": "fox" },
+            "animations": {
+                "sleep": "animation.fox.sleep"
+            },
+            "scripts": {
+                "animate": [
+                    "sleep"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "name": "aw:heart",
+          "type": "item",
+          "weight": 25
+        },
+        {
+          "name": "aw:heart",
+          "type": "item",
+          "functions": [{ "function": "set_count", "count": 3 }],
+          "weight": 3
+        },
+        {
+          "name": "minecraft:arrow",
+          "type": "item",
+          "functions": [{ "function": "set_count", "count": 4 }],
+          "weight": 40
+        },
+        {
+          "name": "minecraft:arrow",
+          "type": "item",
+          "functions": [{ "function": "set_count", "count": 32 }],
+          "weight": 4
+        },
+        {
+          "name": "minecraft:cod",
+          "type": "item",
+          "functions": [{ "function": "set_count", "count": 16 }],
+          "weight": 5
+        },
+        {
+          "name": "minecraft:salmon",
+          "type": "item",
+          "functions": [{ "function": "set_count", "count": 16 }],
+          "weight": 5
+        },
+        {
+          "name": "minecraft:pufferfish",
+          "type": "item",
+          "weight": 15
+        },
+        {
+          "name": "aw:build1",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "aw:build2",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "aw:build3",
+          "type": "item",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

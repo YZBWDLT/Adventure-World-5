@@ -1,0 +1,40 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "aw:snow_fox",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "properties": {
+                "aw:running_commands": { "type": "bool", "default": false, "client_sync": false }
+            },
+            "animations": {
+                "controller_interact_test": "controller.animation.snow_fox.interact_test"
+            },
+            "scripts": {
+                "animate": [
+                    "controller_interact_test"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:type_family": {"family": [ "no_hook" ]},
+            "minecraft:physics": {},
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] },
+            "minecraft:interact": {
+                "interactions": [
+                    { "on_interact": { "event": "fox_running_commands:true", "target": "self" }, "interact_text": "action.interact.rua_fox" }
+                ]
+            }
+        },
+        "events": {
+            "fox_running_commands:true": {
+                "set_property": { "aw:running_commands": true }
+            },
+            "fox_running_commands:false": {
+                "set_property": { "aw:running_commands": false }
+            }
+        }
+    }
+}

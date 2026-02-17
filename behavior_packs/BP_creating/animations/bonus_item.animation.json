@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.bonus_item.hold_particle": {
+            "animation_length": 1,
+            "loop": true,
+            "timeline": {
+                "0.9": [
+                    "/particle aw:bonus_item_small ~~0.5~"
+                ]
+            }
+        },
+        "animation.bonus_item.disappear_particle": {
+            "animation_length": 1,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/particle aw:bonus_item ~~0.5~"
+                ]
+            }
+        },
+        "animation.bonus_item.trigger_command": {
+            "animation_length": 1,
+            "loop": true,
+            "timeline": {
+                "0.9": [
+                    "/function entities/bonus_item"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+# ===== 时间线控制器 =====
+# <!> 注意：该函数仅当时间线启用后执行
+
+# --- 时间值流逝 ---
+# 当data.timeLapse > 0时，会导致time.timeline每游戏刻自加
+execute if score timeLapse data matches 1.. run scoreboard players add timeline time 1
+
+# --- 需要启用的时间线文件 ---
+execute if score timeline active matches 1 run function game/start/1_ship_accident
+execute if score timeline active matches 2 run function game/1_mine/2_meet_tp
+execute if score timeline active matches 3 run function game/1_mine/3_give_pickaxe
+execute if score timeline active matches 4 run function game/1_mine/4_tp_help
+execute if score timeline active matches 5 run function game/1_mine/5_leave_mine
+execute if score timeline active matches 6 run function game/village/6_parkour
+execute if score timeline active matches 7 run function game/village/7_escape_guitar
+execute if score timeline active matches 8 run function game/2_hill/8_hill_hint
+execute if score timeline active matches 9 run function game/village/9_goto_plain
+execute if score timeline active matches 10 run function game/plain/10_dig
+execute if score timeline active matches 11 run function game/3_shaft/11_shaft_boss
+execute if score timeline active matches 12 run function build/12_bridge
+execute if score timeline active matches 13 run function build/13_dock
+execute if score timeline active matches 14 run function build/14_house_heart
+execute if score timeline active matches 15 run function build/15_house_hint
+execute if score timeline active matches 16 run function build/16_house_potion
+execute if score timeline active matches 17 run function build/17_map
+execute if score timeline active matches 18 run function game/village/18_boat
+execute if score timeline active matches 19 run function game/3_shaft/19_unlock_build
+execute if score timeline active matches 20 run function build/20_station
+execute if score timeline active matches 21 run function build/21_station_south
+execute if score timeline active matches 22 run function build/22_tower
+execute if score timeline active matches 23 run function game/4_rail/23_unlock_metro
+execute if score timeline active matches 24 run function game/plain/24_place_lever
+execute if score timeline active matches 25 run function game/5_mansion/25_rotate_mansion
+execute if score timeline active matches 26 run function game/5_mansion/26_mansion_boss
+execute if score timeline active matches 27 run function game/plain/27_shoot
+execute if score timeline active matches 28 run function build/28_color
+execute if score timeline active matches 29 run function build/29_station_farm
+execute if score timeline active matches 30 run function build/30_dock_farm
+execute if score timeline active matches 31 run function game/starry/31_ccb
+execute if score timeline active matches 32 run function game/village/32_unlock_borrow
+execute if score timeline active matches 33 run function build/33_portal
+execute if score timeline active matches 34 run function game/village/34_talk
+execute if score timeline active matches 35 run function game/village/35_mansion_prepare
+execute if score timeline active matches 36 run function game/village/36_monument_prepare
+execute if score timeline active matches 37 run function game/village/37_fortress_prepare
+execute if score timeline active matches 38 run function game/6_monument/38_flip_water
+execute if score timeline active matches 39 run function game/6_monument/39_monument_boss
+execute if score timeline active matches 40 run function build/40_billboard
+execute if score timeline active matches 41 run function build/41_desert_bridge
+execute if score timeline active matches 42 run function game/7_fortress/42_red
+execute if score timeline active matches 43 run function game/7_fortress/43_blue
+execute if score timeline active matches 44 run function game/7_fortress/44_rescue
+execute if score timeline active matches 45 run function game/7_fortress/45_fortress_boss
+execute if score timeline active matches 46 run function game/5_mansion/46_mansion_finish
+execute if score timeline active matches 47 run function game/village/47_unlock_saturation
+execute if score timeline active matches 48 run function game/6_monument/48_monument_finish
+execute if score timeline active matches 49 run function game/village/49_unlock_regeneration
+execute if score timeline active matches 50 run function game/7_fortress/50_fortress_finish
+execute if score timeline active matches 51 run function game/starry/51_firefight
+execute if score timeline active matches 52 run function game/8_pe/52_show_build
+execute if score timeline active matches 53 run function game/8_pe/53_nether_spire
+execute if score timeline active matches 54 run function game/village/54_finish_three
+execute if score timeline active matches 55 run function game/plain/55_open_pe
+execute if score timeline active matches 56 run function build/56_pass
+execute if score timeline active matches 57 run function game/8_pe/57_prepare_final
+execute if score timeline active matches 58 run function game/start/58_final_1
+execute if score timeline active matches 59 run function game/start/59_final_2
+execute if score timeline active matches 60 run function game/start/60_final_3
+execute if score timeline active matches 61 run function game/start/61_final_4
+execute if score timeline active matches 62 in the_end run function game/the_end/62_the_end_boss
+execute if score timeline active matches 63 run function game/village/63_island_disappear
+execute if score timeline active matches 64 run function game/village/64_credits
+execute if score timeline active matches 65 run function game/village/65_new_boat

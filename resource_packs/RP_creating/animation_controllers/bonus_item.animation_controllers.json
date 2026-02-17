@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bonus.anim": {
+			"initial_state": "appear",
+			"states": {
+				"appear": {
+					"animations": [
+						{"appear": "query.property('aw:bonus_item_appear_style')==0"},
+						{"appear2": "query.property('aw:bonus_item_appear_style')==1"}
+					],
+					"transitions": [
+						{"hold": "query.property('aw:bonus_item_stage')==1"}
+					]
+				},
+				"hold": {
+					"animations": ["hold"],
+					"transitions": [
+						{"disappear": "query.property('aw:bonus_item_stage')==2"},
+						{"appear": "query.property('aw:bonus_item_stage')==0"}
+					]
+				},
+				"disappear": {
+					"animations": ["disappear"]
+				}
+			}
+		}
+	}
+}

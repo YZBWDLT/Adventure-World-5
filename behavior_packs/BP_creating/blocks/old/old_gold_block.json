@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "aw:old_gold_block",
+            "menu_category": {
+                "category": "nature",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.30
+            },
+            "minecraft:loot": "loot_tables/empty.json"
+        }
+    }
+}

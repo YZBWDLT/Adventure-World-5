@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "name": "loot_tables/empty.json",
+                    "type": "loot_table",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

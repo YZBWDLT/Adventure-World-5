@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "name": "aw:heart",
+                    "type": "item",
+                    "weight": 20
+                },
+                {
+                    "name": "aw:heart",
+                    "type": "item",
+                    "functions": [{ "function": "set_count", "count": 3 }],
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:arrow",
+                    "type": "item",
+                    "functions": [{ "function": "set_count", "count": 8 }],
+                    "weight": 20
+                },
+                {
+                    "name": "minecraft:arrow",
+                    "type": "item",
+                    "functions": [{ "function": "set_count", "count": 32 }],
+                    "weight": 5
+                },
+                {
+                    "name": "loot_tables/empty.json",
+                    "type": "loot_table",
+                    "weight": 50
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:npc",
+            "render_controllers": [ "controller.render.custom_npc" ],
+            "materials": { "default": "entity_alphatest" },
+            "textures": {
+                "t0": "textures/entity/npc/TianPing",
+                "t1": "textures/entity/npc/WangYufan",
+                "t2": "textures/entity/npc/ZouLuyao",
+                "t3": "textures/entity/npc/LvYan",
+                "t4": "textures/entity/npc/NiGaozhi",
+                "t5": "textures/entity/npc/HuYu",
+                "t6": "textures/entity/npc/LuQianli",
+                "t7": "textures/entity/npc/ChenLinxi",
+                "t8": "textures/entity/npc/SunJiarui",
+                "t9": "textures/entity/npc/YangCheng",
+                "t10": "textures/entity/npc/YiYun",
+                "t11": "textures/entity/npc/11",
+                "t12": "textures/entity/authors/andy7343",
+                "t13": "textures/entity/authors/yzbwdlt",
+                "t14": "textures/entity/authors/kriswenyu",
+                "t15": "textures/entity/authors/greeleaf"
+            },
+            "geometry": {
+                "default": "geometry.humanoid.default",
+                "slim": "geometry.humanoid.slim"
+            },
+            "spawn_egg": { "base_color": "#ffffff", "overlay_color": "#000000" },
+            "scripts": {
+                "scale": "0.9375",
+                
+                "animate": [ "bob", "look_at_target_default", "controller_move","state_controller", "animation_controller" ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.geometry = query.property('aw:geometry') == 'slim' ? 1 : 0;",
+                    "variable.skin = query.property('aw:skin');",
+                    
+                    "variable.state = query.property('aw:state');",
+                    "variable.is_sitting = variable.state == 'sit' || variable.state == 'sit_raising_head';",
+                    "variable.is_walking = query.is_moving;",
+                    "variable.anim = query.property('aw:animation');",
+                    "variable.speak_mode = query.property('aw:speak_mode');"
+                ]
+            },
+            "animations": {
+                "bob": "animation.player.bob",
+                "look_at_target_default": "animation.humanoid.look_at_target.default",
+                "move": "animation.humanoid.move",
+                "state_controller": "controller.animation.aw_npc.state",
+                "controller_move": "controller.animation.humanoid.move",
+                "animation_controller": "controller.animation.aw_npc.animation",
+
+                "stand_basic": "animation.aw_npc.stand",
+                "stand_walk": "animation.aw_npc.stand.walk",
+                "sit_basic": "animation.aw_npc.sit",
+                "sit_raising_head": "animation.aw_npc.sit.raise_head",
+                "lie_basic": "animation.aw_npc.lie",
+
+                "wave_hand_standing": "animation.aw_npc.stand.wave_hand",
+                "wave_hand_sitting": "animation.aw_npc.sit.wave_hand",
+                "speaking1": "animation.aw_npc.speaking1",
+                "speaking2": "animation.aw_npc.speaking2",
+                "speaking3": "animation.aw_npc.speaking3",
+                "speaking4": "animation.aw_npc.speaking4",
+                "applause": "animation.aw_npc.applause",
+                "place_block": "animation.aw_npc.place_block",
+                "look_around": "animation.aw_npc.look_around",
+                "nod": "animation.aw_npc.nod",
+                "shake_head": "animation.aw_npc.shake_head",
+                "bad_smile_standing": "animation.aw_npc.stand.bad_smile",
+                "bad_smile_sitting": "animation.aw_npc.sit.bad_smile",
+                "confuse": "animation.aw_npc.confuse",
+                "point": "animation.aw_npc.point",
+                "think": "animation.aw_npc.think"
+            },
+            "enable_attachables": true
+        }
+    }
+}

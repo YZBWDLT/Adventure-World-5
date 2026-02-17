@@ -1,0 +1,395 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "wake": {
+            "sounds": [
+                { "name": "sounds/music/wake", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "wake_start": {
+            "sounds": [
+                { "name": "sounds/music/wake_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "village": {
+            "sounds": [
+                { "name": "sounds/music/village", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "village_first": {
+            "sounds": [
+                { "name": "sounds/music/village_first", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "shop": {
+            "sounds": [
+                { "name": "sounds/music/shop", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "ice": {
+            "sounds": [
+                { "name": "sounds/music/ice", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "build_billboard": {
+            "sounds": [
+                { "name": "sounds/music/build_billboard", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "plain": {
+            "sounds": [
+                { "name": "sounds/music/plain", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "plain_start": {
+            "sounds": [
+                { "name": "sounds/music/plain_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "plain_sword_start": {
+            "sounds": [
+                { "name": "sounds/music/plain_sword_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "metro": {
+            "sounds": [
+                { "name": "sounds/music/metro", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "lost_forest": {
+            "sounds": [
+                { "name": "sounds/music/lost_forest", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "forest": {
+            "sounds": [
+                { "name": "sounds/music/forest", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "forest_start": {
+            "sounds": [
+                { "name": "sounds/music/forest_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "starry": {
+            "sounds": [
+                { "name": "sounds/music/starry", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "starry_start": {
+            "sounds": [
+                { "name": "sounds/music/starry_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "snow": {
+            "sounds": [
+                { "name": "sounds/music/snow", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "badland": {
+            "sounds": [
+                { "name": "sounds/music/badland", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "beach_start": {
+            "sounds": [
+                { "name": "sounds/music/beach_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "beach": {
+            "sounds": [
+                { "name": "sounds/music/beach", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "lab": {
+            "sounds": [
+                { "name": "sounds/music/lab", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "parkour": {
+            "sounds": [
+                { "name": "sounds/music/parkour", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "dig": {
+            "sounds": [
+                { "name": "sounds/music/dig", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boat": {
+            "sounds": [
+                { "name": "sounds/music/boat", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "shoot": {
+            "sounds": [
+                { "name": "sounds/music/shoot", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "fire": {
+            "sounds": [
+                { "name": "sounds/music/fire", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "finish_game": {
+            "sounds": [
+                { "name": "sounds/music/finish_game", "volume": 0.3, "stream": true }
+            ],
+            "category": "music"
+        },
+        "cozy": {
+            "sounds": [
+                { "name": "sounds/music/cozy", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "hear": {
+            "sounds": [
+                { "name": "sounds/music/hear", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "cave": {
+            "sounds": [
+                { "name": "sounds/music/cave", "volume": 0.5, "stream": true }
+            ],
+            "category": "music"
+        },
+        "passage": {
+            "sounds": [
+                { "name": "sounds/music/passage", "volume": 0.5, "stream": true }
+            ],
+            "category": "music"
+        },
+        "1_mine": {
+            "sounds": [
+                { "name": "sounds/music/1_mine", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "2_hill": {
+            "sounds": [
+                { "name": "sounds/music/2_hill", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "3_shaft": {
+            "sounds": [
+                { "name": "sounds/music/3_shaft", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "4_rail": {
+            "sounds": [
+                { "name": "sounds/music/4_rail", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "5_mansion": {
+            "sounds": [
+                { "name": "sounds/music/5_mansion", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "6_monument": {
+            "sounds": [
+                { "name": "sounds/music/6_monument", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "7_fortress": {
+            "sounds": [
+                { "name": "sounds/music/7_fortress", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "8_pe": {
+            "sounds": [
+                { "name": "sounds/music/8_pe", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "8_pe_old": {
+            "sounds": [
+                { "name": "sounds/music/8_pe_old", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "nether_spire": {
+            "sounds": [
+                { "name": "sounds/music/nether_spire", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "9_final": {
+            "sounds": [
+                { "name": "sounds/music/9_final", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss1": {
+            "sounds": [
+                { "name": "sounds/music/boss1", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss1_start": {
+            "sounds": [
+                { "name": "sounds/music/boss1_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss2": {
+            "sounds": [
+                { "name": "sounds/music/boss2", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_win": {
+            "sounds": [
+                { "name": "sounds/music/boss_win", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_win_start": {
+            "sounds": [
+                { "name": "sounds/music/boss_win_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_appear": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_appear", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_1": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_1", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_1_start": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_1_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_2": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_2", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_2_start": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_2_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_win": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_win", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "boss_final_win_start": {
+            "sounds": [
+                { "name": "sounds/music/boss_final_win_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "dream_end": {
+            "sounds": [
+                { "name": "sounds/music/dream_end", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "dream_end_start": {
+            "sounds": [
+                { "name": "sounds/music/dream_end_start", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "island_disappear": {
+            "sounds": [
+                { "name": "sounds/music/island_disappear", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "credits": {
+            "sounds": [
+                { "name": "sounds/music/credits", "volume": 0.4, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_piece": {
+            "sounds": [
+                { "name": "sounds/music/get_piece", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_heart": {
+            "sounds": [
+                { "name": "sounds/music/get_heart", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_book": {
+            "sounds": [
+                { "name": "sounds/music/get_book", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_item": {
+            "sounds": [
+                { "name": "sounds/music/get_item", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_sword": {
+            "sounds": [
+                { "name": "sounds/music/get_sword", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "get_tool": {
+            "sounds": [
+                { "name": "sounds/music/get_tool", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        },
+        "solve_puzzle": {
+            "sounds": [
+                { "name": "sounds/music/solve_puzzle", "volume": 0.7, "stream": true }
+            ],
+            "category": "music"
+        }
+    }
+}

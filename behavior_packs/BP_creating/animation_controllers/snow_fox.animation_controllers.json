@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.snow_fox.interact_test": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "interacted": "query.property('aw:running_commands')" }
+                    ]
+                },
+                "interacted": {
+                    "on_entry": [ "/function entities/snow_fox/interacted", "@s fox_running_commands:false" ],
+                    "transitions": [ { "default": "1" } ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,213 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:zombie",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:zombie_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:movement": {
+          "value": 0.32
+        }
+      },
+      "aw:equip": {
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/diamond.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.weapon.mainhand",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.head",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.chest",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.legs",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.feet",
+              "drop_chance": 0
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "zombie",
+          "undead",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_path_over_water": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:health": {
+        "value": 27,
+        "max": 27
+      },
+      "minecraft:movement": {
+        "value": 0.16
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 0,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/empty.json",
+        "slot_drop_chance": [
+          {
+            "slot": "slot.weapon.mainhand",
+            "drop_chance": 0
+          },
+          {
+            "slot": "slot.armor.head",
+            "drop_chance": 0
+          },
+          {
+            "slot": "slot.armor.chest",
+            "drop_chance": 0
+          },
+          {
+            "slot": "slot.armor.legs",
+            "drop_chance": 0
+          },
+          {
+            "slot": "slot.armor.feet",
+            "drop_chance": 0
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 25.0,
+        "must_see_forget_duration": 17.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 32
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {},
+      "aw:baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_baby"
+          ]
+        }
+      },
+      "aw:equip": {
+        "add": {
+          "component_groups": [
+            "aw:equip"
+          ]
+        }
+      },
+      "aw:equip_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_baby",
+            "aw:equip"
+          ]
+        }
+      }
+    }
+  }
+}

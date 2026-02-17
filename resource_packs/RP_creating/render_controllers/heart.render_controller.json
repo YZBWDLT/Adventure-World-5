@@ -1,0 +1,11 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.heart": {
+            "geometry": "Geometry.default",
+            "part_visibility": [ { "*": "query.is_alive" } ],
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.default" ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "entity_sounds" : {
+      "entities" : {
+        "aw:heart_piece" : {
+            "events" : {
+                 "death" : { "sound": "", "volume": 0 }
+              }
+           },
+        "aw:heart_container" : {
+            "events" : {
+                 "death" : { "sound": "", "volume": 0 }
+              }
+           },
+         "aw:npc": {
+                "events": {
+                    "death": { "sound": "", "volume": 0 },
+                    "hurt": { "sound": "", "volume": 0 }
+                }
+            }
+        }
+    }
+}

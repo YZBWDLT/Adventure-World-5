@@ -1,0 +1,53 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.custom_npc": {
+            "textures": [ "array.skins[query.variant]" ],
+            "materials": [ { "*": "material.default" } ],
+            "geometry": "array.models[query.variant]",
+            "part_visibility": [ { "*": "query.is_alive" } ],
+            "arrays": {
+                "textures": {
+                    "array.skins": [
+                        "texture.t0",
+                        "texture.t1",
+                        "texture.t2",
+                        "texture.t3",
+                        "texture.t4",
+                        "texture.t5",
+                        "texture.t6",
+                        "texture.t7",
+                        "texture.t8",
+                        "texture.t9",
+                        "texture.t10",
+                        "texture.t11",
+                        "texture.t12",
+                        "texture.t13",
+                        "texture.t14",
+                        "texture.t15"
+                    ]
+                },
+                "geometries": {
+                    "array.models": [
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.slim",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.slim",
+                        "geometry.default",
+                        "geometry.default",
+                        "geometry.slim",
+                        "geometry.default"
+                    ]
+                }
+            }
+        }
+    }
+}

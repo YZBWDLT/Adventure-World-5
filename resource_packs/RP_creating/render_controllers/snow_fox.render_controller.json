@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.aw_snow_fox": {
+            "geometry": "Geometry.default",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "texture.default" ],
+            "part_visibility": [
+                { "leg*": false },
+                { "head": false },
+                { "head_sleeping": true }
+            ]
+        }
+    }
+}

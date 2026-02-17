@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "冒险世界：筑梦 行为包",
+        "description": "作者：量筒&巴豆",
+        "uuid":"adb53c7f-e208-4049-a551-a03f96c1096a",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 20, 10 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "version": [ 1, 0, 0 ],
+            "uuid":"efda7ea5-0739-4cd0-a0ec-cb8ebf0c900c"
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:player_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 9,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+      "aw:skeleton_king_arrow_m": {
+        "minecraft:projectile": {
+            "on_hit": { "impact_damage": { "damage": 1 , "knockback": true, "semi_random_diff_damage": false, "destroy_on_hit": true }, "stick_in_ground": { "shake_time": 0.35 }, "arrow_effect": { } },
+            "hit_sound": "bow.hit",
+            "power": 1.0,
+            "gravity": 0,
+            "uncertainty_base": 2,
+            "uncertainty_multiplier": 0,
+            "anchor": 1,
+            "should_bounce": true,
+            "offset": [ 0, -0.1, 0 ],
+            "inertia": 1
+        },
+        "minecraft:variant": { "value": 1 }
+      },
+      "aw:skeleton_king_arrow_l": {
+        "minecraft:projectile": {
+            "on_hit": { "impact_damage": { "damage": 2 , "knockback": true, "semi_random_diff_damage": false, "destroy_on_hit": true }, "stick_in_ground": { "shake_time": 0.35 }, "arrow_effect": { } },
+            "hit_sound": "bow.hit",
+            "power": 2.0,
+            "gravity": 0,
+            "uncertainty_base": 0,
+            "uncertainty_multiplier": 0,
+            "anchor": 1,
+            "should_bounce": true,
+            "offset": [ 0, -0.1, 0 ],
+            "inertia": 1
+        },
+        "minecraft:variant": { "value": 1 }
+      },
+      "aw:skeleton_king_arrow_s": {
+        "minecraft:projectile": {
+            "on_hit": { "impact_damage": { "damage": 2 , "knockback": true, "semi_random_diff_damage": false, "destroy_on_hit": true }, "stick_in_ground": { "shake_time": 0.35 }, "arrow_effect": { } },
+            "hit_sound": "bow.hit",
+            "power": 0.66,
+            "gravity": 0,
+            "uncertainty_base": 20,
+            "uncertainty_multiplier": 0,
+            "anchor": 1,
+            "should_bounce": true,
+            "offset": [ 0, -0.1, 0 ],
+            "inertia": 1
+        },
+        "minecraft:variant": { "value": 1 }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 2,
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+          "stick_in_ground": {
+            "shake_time" : 0.35
+          },
+          "arrow_effect": {
+          }
+        },
+        "hit_sound": "bow.hit",
+        "power": 0.5,
+        "gravity": 0,
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0,
+        "anchor": 1,
+        "should_bounce": true,
+        "offset": [ 0, -0.1, 0 ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:despawn": {
+      "despawn_from_distance": {}
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 7,
+          "use_motion_prediction_hints": true
+        }
+      },
+      "minecraft:type_family": { "family": [ "arrow" ] }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "player"},
+            "add": {
+              "component_groups" : [ "minecraft:player_arrow" ]
+            }
+          },
+          { "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "skeleton_king" },
+                { "test": "has_tag", "subject": "other", "value": "arrow_m" }
+              ]
+            },
+            "add": { 
+              "component_groups": [ "aw:skeleton_king_arrow_m" ] 
+            },
+            "remove": { 
+              "component_groups": [ "aw:skeleton_king_arrow_l", "aw:skeleton_king_arrow_s" ] 
+            }
+          },
+          { "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "skeleton_king" },
+                { "test": "has_tag", "subject": "other", "value": "arrow_l" }
+              ]
+            }, 
+            "add": { 
+              "component_groups": [ "aw:skeleton_king_arrow_l" ] 
+            },
+            "remove": { 
+              "component_groups": [ "aw:skeleton_king_arrow_m", "aw:skeleton_king_arrow_s" ] 
+            }
+        },
+        { "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "skeleton_king" },
+                { "test": "has_tag", "subject": "other", "value": "arrow_s" }
+              ]
+            },
+          "add": { 
+            "component_groups": [ "aw:skeleton_king_arrow_s" ] 
+           },
+           "remove": { 
+              "component_groups": [ "aw:skeleton_king_arrow_m", "aw:skeleton_king_arrow_l" ] 
+            }
+          }
+        ]
+      }
+    }
+  }
+}

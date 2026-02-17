@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.bonus_item": {
+            "geometry": "array.geometry_item_type[variable.type_index]",
+            "materials": [ { "*": "material.default" } ],
+            "textures": [ "array.texture_item_type[variable.type_index]" ],
+            "arrays": {
+                "geometries": {
+                    "array.geometry_item_type": [
+                        "geometry.bonus_item_sword",
+                        "geometry.bonus_item_iron_pickaxe",
+                        "geometry.bonus_item_block",
+                        "geometry.bonus_item_wind_pearl",
+                        "geometry.bonus_item_block",
+                        "geometry.bonus_item_bow",
+                        "geometry.bonus_item_carved_pumpkin",
+                        "geometry.bonus_item_block",
+                        "geometry.bonus_item_nautilus_shell",
+                        "geometry.bonus_item_quiver",
+                        "geometry.bonus_item_iron_pickaxe",
+                        "geometry.bonus_item_water_gun"
+                    ]
+                },
+                "textures": {
+                    "array.texture_item_type": [
+                        "texture.bonus_item_sword",
+                        "texture.bonus_item_iron_pickaxe",
+                        "texture.bonus_item_gray_glazed_terracotta",
+                        "texture.bonus_item_wind_pearl",
+                        "texture.bonus_item_silver_glazed_terracotta",
+                        "texture.bonus_item_bow",
+                        "texture.bonus_item_carved_pumpkin",
+                        "texture.bonus_item_white_glazed_terracotta",
+                        "texture.bonus_item_nautilus_shell",
+                        "texture.bonus_item_quiver",
+                        "texture.bonus_item_emerald_pickaxe",
+                        "texture.bonus_item_water_gun"
+                    ]
+                }
+            }
+        }
+    }
+}

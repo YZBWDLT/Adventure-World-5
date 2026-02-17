@@ -1,0 +1,20 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+      "diamond_sword": { "textures": "textures/items/diamond_sword" },
+      "diamond_pickaxe": { "textures": "textures/items/diamond_pickaxe" },
+      "heart": { "textures": "textures/items/heart" },
+      "potion_heal": { "textures": "textures/items/potion_heal" },
+      "potion_full": { "textures": "textures/items/potion_full" },
+      "potion_regeneration": { "textures": "textures/items/potion_regeneration" },
+      "potion_shield": { "textures": "textures/items/potion_shield" },
+      "wind_pearl": { "textures": "textures/items/wind_pearl" },
+      "snowball":{"textures": "textures/items/wind_pearl"},
+      "quiver":{"textures": "textures/items/quiver"},
+      "water_gun":{"textures": "textures/items/water_gun"},
+      "water":{"textures": "textures/items/water"},
+      "schellon_brush":{"textures": "textures/items/schellon_brush"},
+      "postcard":{"textures": "textures/items/postcard"}
+    }
+  }

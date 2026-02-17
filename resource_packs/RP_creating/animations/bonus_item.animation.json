@@ -1,0 +1,69 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bonus.appear": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"item": {
+					"rotation": [0, "180*query.anim_time", 0],
+					"position": [0, "math.sin(query.anim_time)", 0],
+					"scale": "-0.5*math.pow(query.anim_time, 2)+1.5*query.anim_time"
+				}
+			}
+		},
+		"animation.bonus.appear2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"item": {
+					"rotation": [0, "180*query.anim_time", 0],
+					"position": {
+						"0.0": [0, 36, 0],
+						"0.5": [0, -2, 0],
+						"1.0": [0, 9, 0],
+						"1.25": [0, -2, 0],
+						"1.5": [0, 2.25, 0],
+						"1.625": [0, -2, 0],
+						"1.75": [0, 0.5625, 0],
+						"1.8333": [0, -2, 0],
+						"1.9167": [0, 0, 0]
+					},
+					"scale": "-0.5*math.pow(query.anim_time, 2)+1.5*query.anim_time"
+				}
+			}
+		},
+		"animation.bonus.hold": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"rotation": [0, "60*query.anim_time", 0],
+					"position": [0, "2*math.sin(90*query.anim_time)", 0]
+				}
+			}
+		},
+		"animation.bonus.disappear": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"item": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -60, 0],
+						"1.0": [0, 720, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -9, 0],
+						"1.0": [0, 36, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1.25, 1.25, 1.25],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

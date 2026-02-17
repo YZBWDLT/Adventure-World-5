@@ -1,0 +1,66 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:bonus_item",
+            "render_controllers": [ "controller.render.bonus_item" ],
+            "geometry": {
+                "bonus_item_sword": "geometry.bonus_item_sword",
+                "bonus_item_iron_pickaxe": "geometry.bonus_item_iron_pickaxe",
+                "bonus_item_block": "geometry.bonus_item_block",
+                "bonus_item_wind_pearl": "geometry.bonus_item_wind_pearl",
+                "bonus_item_bow": "geometry.bonus_item_bow",
+                "bonus_item_carved_pumpkin": "geometry.bonus_item_carved_pumpkin",
+                "bonus_item_nautilus_shell": "geometry.bonus_item_nautilus_shell",
+                "bonus_item_quiver": "geometry.bonus_item_quiver",
+                "bonus_item_water_gun": "geometry.bonus_item_water_gun"
+            },
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "bonus_item_sword": "textures/entity/bonus_item/sword",
+                "bonus_item_iron_pickaxe": "textures/entity/bonus_item/iron_pickaxe",
+                "bonus_item_gray_glazed_terracotta": "textures/entity/bonus_item/glazed_terracotta_gray",
+                "bonus_item_wind_pearl": "textures/items/wind_pearl",
+                "bonus_item_silver_glazed_terracotta": "textures/entity/bonus_item/glazed_terracotta_silver",
+                "bonus_item_bow": "textures/entity/bonus_item/bow",
+                "bonus_item_carved_pumpkin": "textures/entity/bonus_item/carved_pumpkin",
+                "bonus_item_white_glazed_terracotta": "textures/entity/bonus_item/glazed_terracotta_white",
+                "bonus_item_nautilus_shell": "textures/entity/bonus_item/nautilus_shell",
+                "bonus_item_quiver": "textures/entity/bonus_item/quiver",
+                "bonus_item_emerald_pickaxe": "textures/items/diamond_pickaxe",
+                "bonus_item_water_gun": "textures/items/water_gun"
+            },
+
+            "scripts": {
+                "pre_animation": [
+                    "variable.type = query.property('aw:bonus_item_type');",
+                    "variable.type_index = 0;",
+                    "variable.type_index = variable.type == 'sword' ? 0 : variable.type_index;",
+                    "variable.type_index = variable.type == 'iron_pickaxe' ? 1 : variable.type_index;",
+                    "variable.type_index = variable.type == 'gray_glazed_terracotta' ? 2 : variable.type_index;",
+                    "variable.type_index = variable.type == 'wind_pearl' ? 3 : variable.type_index;",
+                    "variable.type_index = variable.type == 'silver_glazed_terracotta' ? 4 : variable.type_index;",
+                    "variable.type_index = variable.type == 'bow' ? 5 : variable.type_index;",
+                    "variable.type_index = variable.type == 'carved_pumpkin' ? 6 : variable.type_index;",
+                    "variable.type_index = variable.type == 'white_glazed_terracotta' ? 7 : variable.type_index;",
+                    "variable.type_index = variable.type == 'nautilus_shell' ? 8 : variable.type_index;",
+                    "variable.type_index = variable.type == 'quiver' ? 9 : variable.type_index;",
+                    "variable.type_index = variable.type == 'emerald_pickaxe' ? 10 : variable.type_index;",
+                    "variable.type_index = variable.type == 'water_gun' ? 11 : variable.type_index;"
+                ],
+                "animate": [
+                    "controller_anim"
+                ]
+            },
+            "animations": {
+                "controller_anim": "controller.animation.bonus.anim",
+                "appear": "animation.bonus.appear",
+                "appear2": "animation.bonus.appear2",
+                "hold": "animation.bonus.hold",
+                "disappear": "animation.bonus.disappear"
+            }
+        }
+    }
+}

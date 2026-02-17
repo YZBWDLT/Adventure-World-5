@@ -1,0 +1,250 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:drowned",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": { "animate": [ "health_test" ] },
+      "animations": {
+        "health_test": "controller.animation.drowned.boss"
+      }
+    },
+    "component_groups": {
+      "minecraft:baby_drowned": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1,
+          "track_target": false,
+          "require_complete_path": true
+        },
+        "minecraft:movement": {
+          "value": 0.18
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.36
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/zombie.json"
+        }
+      },
+      "aw:equip": {
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/diamond.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.weapon.mainhand",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.head",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.chest",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.legs",
+              "drop_chance": 0
+            },
+            {
+              "slot": "slot.armor.feet",
+              "drop_chance": 0
+            }
+          ]
+        }
+      },
+      "minecraft:ranged_mode": {
+        "minecraft:shooter": {
+          "def": "minecraft:thrown_trident"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 3,
+          "attack_interval": 5.0,
+          "attack_radius": 64.0,
+          "swing": true
+        },
+        "minecraft:health": {
+          "value": 200,
+          "max": 200
+        },
+        "minecraft:boss": {
+          "hud_range": 60,
+          "name": "entity.aw:drowned_boss.name",
+          "should_darken_sky": false
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/trident.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.weapon.mainhand",
+              "drop_chance": 0
+            }
+          ]
+        }
+      },
+      "minecraft:adult_drowned": {
+        "minecraft:attack": {
+          "damage": 2
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1,
+          "track_target": false,
+          "require_complete_path": true
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/zombie.json"
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "drowned",
+          "zombie",
+          "undead",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement": {
+        "value": 0.12
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.24
+      },
+      "minecraft:movement.generic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:health": {
+        "value": 27,
+        "max": 27
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_sink": false,
+        "can_walk": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": false,
+        "reselect_targets": true,
+        "within_radius": 64.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:adult_drowned"
+          ]
+        }
+      },
+      "aw:baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:baby_drowned"
+          ]
+        }
+      },
+      "aw:equip": {
+        "add": {
+          "component_groups": [
+            "minecraft:adult_drowned",
+            "aw:equip"
+          ]
+        }
+      },
+      "aw:equip_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:baby_drowned",
+            "aw:equip"
+          ]
+        }
+      },
+      "aw:boss": {
+        "add": {
+          "component_groups": [
+            "minecraft:ranged_mode"
+          ]
+        }
+      }
+    }
+  }
+}

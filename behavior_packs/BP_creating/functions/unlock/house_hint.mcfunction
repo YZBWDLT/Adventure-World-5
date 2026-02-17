@@ -1,0 +1,1 @@
+structure load unlock:house_hint -159 31 143
