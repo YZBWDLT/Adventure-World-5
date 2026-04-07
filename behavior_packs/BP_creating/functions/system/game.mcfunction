@@ -23,22 +23,13 @@ execute as @e[type=aw:heart_container] at @s if entity @a[r=1] run function lib/
 execute if score tick time matches 0 if score saturation data matches 1 run effect @a saturation 5 0 true
 
 #能挖掉的方块不要有掉落物
-kill @e[type=item,name="灰色带釉陶瓦"]
-kill @e[type=item,name="淡灰色带釉陶瓦"]
-kill @e[type=item,name="白色带釉陶瓦"]
-kill @e[type=item,name="线"]
-kill @e[type=item,name="仙人掌"]
-kill @e[type=item,name="橡木告示牌"]
-execute unless score position data matches 9 run kill @e[type=item,name="黑曜石"]
-kill @e[type=item,name="Gray Glazed Terracotta"]
-kill @e[type=item,name="Grey Glazed Terracotta"]
-kill @e[type=item,name="Light Gray Glazed Terracotta"]
-kill @e[type=item,name="Light Grey Glazed Terracotta"]
-kill @e[type=item,name="White Glazed Terracotta"]
-kill @e[type=item,name="String"]
-kill @e[type=item,name="Cactus"]
-kill @e[type=item,name="Oak Sign"]
-execute unless score position data matches 9 run kill @e[type=item,name="Obsidian"]
+scriptevent aw:removeItemEntity minecraft:gray_glazed_terracotta
+scriptevent aw:removeItemEntity minecraft:light_gray_glazed_terracotta
+scriptevent aw:removeItemEntity minecraft:white_glazed_terracotta
+scriptevent aw:removeItemEntity minecraft:string
+scriptevent aw:removeItemEntity minecraft:cactus
+scriptevent aw:removeItemEntity minecraft:oak_sign
+execute unless score position data matches 9 run scriptevent aw:removeItemEntity minecraft:obsidian
 
 #当武器工具坏掉后给予，剑还要附魔
 execute if score sword data matches 1 as @a[hasitem={item=diamond_sword,quantity=0}] run give @s diamond_sword 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["web","aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
@@ -66,8 +57,7 @@ execute if score item_pumpkin data matches 1 as @a[hasitem={item=carved_pumpkin,
 
 #弓和箭袋影响箭携带上限
 execute if score 5_mansion_item data matches 1 as @a[hasitem={item=bow,quantity=0}] run give @s bow 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
-execute if score 5_mansion_item data matches 0 run kill @e[type=item,name="箭"]
-execute if score 5_mansion_item data matches 0 run kill @e[type=item,name="Arrow"]
+execute if score 5_mansion_item data matches 0 run scriptevent aw:removeItemEntity minecraft:arrow
 execute if score 5_mansion_item data matches 0 run clear @a arrow
 execute if score quiver data matches 1 as @a[hasitem={item=aw:quiver,quantity=0}] run give @s aw:quiver 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
 

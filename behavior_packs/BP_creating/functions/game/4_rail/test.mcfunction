@@ -4,8 +4,7 @@
 execute if score refresh data matches 0 if entity @a[x=-189.5,y=-44,z=-32.5,r=1] run function game/4_rail/refresh
 
 #清除矿车
-kill @e[type=item,name="矿车"]
-kill @e[type=item,name="Minecart"]
+scriptevent aw:removeItemEntity minecraft:minecart
 clear @a minecart
 
 #前往买卖村
