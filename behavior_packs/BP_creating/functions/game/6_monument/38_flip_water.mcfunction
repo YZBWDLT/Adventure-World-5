@@ -1,8 +1,5 @@
 #改变海底神殿水位
 
-execute if score timeline time matches 10 if score 6_monument_water data matches 0
-execute if score timeline time matches 10 if score 6_monument_water data matches 1
-
 execute if score timeline time matches 70..80 if score 6_monument_water data matches 0 run fill -151 -59 143 -93 -49 189 air replace water
 
 execute if score timeline time matches 20 if score 6_monument_water data matches 0 run fill -151 -45 143 -93 -45 189 water replace air

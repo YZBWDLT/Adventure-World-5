@@ -3,12 +3,11 @@
 # --- 时间控制器 ---
 function system/timer
 
-# --- 时间线、剧情线与音效控制器 ---
+# --- 时间线 ---
 # 仅当启用后执行
 
 # 当剧情没有执行时timeline active=0，timeline不动并开启检测功能；当有剧情时>0，开启timeline并关闭检测避免重复执行
 execute if score timeline active matches 1.. run function system/controller/timeline
-execute if score sound active matches 1.. run function system/controller/sound
 
 # --- 反退出重进 ---
 ## 获取退出重进的玩家
