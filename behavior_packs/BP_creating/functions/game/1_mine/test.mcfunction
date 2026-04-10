@@ -1,7 +1,7 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-232.5,y=-29,z=103.5,r=1] run function game/1_mine/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-232.5,y=-29,z=103.5,r=1] run function game/1_mine/refresh
 
 #前往筑梦镇
 execute if score timeline active matches 0 if entity @a[x=-232.5,y=-29,z=101.5,r=1] positioned -233 30 103 facing -233 30 104 run function game/village/enter

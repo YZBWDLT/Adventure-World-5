@@ -9,7 +9,6 @@ execute if score position data matches 5 run function game/3_shaft/test
 execute if score position data matches 6 run function game/4_rail/test
 execute if score position data matches 7 run function game/forest/test
 execute if score position data matches 8 run function game/5_mansion/test
-execute if score position data matches 9 run function game/sea/test
 execute if score position data matches 10 run function game/starry/test
 execute if score position data matches 11 run function game/6_monument/test
 execute if score position data matches 12 run function game/7_fortress/test

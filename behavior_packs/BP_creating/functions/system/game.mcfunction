@@ -1,9 +1,5 @@
 # ===== 游戏内常开的功能 =====
 
-#死掉时重置场景
-function lib/get_data/player_is_alive
-execute if entity @a[tag=!isAlive] run scoreboard players set refresh data 0
-
 #水下有挖掘疲劳，用钻镐没事
 #0:拿到钻镐就清除，1:无作用，2：有钻镐，但不能进府邸神殿要塞，3：有钻镐
 execute if score 8_pe_item data matches 0 run clear @a diamond_pickaxe

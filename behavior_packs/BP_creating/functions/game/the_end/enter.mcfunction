@@ -4,7 +4,7 @@
 
 title @a title §o§e终末之地
 scoreboard players set position data 15
-scoreboard players set refresh data 0
+scoreboard players set refreshArea data 0
 execute in the_end run tp @a 0 58 -40 facing 0 58 0
 execute if score 9_the_end_boss data matches !1..3 run function game/the_end/events/restrict_end_portal
 scoreboard players set timeline active 62

@@ -1,14 +1,14 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-185.5,y=36,z=130.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-232.5,y=30,z=103.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-286.5,y=55.5,z=135.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-198.5,y=33,z=103.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-243.5,y=31,z=115.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-166.5,y=31,z=180.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-142.5,y=31,z=166.5,r=1] run function game/village/refresh
-execute if score refresh data matches 0 if entity @a[x=-239.5,y=31,z=139.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-185.5,y=36,z=130.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-232.5,y=30,z=103.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-286.5,y=55.5,z=135.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-198.5,y=33,z=103.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-243.5,y=31,z=115.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-166.5,y=31,z=180.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-142.5,y=31,z=166.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-239.5,y=31,z=139.5,r=1] run function game/village/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-280.5,y=59.5,z=129.5,r=1.5] run tp @a -281 58 129 facing -282 58 129
@@ -29,7 +29,7 @@ execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run title @a title §l§7一号�
 execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run spawnpoint @a -233 -29 103
 execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run setworldspawn -233 -29 103
 execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run scoreboard players set position data 2
-execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-232.5,y=29,z=101.5,r=1] run tp @a -233 -29 103 facing -233 -29 104
 
 #跑酷游戏规则
@@ -58,7 +58,7 @@ execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run title @a title §0浮空峰�
 execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run spawnpoint @a -287 -13 149
 execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run setworldspawn -287 -13 149
 execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run scoreboard players set position data 3
-execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-286.5,y=56,z=133.5,r=1] run tp @a -287 -13 149 facing -287 -13 146
 
 #前往逍遥平原
@@ -150,7 +150,7 @@ execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run title @a title §l§9溟海
 execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run spawnpoint @a -137 31 166
 execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run setworldspawn -137 31 166
 execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run scoreboard players set position data 9
-execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-140.5,y=31,z=166.5,r=1] run tp @a -137 31 166 facing -136 31 166
 
 #对话-返回
@@ -198,7 +198,7 @@ execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if e
 execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run spawnpoint @a -316 -49 60
 execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run setworldspawn -316 -49 60
 execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set position data 12
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set refresh data 0
+execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set refreshArea data 0
 execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run tp @a -316 -49 60 facing -315 -49 60
 
 execute if score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦

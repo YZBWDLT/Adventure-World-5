@@ -16,7 +16,7 @@ execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -200 33 -40
 execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -200 33 -40
 execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set position data 4
-execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refresh data 0
+execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refreshArea data 0
 execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -200 33 -40 facing -200 33 -41
 execute if block -232 -14 179 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -232 -14 179 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
@@ -31,7 +31,7 @@ execute if block -231 -14 190 stone_button["button_pressed_bit"=true,"facing_dir
 #地铁-明月森林
 execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -293 31 -57 run function game/forest/enter
 execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] run time set midnight
-execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refresh data 0
+execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refreshArea data 0
 execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -293 31 -57 facing -293 31 -56
 execute if block -238 -14 177 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -238 -14 177 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
@@ -40,7 +40,7 @@ execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -298 31 87
 execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -298 31 87
 execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set position data 10
-execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refresh data 0
+execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refreshArea data 0
 execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -298 31 87 facing -298 31 86
 execute if block -238 -14 184 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -238 -14 184 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
@@ -49,7 +49,7 @@ execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -123 33 33
 execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -123 33 33
 execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set position data 4
-execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refresh data 0
+execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set refreshArea data 0
 execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -123 33 33 facing -123 33 34
 execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -229 -13 181 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 

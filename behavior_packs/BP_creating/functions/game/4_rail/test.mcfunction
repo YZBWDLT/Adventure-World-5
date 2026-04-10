@@ -1,7 +1,7 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-189.5,y=-44,z=-32.5,r=1] run function game/4_rail/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-189.5,y=-44,z=-32.5,r=1] run function game/4_rail/refresh
 
 #清除矿车
 scriptevent aw:removeItemEntity minecraft:minecart
@@ -12,7 +12,7 @@ execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run title @a title §o§6买卖
 execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run spawnpoint @a -192 27 -35
 execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run setworldspawn -192 27 -35
 execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-191.5,y=-44,z=-32.5,r=1] run tp @a -192 27 -35 facing -192 27 -36
 
 #御风珠传送
@@ -45,5 +45,5 @@ execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.
 execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run spawnpoint @a -192 27 -35
 execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run setworldspawn -192 27 -35
 execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set position data 4
-execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set refresh data 0
+execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 4_rail_boss data matches 3 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run tp @a -192 27 -35 facing -192 27 -36

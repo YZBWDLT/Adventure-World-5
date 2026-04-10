@@ -1,8 +1,8 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-262.5,y=34,z=86.5,r=1] run function game/starry/refresh
-execute if score refresh data matches 0 if entity @a[x=-297.5,y=30.94,z=87.5,r=1] run function game/starry/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-262.5,y=34,z=86.5,r=1] run function game/starry/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-297.5,y=30.94,z=87.5,r=1] run function game/starry/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-287.5,y=39.5,z=21.5,r=1.5] run tp @a -288 38 21 facing -287 38 21

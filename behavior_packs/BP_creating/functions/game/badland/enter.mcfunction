@@ -5,7 +5,7 @@ title @a title §v五§g色§s山
 spawnpoint @a ~~~
 setworldspawn ~~~
 scoreboard players set position data 14
-scoreboard players set refresh data 0
+scoreboard players set refreshArea data 0
 tp @a ~~~ facing ^^^1
 
 # 如果是网易版，则直接给出邹鹭遥的馈赠

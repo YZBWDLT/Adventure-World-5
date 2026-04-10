@@ -1,14 +1,14 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-121.5,y=-48,z=142.5,r=1] run function game/6_monument/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-121.5,y=-48,z=142.5,r=1] run function game/6_monument/refresh
 
 #前往溟海
 execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run title @a title §l§9溟海
 execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run spawnpoint @a -102 5 188
 execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run setworldspawn -102 5 188
 execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run scoreboard players set position data 9
-execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-121.5,y=-48,z=140.5,r=1] run tp @a -102 5 188 facing -102 5 187
 
 #御风珠传送
@@ -63,5 +63,5 @@ execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=
 execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run spawnpoint @a -102 5 188
 execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run setworldspawn -102 5 188
 execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set position data 9
-execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set refresh data 0
+execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 6_monument_boss data matches 7.. if entity @a[x=-160.5,y=-57,z=185.5,r=1] run tp @a -102 5 188 facing -102 5 187

@@ -102,7 +102,7 @@ execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run spawnpoint @a -102 5 188
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run setworldspawn -102 5 188
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set position data 9
-execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set refresh data 0
+execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set music data 114
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function music/replay
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set 6_monument_boss data 7

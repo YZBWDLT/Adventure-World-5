@@ -49,7 +49,7 @@ execute if score 8_pe_boss data matches 1 if block -226 -54 -24 aw:nether_reacto
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run spawnpoint @a -78 31 23
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run setworldspawn -78 31 23
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set position data 10
-execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refresh data 0
+execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set timeline active 57
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_states/timeline/enable_lock_camera

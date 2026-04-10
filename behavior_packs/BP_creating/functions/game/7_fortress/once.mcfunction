@@ -52,5 +52,5 @@ execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run spawnpoint @a -240 31 139
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run setworldspawn -240 31 139
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run scoreboard players set position data 1
-execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run scoreboard players set refresh data 0
+execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run scoreboard players set 7_fortress_boss data 2

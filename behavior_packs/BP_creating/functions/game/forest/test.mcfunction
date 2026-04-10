@@ -1,10 +1,10 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-263.5,y=31,z=-47.5,r=1] run function game/forest/refresh
-execute if score refresh data matches 0 if entity @a[x=-286.5,y=31,z=-47.5,r=1] run function game/forest/refresh
-execute if score refresh data matches 0 if entity @a[x=-292.5,y=31,z=-56.5,r=1] run function game/forest/refresh
-execute if score refresh data matches 0 if entity @a[x=-298.5,y=31,z=10.5,r=1] run function game/forest/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-263.5,y=31,z=-47.5,r=1] run function game/forest/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-286.5,y=31,z=-47.5,r=1] run function game/forest/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-292.5,y=31,z=-56.5,r=1] run function game/forest/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-298.5,y=31,z=10.5,r=1] run function game/forest/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-292.5,y=38.5,z=-60.5,r=2] run tp @a -293 37 -60 facing -293 37 -61
@@ -14,7 +14,7 @@ execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run title @a title §o§6买卖�
 execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run spawnpoint @a -257 33 -48
 execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run setworldspawn -257 33 -48
 execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run scoreboard players set lost_forest data 1
 execute if entity @a[x=-260.5,y=33,z=-47.5,r=1] run tp @a -257 33 -48 facing -256 33 -48
 
@@ -47,7 +47,7 @@ execute if score lost_forest data matches 7 run title @a title §9明月森林
 execute if score lost_forest data matches 7 run time set midnight
 execute if score lost_forest data matches 7 run spawnpoint @a -287 31 -48
 execute if score lost_forest data matches 7 run setworldspawn -287 31 -48
-execute if score lost_forest data matches 7 run scoreboard players set refresh data 0
+execute if score lost_forest data matches 7 run scoreboard players set refreshArea data 0
 execute if score lost_forest data matches 7 run tp @a -287 31 -48 facing -288 31 -48
 execute if score lost_forest data matches 7 run scoreboard players set lost_forest data 1
 
@@ -57,7 +57,7 @@ execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run time set noon
 execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run spawnpoint @a -257 33 -48
 execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run setworldspawn -257 33 -48
 execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-284.5,y=31,z=-47.5,r=1] run tp @a -257 33 -48 facing -256 33 -48
 
 #南瓜显示-森林地洞
@@ -67,7 +67,7 @@ execute unless entity @a[hasitem={item=carved_pumpkin,location=slot.armor.head}]
 #前往林地府邸
 execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a title §l§4林地府邸
 execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a subtitle §4一层——正门
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set refresh data 0
+execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set refreshArea data 0
 execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set position data 8
 execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run tp @a -256.5 -48.94 -12.5 facing -257.5 -48.94 -12.5
 execute unless score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a title §l§4林地府邸

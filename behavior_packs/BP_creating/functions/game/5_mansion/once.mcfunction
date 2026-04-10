@@ -61,7 +61,7 @@ execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run spawnpoint @a -299 31 10
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run setworldspawn -299 31 10
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set position data 7
-execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set refresh data 0
+execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set music data 84
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function music/replay
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set 5_mansion_boss data 3

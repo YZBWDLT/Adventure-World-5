@@ -1,7 +1,7 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-256.5,y=-48.94,z=-12.5,r=1] run function game/5_mansion/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-256.5,y=-48.94,z=-12.5,r=1] run function game/5_mansion/refresh
 
 #标靶清雪球
 execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-310.5,y=-46.5,z=-16.5,r=4]
@@ -55,7 +55,7 @@ execute unless entity @a[hasitem={item=carved_pumpkin,location=slot.armor.head}]
 
 #前往明月森林
 execute if entity @a[x=-254.5,y=-49,z=-12.5,r=1] positioned -299 31 10 run function game/forest/enter
-execute if entity @a[x=-254.5,y=-49,z=-12.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-254.5,y=-49,z=-12.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-254.5,y=-49,z=-12.5,r=1] run tp @a -299 31 10 facing -298 31 10
 
 #四角的观察视角
@@ -194,5 +194,5 @@ execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_pl
 
 #从BOSS战离开（第二次进入场地再离开时）
 execute if score 5_mansion_boss data matches 3.. if entity @a[x=-304.5,y=-39,z=-8.5,r=1] positioned -299 31 10 run function game/forest/enter
-execute if score 5_mansion_boss data matches 3.. if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set refresh data 0
+execute if score 5_mansion_boss data matches 3.. if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 5_mansion_boss data matches 3.. if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run tp @a -299 31 10 facing -298 31 10

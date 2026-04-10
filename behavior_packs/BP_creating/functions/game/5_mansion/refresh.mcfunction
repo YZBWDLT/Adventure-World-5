@@ -5,7 +5,7 @@
 #在通关之前BOSS会重新生成
 
 #记录已刷新避免重复
-scoreboard players set refresh data 1
+scoreboard players set refreshArea data 1
 
 #复原陶罐
 fill -318 -49 -23 -318 -49 -19 aw:decorated_pot_type1

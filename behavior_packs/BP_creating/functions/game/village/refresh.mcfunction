@@ -8,7 +8,7 @@
 #玩家的位置信息也会更新
 
 #记录已刷新避免重复
-scoreboard players set refresh data 1
+scoreboard players set refreshArea data 1
 
 #复原陶罐等可破坏场景
 setblock -263 32 165 web

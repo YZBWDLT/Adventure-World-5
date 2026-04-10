@@ -1,7 +1,7 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-315.5,y=-49,z=60.5,r=1] run function game/7_fortress/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-315.5,y=-49,z=60.5,r=1] run function game/7_fortress/refresh
 
 #前往筑梦镇
 execute if entity @a[x=-317.5,y=-49,z=60.5,r=1] positioned -240 31 139 facing -239 31 139 run function game/village/enter

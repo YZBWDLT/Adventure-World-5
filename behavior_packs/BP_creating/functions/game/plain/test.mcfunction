@@ -1,16 +1,16 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-198.5,y=33,z=97.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-163.5,y=22,z=66.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-191.5,y=27,z=-34.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-199.5,y=33,z=-39.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-256.5,y=33,z=-47.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-256.5,y=35,z=86.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-122.5,y=33,z=33.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-77.5,y=31,z=23.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-142.5,y=16,z=-9.5,r=1] run function game/plain/refresh
-execute if score refresh data matches 0 if entity @a[x=-98.5,y=24,z=23.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-198.5,y=33,z=97.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-163.5,y=22,z=66.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-191.5,y=27,z=-34.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-199.5,y=33,z=-39.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-256.5,y=33,z=-47.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-256.5,y=35,z=86.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-122.5,y=33,z=33.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-77.5,y=31,z=23.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-142.5,y=16,z=-9.5,r=1] run function game/plain/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-98.5,y=24,z=23.5,r=1] run function game/plain/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-158.5,y=33.5,z=90.5,r=2] run tp @a -160 32 90 facing -159 32 90
@@ -77,7 +77,7 @@ execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run title @a title §l§9逍遥�
 execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run spawnpoint @a -164 -59 70
 execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run setworldspawn -164 -59 70
 execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run scoreboard players set position data 5
-execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-163.5,y=23,z=68.5,r=1] run tp @a -164 -59 70 facing -164 -59 71
 
 #水流俯视视角
@@ -99,7 +99,7 @@ execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run title @a title §l§e地铁�
 execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run spawnpoint @a -190 -44 -33
 execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run setworldspawn -190 -44 -33
 execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run scoreboard players set position data 6
-execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-191.5,y=27,z=-32.5,r=1] run tp @a -190 -44 -33 facing -189 -44 -33
 
 #饱和
@@ -150,7 +150,7 @@ execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run title @a title §o§8迷失�
 execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run spawnpoint @a -264 31 -48
 execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run setworldspawn -264 31 -48
 execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run scoreboard players set position data 7
-execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-258.5,y=33,z=-47.5,r=1] run tp @a -264 31 -48 facing -265 31 -48
 
 #射鸡游戏规则
@@ -182,7 +182,7 @@ execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run title @a title §c繁§9星§
 execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run spawnpoint @a -263 34 86
 execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run setworldspawn -263 34 86
 execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run scoreboard players set position data 10
-execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-258.5,y=35,z=86.5,r=1] run tp @a -263 34 86 facing -264 34 86
 
 #前往时间神庙
@@ -190,7 +190,7 @@ execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run title @a title §g时间神庙
 execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run spawnpoint @a -246 -55 57
 execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run setworldspawn -246 -55 57
 execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run scoreboard players set position data 13
-execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-77.5,y=31,z=21.5,r=1] run tp @a -246 -55 57 facing -246 -55 56
 
 #前往五色山（地下、捷径）

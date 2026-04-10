@@ -1,14 +1,14 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-245.5,y=-55,z=57.5,r=1] run function game/8_pe/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-245.5,y=-55,z=57.5,r=1] run function game/8_pe/refresh
 
 #前往旭日沙漠
 execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run title @a title §l§o§6旭日沙漠
 execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run spawnpoint @a -78 31 23
 execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run setworldspawn -78 31 23
 execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-245.5,y=-55,z=59.5,r=1] run tp @a -78 31 23 facing -78 31 24
 
 #御风珠传送
@@ -72,7 +72,7 @@ execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=
 execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run spawnpoint @a -78 31 23
 execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run setworldspawn -78 31 23
 execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set position data 4
-execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refresh data 0
+execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 8_pe_boss data matches 3 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run tp @a -78 31 23 facing -78 31 24
 
 #南瓜显示-牌子1

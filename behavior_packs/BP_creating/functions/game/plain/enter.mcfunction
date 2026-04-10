@@ -4,5 +4,5 @@ title @a title §o§a逍遥平原
 spawnpoint @a ~~~
 setworldspawn ~~~
 scoreboard players set position data 4
-scoreboard players set refresh data 0
+scoreboard players set refreshArea data 0
 tp @a ~~~ facing ^^^1

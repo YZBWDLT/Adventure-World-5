@@ -1,8 +1,8 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-136.5,y=16,z=-9.5,r=1] run function game/badland/refresh
-execute if score refresh data matches 0 if entity @a[x=-98.5,y=24,z=17.5,r=1] run function game/badland/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-136.5,y=16,z=-9.5,r=1] run function game/badland/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-98.5,y=24,z=17.5,r=1] run function game/badland/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-129.5,y=34.5,z=-61.5,r=1.5] run tp @a -130 34 -62 facing -129 34 -62
@@ -18,7 +18,7 @@ execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run title @a title §o§6买卖�
 execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run spawnpoint @a -143 16 -10
 execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run setworldspawn -143 16 -10
 execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-138.5,y=16,z=-9.5,r=1] run tp @a -143 16 -10 facing -144 16 -10
 
 #前往旭日沙漠（捷径）
@@ -26,7 +26,7 @@ execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run title @a title §l§o§6旭日
 execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run spawnpoint @a -99 24 23
 execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run setworldspawn -99 24 23
 execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run scoreboard players set position data 4
-execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-98.5,y=24,z=19.5,r=1] run tp @a -99 24 23 facing -99 24 24
 
 #怪物控制开关门

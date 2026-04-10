@@ -4,7 +4,7 @@
 #怪物会重新生成，但机关不会
 
 #记录已刷新避免重复
-scoreboard players set refresh data 1
+scoreboard players set refreshArea data 1
 
 #复原陶罐
 fill -240 -55 37 -236 -55 37 aw:decorated_pot_type1

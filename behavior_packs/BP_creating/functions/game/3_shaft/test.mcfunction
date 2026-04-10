@@ -1,7 +1,7 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-163.5,y=-59,z=70.5,r=1] run function game/3_shaft/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-163.5,y=-59,z=70.5,r=1] run function game/3_shaft/refresh
 
 #前往逍遥平原
 execute if entity @a[x=-163.5,y=-59,z=68.5,r=1] positioned -164 22 66 facing -164 22 65 run function game/plain/enter

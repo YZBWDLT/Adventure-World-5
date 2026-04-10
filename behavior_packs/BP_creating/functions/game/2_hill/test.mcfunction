@@ -1,14 +1,14 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refresh data matches 0 if entity @a[x=-286.5,y=-13,z=149.5,r=1] run function game/2_hill/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-286.5,y=-13,z=149.5,r=1] run function game/2_hill/refresh
 
 #前往浮空山
 execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run title @a title §o§0浮空山
 execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run spawnpoint @a -286.5 55.5 135.5
 execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run setworldspawn -286.5 55.5 135.5
 execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run scoreboard players set position data 1
-execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run scoreboard players set refresh data 0
+execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run scoreboard players set refreshArea data 0
 execute if entity @a[x=-286.5,y=-13,z=151.5,r=1] run tp @a -286.5 55.5 135.5 facing -286.5 55.5 136.5
 
 #去底部拿方块

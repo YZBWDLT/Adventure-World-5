@@ -3,4 +3,4 @@
 # 因为巴豆没时间了，这里的代码由量筒代写，巴豆微调
 
 ## 重置此区域
-execute if score refresh data matches 0 run function game/the_end/refresh
+execute if score refreshArea data matches 0 run function game/the_end/refresh

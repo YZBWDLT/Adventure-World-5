@@ -2,7 +2,7 @@
 # 当每次进入终末之地时执行此命令
 
 # 记录已刷新避免重复
-scoreboard players set refresh data 1
+scoreboard players set refreshArea data 1
 
 # 更新箭矢陶罐
 setblock 3 59 -2 aw:decorated_pot_type3

@@ -42,7 +42,7 @@ scoreboard players set repmark data 0
 scoreboard players set repmusic data 0
 
 #其余游戏数据
-scoreboard players set refresh data 0
+scoreboard players set refreshArea data 0
 scoreboard players set gamemode data 0
 scoreboard players set parkour data 99999
 scoreboard players set dig data 99999
