@@ -15,7 +15,7 @@ execute if score badland_enemy2 data matches 0 if entity @a[x=-101,y=22,z=-46,dx
 #搭建五色山捷径
 execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -99 17 10 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=20..}]] run scoreboard players set timeline active 56
 execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -99 17 10 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=20..}]] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -99 17 10 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=20..}]] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -99 17 10 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=20..}]] run function lib/utils/start_dialogue
 execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -99 17 10 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=20..}]] run setblock -99 17 10 air
 execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§e材料不足！"}]}
 execute if block -99 17 10 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -99 17 10 stone_button["button_pressed_bit"=false,"facing_direction"=1]

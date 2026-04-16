@@ -10,7 +10,7 @@
                     ]
                 },
                 "interacted": {
-                    "on_entry": [ "/function entities/snow_fox/interacted", "@s fox_running_commands:false" ],
+                    "on_entry": [ "/function entity/snow_fox/interacted", "@s fox_running_commands:false" ],
                     "transitions": [ { "default": "1" } ]
                 }
             }

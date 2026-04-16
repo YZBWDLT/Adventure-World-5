@@ -23,14 +23,14 @@ execute if entity @a[x=-173,y=20,z=90,dx=2,dy=3,dz=10] if block -191 21 99 stone
 execute unless entity @a[x=-173,y=20,z=90,dx=2,dy=3,dz=10] if block -191 21 99 light_blue_glazed_terracotta run setblock -191 21 99 stone
 
 #标靶清雪球
-execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-162.5,y=16.5,z=12.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=fishing_hook,x=-162.5,y=16.5,z=12.5,r=4]
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 2 run scoreboard players set 3_shaft_item data 1
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 1 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] run scoreboard players set 3_shaft_item data 2
-execute if score 5_mansion_item data matches 0 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
-execute if score 5_mansion_item data matches 0 unless entity @a[x=-162.5,y=16.5,z=12.5,r=4] run give @a[tag=fishing_rod] fishing_rod
-execute if score 5_mansion_item data matches 0 unless entity @a[x=-162.5,y=16.5,z=12.5,r=4] run tag @a remove fishing_rod
+execute if score bow itemState matches 0 run kill @e[type=aw:wind_pearl,x=-162.5,y=16.5,z=12.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=fishing_hook,x=-162.5,y=16.5,z=12.5,r=4]
+execute if score bow itemState matches 0 if score windPearl itemState matches 2 run scoreboard players set windPearl itemState 1
+execute if score bow itemState matches 0 if score windPearl itemState matches 1 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] run scoreboard players set windPearl itemState 2
+execute if score bow itemState matches 0 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-162.5,y=16.5,z=12.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
+execute if score bow itemState matches 0 unless entity @a[x=-162.5,y=16.5,z=12.5,r=4] run give @a[tag=fishing_rod] fishing_rod
+execute if score bow itemState matches 0 unless entity @a[x=-162.5,y=16.5,z=12.5,r=4] run tag @a remove fishing_rod
 
 #平原迷宫
 scoreboard players set plain_maze_new data 0
@@ -57,19 +57,19 @@ execute if block -141 32 68 stone_button["button_pressed_bit"=true,"facing_direc
 execute if block -141 32 68 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -141 32 68 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #开始挖掘
-execute if score 1_mine_item data matches 0 if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 10
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 83 127 -49 83 140 aw:dig2
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 82 127 -49 82 140 stonebrick
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 79 127 -49 79 140 aw:dig3
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 78 127 -49 78 140 deepslate_bricks
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 75 127 -49 75 140 aw:dig4
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 74 127 -49 74 140 polished_blackstone_bricks
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b挖掘开始！这个没法退出，一路挖到底吧！"}]}
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 42
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
-execute if score 1_mine_item data matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] at @e[type=armor_stand,x=-62,y=87,z=127,dx=13,dy=1,dz=13] run tp @a ~ 84 ~ facing -55.00 84 134.00
+execute if score pickaxe itemState matches 0 if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 10
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 83 127 -49 83 140 aw:dig2
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 82 127 -49 82 140 stonebrick
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 79 127 -49 79 140 aw:dig3
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 78 127 -49 78 140 deepslate_bricks
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 75 127 -49 75 140 aw:dig4
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run fill -62 74 127 -49 74 140 polished_blackstone_bricks
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b挖掘开始！这个没法退出，一路挖到底吧！"}]}
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 42
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if score pickaxe itemState matches 1.. if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] at @e[type=armor_stand,x=-62,y=87,z=127,dx=13,dy=1,dz=13] run tp @a ~ 84 ~ facing -55.00 84 134.00
 execute if block -141 32 65 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -141 32 65 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #前往逍遥矿井
@@ -136,11 +136,11 @@ execute if block -243 32 -62 stone_button["button_pressed_bit"=true,"facing_dire
 
 #某彩蛋
 execute if score repmark data matches 0 if block -237 31 -15 lever ["lever_direction"="up_east_west"] run function lib/modify_states/timeline/enable_time_lapse
-execute if score repmark data matches 0 if block -237 31 -15 lever ["lever_direction"="up_east_west"] run function lib/modify_states/timeline/enable_lock_camera
+execute if score repmark data matches 0 if block -237 31 -15 lever ["lever_direction"="up_east_west"] run function lib/utils/start_dialogue
 execute if score repmark data matches 0 if block -237 31 -15 lever ["lever_direction"="up_east_west"] run scoreboard players set timeline active 24
 execute if score repmark data matches 0 if block -237 31 -15 lever ["lever_direction"="up_east_west"] run scoreboard players set repmark data 1
 execute if score repmark data matches 0 if block -236 30 -15 lever run function lib/modify_states/timeline/enable_time_lapse
-execute if score repmark data matches 0 if block -236 30 -15 lever run function lib/modify_states/timeline/enable_lock_camera
+execute if score repmark data matches 0 if block -236 30 -15 lever run function lib/utils/start_dialogue
 execute if score repmark data matches 0 if block -236 30 -15 lever run scoreboard players set timeline active 24
 execute if score repmark data matches 0 if block -236 30 -15 lever run scoreboard players set timeline time 200
 execute if score repmark data matches 0 if block -236 30 -15 lever run scoreboard players set repmark data 1
@@ -164,13 +164,13 @@ execute if block -215 34 -52 stone_button["button_pressed_bit"=true,"facing_dire
 execute if block -215 34 -52 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -215 34 -52 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #开始射鸡
-execute if score 5_mansion_item data matches 0 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 27
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 43
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 9 75 167 0 0
-execute if score 5_mansion_item data matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b射鸡开始！退出的按钮在脚下！"}]}
+execute if score bow itemState matches 0 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 27
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 43
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 9 75 167 0 0
+execute if score bow itemState matches 1 if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b射鸡开始！退出的按钮在脚下！"}]}
 execute if block -218 34 -54 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -218 34 -54 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #南瓜显示-实验室

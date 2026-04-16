@@ -58,7 +58,7 @@ execute if score plain_enemy7 data matches 0 if entity @a[x=-113,y=31,z=33,dx=30
 #搭建桥
 execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -200 32 23 as @p if entity @s[hasitem=[{item=aw:build1,quantity=5..},{item=aw:build2,quantity=5..}]] run scoreboard players set timeline active 12
 execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -200 32 23 as @p if entity @s[hasitem=[{item=aw:build1,quantity=5..},{item=aw:build2,quantity=5..}]] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -200 32 23 as @p if entity @s[hasitem=[{item=aw:build1,quantity=5..},{item=aw:build2,quantity=5..}]] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -200 32 23 as @p if entity @s[hasitem=[{item=aw:build1,quantity=5..},{item=aw:build2,quantity=5..}]] run function lib/utils/start_dialogue
 execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -200 32 23 as @p if entity @s[hasitem=[{item=aw:build1,quantity=5..},{item=aw:build2,quantity=5..}]] run setblock -200 32 23 air
 execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§e材料不足！"}]}
 execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -200 32 23 stone_button["button_pressed_bit"=false,"facing_direction"=1]
@@ -67,14 +67,14 @@ execute if block -200 32 23 stone_button["button_pressed_bit"=true,"facing_direc
 execute unless entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§a[我]看不见背面牌子写的什么，还是上去再叫吕岩吧。"}]}
 execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -135 34 28 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=10..}]] run scoreboard players set timeline active 41
 execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -135 34 28 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=10..}]] run function lib/modify_states/timeline/enable_time_lapse
-execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -135 34 28 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=10..}]] run function lib/modify_states/timeline/enable_lock_camera
+execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -135 34 28 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=10..}]] run function lib/utils/start_dialogue
 execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -135 34 28 as @p if entity @s[hasitem=[{item=aw:build2,quantity=5..},{item=aw:build3,quantity=10..}]] run setblock -135 34 28 air
 execute if entity @a[x=-135,y=33,z=24,dx=5,dy=2,dz=8] if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§e材料不足！"}]}
 execute if block -135 34 28 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -135 34 28 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #田萍开门
 execute if entity @a[x=-86,y=31,z=30,dx=16,dy=4,dz=16] if score progress data matches 6 if score aiya_wodeshengao data matches 0 run function lib/modify_states/timeline/enable_time_lapse
-execute if entity @a[x=-86,y=31,z=30,dx=16,dy=4,dz=16] if score progress data matches 6 if score aiya_wodeshengao data matches 0 run function lib/modify_states/timeline/enable_lock_camera
+execute if entity @a[x=-86,y=31,z=30,dx=16,dy=4,dz=16] if score progress data matches 6 if score aiya_wodeshengao data matches 0 run function lib/utils/start_dialogue
 execute if entity @a[x=-86,y=31,z=30,dx=16,dy=4,dz=16] if score progress data matches 6 if score aiya_wodeshengao data matches 0 run scoreboard players set timeline active 55
 execute if entity @a[x=-86,y=31,z=30,dx=16,dy=4,dz=16] if score progress data matches 6 if score aiya_wodeshengao data matches 0 run scoreboard players set aiya_wodeshengao data 1
 

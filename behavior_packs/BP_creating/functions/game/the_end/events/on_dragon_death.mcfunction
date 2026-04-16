@@ -11,7 +11,7 @@ kill @e[family=monster]
 
 # 传送玩家并锁定玩家视角
 tp @a 0 59 -15 facing 0 59 0
-function lib/modify_states/timeline/enable_lock_camera
+function lib/utils/start_dialogue
 execute as @e[type=aw:marker,name="enderDragonPosition"] at @s run camera @a set minecraft:free pos ~~~ facing ^^^12
 execute as @e[type=aw:marker,name="enderDragonPosition"] at @s run camera @a set minecraft:free ease 12 linear pos ~~12~ facing ^^^12
 event entity @e[type=aw:marker,name="enderDragonPosition"] aw:remove_immediately

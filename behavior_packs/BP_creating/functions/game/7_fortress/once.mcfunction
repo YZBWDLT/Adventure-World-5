@@ -41,13 +41,13 @@ execute if block -297 -40 31 shroomlight if blocks -302 -40 37 -291 -39 48 -302 
 
 #把田萍和王予凡救出来
 execute if score 7_fortress_help data matches 0 if entity @a[x=-268,y=-49,z=59,dx=2,dy=3,dz=2] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 7_fortress_help data matches 0 if entity @a[x=-268,y=-49,z=59,dx=2,dy=3,dz=2] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 7_fortress_help data matches 0 if entity @a[x=-268,y=-49,z=59,dx=2,dy=3,dz=2] run function lib/utils/start_dialogue
 execute if score 7_fortress_help data matches 0 if entity @a[x=-268,y=-49,z=59,dx=2,dy=3,dz=2] run scoreboard players set timeline active 44
 execute if score 7_fortress_help data matches 0 if entity @a[x=-268,y=-49,z=59,dx=2,dy=3,dz=2] run scoreboard players set 7_fortress_help data 1
 
 #从BOSS战离开（第一次离开时）
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run function lib/utils/start_dialogue
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run scoreboard players set timeline active 50
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run spawnpoint @a -240 31 139
 execute if score 7_fortress_boss data matches 1 if entity @a[x=-225.5,y=-49,z=82.5,r=1] run setworldspawn -240 31 139

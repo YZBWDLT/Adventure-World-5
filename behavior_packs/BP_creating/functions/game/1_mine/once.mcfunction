@@ -18,11 +18,11 @@ execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks
 execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run scoreboard players set 1_mine_key data 1 
 
 #获得镐附近检测方块开门
-execute if score 1_mine_item data matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run fill -209 -29 147 -209 -28 147 air
-execute if score 1_mine_item data matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run tellraw @a {"rawtext":[{"text":"§e你挖断了所有的岩石柱，障碍清除了！"}]}
-execute if score 1_mine_item data matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run music play solve_puzzle 1 0 play_once
-execute if score 1_mine_item data matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run function music/play
-execute if score 1_mine_item data matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run scoreboard players set 1_mine_item data 2
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run fill -209 -29 147 -209 -28 147 air
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run tellraw @a {"rawtext":[{"text":"§e你挖断了所有的岩石柱，障碍清除了！"}]}
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run music play solve_puzzle 1 0 play_once
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run function music/play
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run scoreboard players set pickaxe itemState 2
 
 #拿到神镐
 execute if score 1_mine_super_pickaxe data matches 0 if block -257 -29 106 chest if blocks -257 -29 106 -257 -29 106 -257 -31 106 all run tellraw @a {"rawtext":[{"text":"§e你拿到了田萍的神镐，回去还给他吧！"}]}
@@ -62,5 +62,5 @@ execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 
 execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run event entity @e[type=aw:npc,x=-233,y=-49,z=142,r=5] aw:remove_immediately
 execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run scoreboard players set timeline active 5
 execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run function lib/utils/start_dialogue
 execute if score 1_mine_boss data matches 2 if score 1_mine_tphelp data matches 1 if entity @a[x=-232.5,y=-49,z=147.5,r=1] run scoreboard players set 1_mine_tphelp data 2

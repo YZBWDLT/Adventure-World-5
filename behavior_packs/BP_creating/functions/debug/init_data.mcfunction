@@ -24,7 +24,6 @@ scoreboard players set tick time 0
 scoreboard players set timeline active 0
 scoreboard players set timeline time 0
 scoreboard players set timeLapse data 0
-scoreboard players set lockCamera data 0
 
 #玩家所在区域
 scoreboard players set position data 0

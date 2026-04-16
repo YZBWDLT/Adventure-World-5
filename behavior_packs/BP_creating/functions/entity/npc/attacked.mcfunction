@@ -35,8 +35,8 @@ execute if score timeline active matches 0 if entity @s[x=-250,y=31,z=165,r=1] i
 execute if score timeline active matches 0 if entity @s[x=-195,y=31,z=110,r=1] if score progress data matches 2 run say §f我？我不想出去。
 execute if score timeline active matches 0 if entity @s[x=-272,y=57,z=153,r=1] if score progress data matches 2.. run say §f恭喜你啊，破解了遗迹的秘密，别忘了去楼上玩玩跑酷哦。
 
-execute if score timeline active matches 0 if entity @s[x=-146,y=31,z=72,r=1] if score 1_mine_item data matches 0 run say §f你没有镐子吗？很遗憾你现在没法玩这个小游戏。
-execute if score timeline active matches 0 if entity @s[x=-146,y=31,z=72,r=1] if score 1_mine_item data matches 1.. run say §f来玩挖掘小游戏吧，过关之后有建筑材料赠送！
+execute if score timeline active matches 0 if entity @s[x=-146,y=31,z=72,r=1] if score pickaxe itemState matches 0 run say §f你没有镐子吗？很遗憾你现在没法玩这个小游戏。
+execute if score timeline active matches 0 if entity @s[x=-146,y=31,z=72,r=1] if score pickaxe itemState matches 1.. run say §f来玩挖掘小游戏吧，过关之后有建筑材料赠送！
 execute if score timeline active matches 0 if entity @s[x=-164,y=-59,z=121,r=1] if score progress data matches 0..1 run say §f林乐？你们真的已经把恶魔……等等，你是谁？
 execute if score timeline active matches 0 if entity @s[x=-164,y=-59,z=121,r=1] if score progress data matches 2 run say §f这里这么多怪物我实在不敢前进，深处只能麻烦你继续探索了。
 
@@ -62,21 +62,21 @@ execute if score timeline active matches 0 if entity @s[x=-202,y=34,z=-59,r=1] r
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 4 run say §d倪高志§f负责§d林地府邸§f，§d邹鹭遥§f负责§d海底神殿§f，§d吕岩§f负责§d下界要塞§f，想和我聊天长按我或点右键。
 execute if score timeline active matches 0 if entity @s[x=-233,y=31,z=144,r=1] if score progress data matches 4 run say §f我想和你聊会儿天，去§d沙滩§f找我吧！
 execute if score timeline active matches 0 if entity @s[x=-233,y=31,z=144,r=1] if score progress data matches 4 unless entity @e[type=aw:npc,x=-273,y=31,z=185,r=1] run summon aw:npc -273 31 185 facing -273 31 184 skin_1 "王予凡"
-execute if score timeline active matches 0 if entity @s[x=-233,y=31,z=144,r=1] if score progress data matches 4 if score item_fire data matches 0 run scoreboard players set item_fire data 1
+execute if score timeline active matches 0 if entity @s[x=-233,y=31,z=144,r=1] if score progress data matches 4 if score flintAndSteel itemState matches 0 run scoreboard players set flintAndSteel itemState 1
 
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if entity @a[x=-235,y=31,z=136,r=5] if score progress data matches 4 if score monument_prepare data matches 0 run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if entity @a[x=-235,y=31,z=136,r=5] if score progress data matches 4 if score monument_prepare data matches 0 run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if entity @a[x=-235,y=31,z=136,r=5] if score progress data matches 4 if score monument_prepare data matches 0 run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if entity @a[x=-235,y=31,z=136,r=5] if score progress data matches 4 if score monument_prepare data matches 0 run scoreboard players set timeline active 36
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if score progress data matches 4 if score monument_prepare data matches 1 run say §f关于去雪原的事，你去找§d吕岩§f让他帮帮忙吧。
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if score progress data matches 4 if score monument_prepare data matches 2 run say §f多准备几个§d河豚§f，从§d农港§f去§d雪原§f让我给你酿造水肺药水，然后下水§d寻找贝壳§f吧。
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches ..6 if score progress data matches 4 if score monument_prepare data matches 3 run say §f现在你可以去§d海底神殿§f了！
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches 7 run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches 7 run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches 7 run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches 7 run scoreboard players set timeline active 49
 execute if score timeline active matches 0 if entity @s[x=-235,y=31,z=136,r=1] if score 6_monument_boss data matches 8.. run say §f等§d所有神殿都完成§f之后，就去§d找田萍聊聊§f吧！
 
 execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if entity @a[x=-229,y=31,z=142,r=5] if score progress data matches 4 if score fortress_prepare data matches 0 run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if entity @a[x=-229,y=31,z=142,r=5] if score progress data matches 4 if score fortress_prepare data matches 0 run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if entity @a[x=-229,y=31,z=142,r=5] if score progress data matches 4 if score fortress_prepare data matches 0 run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if entity @a[x=-229,y=31,z=142,r=5] if score progress data matches 4 if score fortress_prepare data matches 0 run scoreboard players set timeline active 37
 execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if score progress data matches 4 if score fortress_prepare data matches 1 run say §f我没想好要选什么礼物，你问问§d邹鹭遥§f吧。
 execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches ..1 if score progress data matches 4 if score fortress_prepare data matches 2 run say §f去雪原拿到§d蓝冰§f，交给田萍§d借神镐§f，寻找并挖§d黑曜石§f，搭建传送门。
@@ -84,12 +84,12 @@ execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] i
 execute if score timeline active matches 0 if entity @s[x=-229,y=31,z=142,r=1] if score 7_fortress_boss data matches 2.. run say §f等§d所有神殿都完成§f之后，就去§d找田萍聊聊§f吧！
 
 execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if entity @a[x=-231,y=31,z=136,r=5] if score progress data matches 4 if block -229 31 135 air run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if entity @a[x=-231,y=31,z=136,r=5] if score progress data matches 4 if block -229 31 135 air run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if entity @a[x=-231,y=31,z=136,r=5] if score progress data matches 4 if block -229 31 135 air run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if entity @a[x=-231,y=31,z=136,r=5] if score progress data matches 4 if block -229 31 135 air run scoreboard players set timeline active 35
-execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if score progress data matches 4 unless block -229 31 135 air if score item_pumpkin data matches 0 run say §f拿着我的钥匙去§d实验室§f，得到法宝之后再通过测试，就可以用它穿过迷失森林了。
-execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if score progress data matches 4 unless block -229 31 135 air if score item_pumpkin data matches 1 run say §f我的雕刻技术怎么样？一旦失误就只能吃南瓜派了呢。
+execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if score progress data matches 4 unless block -229 31 135 air if score pumpkin itemState matches 0 run say §f拿着我的钥匙去§d实验室§f，得到法宝之后再通过测试，就可以用它穿过迷失森林了。
+execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches ..2 if score progress data matches 4 unless block -229 31 135 air if score pumpkin itemState matches 1 run say §f我的雕刻技术怎么样？一旦失误就只能吃南瓜派了呢。
 execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches 3 run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches 3 run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches 3 run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches 3 run scoreboard players set timeline active 47
 execute if score timeline active matches 0 if entity @s[x=-231,y=31,z=136,r=1] if score 5_mansion_boss data matches 4.. run say §f等§d所有神殿都完成§f之后，就去§d找田萍聊聊§f吧！
 
@@ -118,7 +118,7 @@ execute if score timeline active matches 0 if entity @s[x=-195,y=31,z=110,r=1] i
 execute if score timeline active matches 0 if entity @s[x=-190,y=31,z=128,r=1] if score progress data matches 5.. run say §f不好意思啊，我有点事儿要思考，有事儿找田萍吧。
 
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run function lib/modify_states/timeline/enable_time_lapse
-execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run function lib/modify_states/timeline/enable_lock_camera
+execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run function lib/utils/start_dialogue
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run scoreboard players set timeline active 54
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 6 run say §f如果你觉得§d哪个地方比较像地牢入口§f，那应该就是它了。
 

@@ -24,10 +24,10 @@ execute if block -280 -32 134 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -280 -32 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -280 -32 134 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #收回方块
-execute if score 2_hill_boss data matches 0 if score 2_hill_item data matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run tellraw @a {"rawtext":[{"text":"§e方块被收回底层了！"}]}
-execute if score 2_hill_boss data matches 0 if score 2_hill_item data matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run summon aw:bonus_item -287 -60 127 facing -287 -60 126 bonus_item_type:gray_glazed_terracotta
-execute if score 2_hill_boss data matches 0 if score 2_hill_item data matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run fill -288 -13 123 -286 -13 123 air
-execute if score 2_hill_boss data matches 0 if score 2_hill_item data matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run scoreboard players set 2_hill_item data 0
+execute if score 2_hill_boss data matches 0 if score firstBlock itemState matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run tellraw @a {"rawtext":[{"text":"§e方块被收回底层了！"}]}
+execute if score 2_hill_boss data matches 0 if score firstBlock itemState matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run summon aw:bonus_item -287 -60 127 facing -287 -60 126 bonus_item_type:gray_glazed_terracotta
+execute if score 2_hill_boss data matches 0 if score firstBlock itemState matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run fill -288 -13 123 -286 -13 123 air
+execute if score 2_hill_boss data matches 0 if score firstBlock itemState matches 1 if entity @a[x=-292,y=-13,z=139,dx=10,dy=4,dz=12] run scoreboard players set firstBlock itemState 0
 
 #手动生成僵尸
 execute if block -294 -49 124 stone_button["button_pressed_bit"=true,"facing_direction"=1] run kill @e[type=zombie]

@@ -49,5 +49,5 @@ execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r
 execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run scoreboard players set progress data 3
 execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run scoreboard players set timeline active 19
 execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run function lib/utils/start_dialogue
 execute if score 3_shaft_boss data matches 1 if entity @a[x=-84.5,y=-45,z=47.5,r=1] run scoreboard players set 3_shaft_boss data 2

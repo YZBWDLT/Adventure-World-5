@@ -14,7 +14,7 @@ execute if score timeline time matches 240.. run effect @a clear resistance
 ## 重新堵死传送门
 execute if score timeline time matches 240.. run function game/the_end/events/restrict_end_portal
 ## 恢复玩家视角
-execute if score timeline time matches 240.. run function lib/modify_states/timeline/disable_lock_camera
+execute if score timeline time matches 240.. run function lib/utils/stop_dialogue
 execute if score timeline time matches 240.. run camera @a clear
 ## 结束
 execute if score timeline time matches 240.. run function game/the_end/events/prepare_to_start_credits

@@ -52,5 +52,5 @@ execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set timeline active 57
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/utils/start_dialogue
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set 8_pe_boss data 3

@@ -10,7 +10,7 @@ scoreboard players set music data 151
 function music/replay
 
 # 解除锁定视角
-function lib/modify_states/timeline/disable_lock_camera
+function lib/utils/stop_dialogue
 camera @a clear
 
 # 重新给予玩家末地水晶并清除现有的末地水晶

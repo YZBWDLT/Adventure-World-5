@@ -14,7 +14,7 @@ setworldspawn 38 82 -12
 
 # 继续对玩家锁定视角
 execute as @a at @s anchored eyes run camera @s set minecraft:free pos ^^^0.5 facing ^^^1
-function lib/modify_states/timeline/enable_lock_camera
+function lib/utils/start_dialogue
 hud @a reset all
 
 # 对玩家添加迷雾

@@ -1,2 +1,2 @@
-function lib/modify_states/timeline/disable_lock_camera
+function lib/utils/stop_dialogue
 camera @a clear

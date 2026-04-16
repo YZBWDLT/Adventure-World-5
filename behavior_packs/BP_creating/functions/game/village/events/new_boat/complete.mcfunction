@@ -7,4 +7,4 @@ function lib/modify_states/timeline/disable_time_lapse
 
 # 恢复玩家的活动
 camera @a clear
-function lib/modify_states/timeline/disable_lock_camera
+function lib/utils/stop_dialogue

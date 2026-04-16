@@ -26,4 +26,16 @@ minecraft.system.afterEvents.scriptEventReceive.subscribe(event => {
 
     };
 
-})
+});
+
+// 玩家使用雪浪笔
+minecraft.world.afterEvents.itemUse.subscribe(event => {
+    const item = event.itemStack;
+    if (item.typeId !== "aw:schellon_brush") return;
+    const player = event.source;
+    const cooldownComp = item.getComponent("minecraft:cooldown");
+    const cooldownTicks = cooldownComp?.getCooldownTicksRemaining(player);
+    const maxCooldownTicks = cooldownComp?.cooldownTicks;
+    if (cooldownTicks !== maxCooldownTicks) return;
+    player.runCommand("function item/schellon_brush");
+});

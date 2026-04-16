@@ -1,10 +1,5 @@
 # ===== 所有检测执行的指令 =====
 
-#出门-出事故沉船
-execute if score position data matches 0 if entity @a[x=-207,y=31,z=453,dx=2,dy=2,dz=2] run scoreboard players set timeline active 1
-execute if score position data matches 0 if entity @a[x=-207,y=31,z=453,dx=2,dy=2,dz=2] run function lib/modify_states/timeline/enable_time_lapse
-execute if score position data matches 0 if entity @a[x=-207,y=31,z=453,dx=2,dy=2,dz=2] run scoreboard players set position data 1
-
 #倪高志的馈赠玻璃瓶
 execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run tellraw @a {"rawtext":[{"text":"§e你拿到了玻璃瓶，这是你让地铁重新开通的奖励！"}]}
 execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run music play get_item 1 0 play_once

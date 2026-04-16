@@ -56,7 +56,7 @@ execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,d
 
 #从BOSS战离开（第一次离开时）
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/utils/start_dialogue
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set timeline active 46
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run spawnpoint @a -299 31 10
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run setworldspawn -299 31 10

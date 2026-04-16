@@ -24,7 +24,7 @@
             "loop": true,
             "timeline": {
                 "0.9": [
-                    "/function entities/bonus_item"
+                    "/function entity/bonus_item"
                 ]
             }
         }

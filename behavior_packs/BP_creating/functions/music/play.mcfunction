@@ -1,3 +1,8 @@
+# ===== 队列音乐 =====
+# 调用此方法以将音乐队列安放到某音乐后
+
+# ↓ 有待整理
+
 #当切换场景时，先music stop，然后更改music data，最后使用此函数
 #当打败BOSS时，先play boss_win_start，然后更改music data，最后使用此函数
 #当播放音效时，先music play，然后使用此函数
@@ -116,3 +121,10 @@ execute if score music data matches 156 run music queue dream_end_start 1 0 play
 execute if score music data matches 156 run music queue dream_end 1 0 loop
 execute if score music data matches 157 run music queue island_disappear 1 0 play_once
 execute if score music data matches 158 run music queue credits 1 0 play_once
+
+# 若在筑梦镇则重新播放音乐
+execute if score position data matches 1 run music stop
+# ↑ 有待整理
+
+# 筑梦镇
+execute if score position data matches 1 run function area/village/queue_music

@@ -1,7 +1,7 @@
 #BOSS战挖开石头见到黑曜石-田萍帮助
 
 execute if score timeline time matches 1 run camera @a fade time 1 2 2 color 0 0 0
-execute if score timeline time matches 20 run function game/village/refresh
+execute if score timeline time matches 20 run function area/village/refresh
 execute if score timeline time matches 20 run tp @a -215 31 137 facing -216 31 133
 execute if score timeline time matches 20 run camera @a set minecraft:free pos -210 34 132 facing -219 31 136
 execute if score timeline time matches 20 run scoreboard players set music data 4

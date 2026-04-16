@@ -11,4 +11,4 @@
 
 scoreboard players set timeline active 0
 function lib/modify_states/timeline/disable_time_lapse
-function lib/modify_states/timeline/disable_lock_camera
+function lib/utils/stop_dialogue

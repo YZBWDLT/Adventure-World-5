@@ -4,30 +4,30 @@
 execute if score refreshArea data matches 0 if entity @a[x=-256.5,y=-48.94,z=-12.5,r=1] run function game/5_mansion/refresh
 
 #标靶清雪球
-execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-310.5,y=-46.5,z=-16.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-262.5,y=-46.5,z=-0.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-257.5,y=-46.5,z=-22.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=aw:wind_pearl,x=-306.5,y=-47.5,z=-11.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=fishing_hook,x=-310.5,y=-46.5,z=-16.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=fishing_hook,x=-262.5,y=-46.5,z=-0.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=fishing_hook,x=-257.5,y=-46.5,z=-22.5,r=4]
-execute if score 5_mansion_item data matches 0 run kill @e[type=fishing_hook,x=-306.5,y=-47.5,z=-11.5,r=4]
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 2 run scoreboard players set 3_shaft_item data 1
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 1 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] run scoreboard players set 3_shaft_item data 2
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 1 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] run scoreboard players set 3_shaft_item data 2
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 1 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] run scoreboard players set 3_shaft_item data 2
-execute if score 5_mansion_item data matches 0 if score 3_shaft_item data matches 1 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run scoreboard players set 3_shaft_item data 2
-execute if score 5_mansion_item data matches 0 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
-execute if score 5_mansion_item data matches 0 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
-execute if score 5_mansion_item data matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] if entity @a[tag=fishing_rod] run function system/game
-execute if score 5_mansion_item data matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run give @a[tag=fishing_rod] fishing_rod
-execute if score 5_mansion_item data matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run tag @a remove fishing_rod
+execute if score bow itemState matches 0 run kill @e[type=aw:wind_pearl,x=-310.5,y=-46.5,z=-16.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=aw:wind_pearl,x=-262.5,y=-46.5,z=-0.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=aw:wind_pearl,x=-257.5,y=-46.5,z=-22.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=aw:wind_pearl,x=-306.5,y=-47.5,z=-11.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=fishing_hook,x=-310.5,y=-46.5,z=-16.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=fishing_hook,x=-262.5,y=-46.5,z=-0.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=fishing_hook,x=-257.5,y=-46.5,z=-22.5,r=4]
+execute if score bow itemState matches 0 run kill @e[type=fishing_hook,x=-306.5,y=-47.5,z=-11.5,r=4]
+execute if score bow itemState matches 0 if score windPearl itemState matches 2 run scoreboard players set windPearl itemState 1
+execute if score bow itemState matches 0 if score windPearl itemState matches 1 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] run scoreboard players set windPearl itemState 2
+execute if score bow itemState matches 0 if score windPearl itemState matches 1 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] run scoreboard players set windPearl itemState 2
+execute if score bow itemState matches 0 if score windPearl itemState matches 1 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] run scoreboard players set windPearl itemState 2
+execute if score bow itemState matches 0 if score windPearl itemState matches 1 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run scoreboard players set windPearl itemState 2
+execute if score bow itemState matches 0 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] as @a[hasitem={item=fishing_rod}] run tag @s add fishing_rod
+execute if score bow itemState matches 0 if entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] as @a[hasitem={item=fishing_rod}] run clear @s fishing_rod
+execute if score bow itemState matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] if entity @a[tag=fishing_rod] run function system/game
+execute if score bow itemState matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run give @a[tag=fishing_rod] fishing_rod
+execute if score bow itemState matches 0 unless entity @a[x=-310.5,y=-46.5,z=-16.5,r=4] unless entity @a[x=-262.5,y=-46.5,z=-0.5,r=4] unless entity @a[x=-257.5,y=-46.5,z=-22.5,r=4] unless entity @a[x=-306.5,y=-47.5,z=-11.5,r=4] run tag @a remove fishing_rod
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-274.5,y=-47.5,z=-29.5,r=1.5] run tp @a -275 -49 -30 facing -275 -49 -29
@@ -127,7 +127,7 @@ execute if score 5_mansion_direction data matches 4 if entity @a[x=-308.5,y=-27,
 #旋转成1（右上无）
 execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set 5_mansion_direction data 1
 execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/start_dialogue
 execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 25
 execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -26 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -290 -47 -16 stone_button["button_pressed_bit"=false,"facing_direction"=1]
@@ -137,7 +137,7 @@ execute if block -285 -48 -24 stone_button["button_pressed_bit"=true,"facing_dir
 #旋转成2（左上无）
 execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set 5_mansion_direction data 2
 execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/start_dialogue
 execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 25
 execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -24 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -290 -47 -16 stone_button["button_pressed_bit"=false,"facing_direction"=1]
@@ -147,7 +147,7 @@ execute if block -285 -48 -26 stone_button["button_pressed_bit"=true,"facing_dir
 #旋转成3（左下无）
 execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set 5_mansion_direction data 3
 execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/start_dialogue
 execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 25
 execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -24 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -26 stone_button["button_pressed_bit"=false,"facing_direction"=1]
@@ -157,7 +157,7 @@ execute if block -290 -47 -16 stone_button["button_pressed_bit"=true,"facing_dir
 #旋转成4（右下无）
 execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set 5_mansion_direction data 4
 execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/start_dialogue
 execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 25
 execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -24 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 execute if block -290 -47 -18 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -285 -48 -26 stone_button["button_pressed_bit"=false,"facing_direction"=1]

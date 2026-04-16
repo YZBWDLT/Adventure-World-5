@@ -11,11 +11,11 @@
                     ]
                 },
                 "interacted": {
-                    "on_entry": [ "/function entities/npc/interacted", "@s interacted_reset" ],
+                    "on_entry": [ "/function entity/npc/interacted", "@s interacted_reset" ],
                     "transitions": [ { "default": "1" } ]
                 },
                 "attacked": {
-                    "on_entry": [ "/function entities/npc/attacked", "@s attacked_reset" ],
+                    "on_entry": [ "/function entity/npc/attacked", "@s attacked_reset" ],
                     "transitions": [ { "default": "1" } ]
                 }
             }

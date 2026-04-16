@@ -40,7 +40,7 @@ execute if score timeline time matches 580 run summon aw:npc -235 31 136 facing 
 execute if score timeline time matches 580 run function unlock/station
 execute if score timeline time matches 580 run function unlock/station_south
 execute if score timeline time matches 580 run function unlock/station_farm
-execute if score timeline time matches 660 run function game/village/refresh
+execute if score timeline time matches 660 run function area/village/refresh
 execute if score timeline time matches 660 run tellraw @a {"rawtext":[{"text":"§f[田萍]终于，大家都聚在一起了，我们来讨论下一步的任务吧！"}]}
 execute if score timeline time matches 740 run tellraw @a {"rawtext":[{"text":"§f[田萍]§d倪高志§f，你一直在研究如何进入森林，告诉林乐如何去§d林地府邸§f吧！"}]}
 execute if score timeline time matches 820 run tellraw @a {"rawtext":[{"text":"§f[田萍]§d邹鹭遥§f，你对药水有研究，看看能不能找到水下呼吸进入§d海底神殿§f的办法。"}]}

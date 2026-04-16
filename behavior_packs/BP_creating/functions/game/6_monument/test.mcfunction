@@ -37,7 +37,7 @@ execute if entity @a[x=-139,y=-45,z=167,dx=10,dy=10,dz=22] if score tick time ma
 
 #改变水位
 execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/start_dialogue
 execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 38
 execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run camera @a set minecraft:free pos -127 -47 167 facing -126 -47 168
 execute if block -122 -47 172 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -122 -47 172 air

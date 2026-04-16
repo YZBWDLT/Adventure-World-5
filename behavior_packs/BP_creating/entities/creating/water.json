@@ -47,7 +47,7 @@
             "aw:douse_fire": {
                 "queue_command": {
                     "command": [
-                        "function entities/water_douse_fire"
+                        "function entity/water_douse_fire"
                     ]
                 }
             },

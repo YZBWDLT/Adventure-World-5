@@ -1,14 +1,14 @@
 # ===== 所有检测执行的指令 =====
 
 #当玩家在出生点时重置场景
-execute if score refreshArea data matches 0 if entity @a[x=-185.5,y=36,z=130.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-232.5,y=30,z=103.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-286.5,y=55.5,z=135.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-198.5,y=33,z=103.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-243.5,y=31,z=115.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-166.5,y=31,z=180.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-142.5,y=31,z=166.5,r=1] run function game/village/refresh
-execute if score refreshArea data matches 0 if entity @a[x=-239.5,y=31,z=139.5,r=1] run function game/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-185.5,y=36,z=130.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-232.5,y=30,z=103.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-286.5,y=55.5,z=135.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-198.5,y=33,z=103.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-243.5,y=31,z=115.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-166.5,y=31,z=180.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-142.5,y=31,z=166.5,r=1] run function area/village/refresh
+execute if score refreshArea data matches 0 if entity @a[x=-239.5,y=31,z=139.5,r=1] run function area/village/refresh
 
 #御风珠传送
 execute if entity @e[type=aw:wind_pearl,x=-280.5,y=59.5,z=129.5,r=1.5] run tp @a -281 58 129 facing -282 58 129

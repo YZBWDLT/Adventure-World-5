@@ -84,16 +84,16 @@ execute if block -283 32 64 stone_button["button_pressed_bit"=true,"facing_direc
 execute if block -283 32 64 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -283 32 64 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #开始灭火
-execute if score 7_fortress_item data matches 0 if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 51
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b灭火开始！有些无法达到的地方也要注意灭火哦！"}]}
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 103
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a 36 67 114
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn 36 67 114
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 36 67 114 facing 37 67 114
-execute if score 7_fortress_item data matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run structure load other:town_fired 33 60 103
+execute if score waterGun itemState matches 0 if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 51
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b灭火开始！有些无法达到的地方也要注意灭火哦！"}]}
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 103
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a 36 67 114
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn 36 67 114
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 36 67 114 facing 37 67 114
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run structure load other:town_fired 33 60 103
 execute if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -283 32 67 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #染坊音乐

@@ -1,6 +1,6 @@
 #给箭
-execute if score quiver data matches 0 as @a[hasitem={item=arrow,quantity=..31}] run give @s arrow
-execute if score quiver data matches 1 as @a[hasitem={item=arrow,quantity=..63}] run give @s arrow
+execute if score quiver itemState matches 0 as @a[hasitem={item=arrow,quantity=..31}] run give @s arrow
+execute if score quiver itemState matches 1 as @a[hasitem={item=arrow,quantity=..63}] run give @s arrow
 
 #统计场上鸡并补充(if block是为了避免场地没加载出来就生成鸡而掉虚空)
 execute if score timeline time matches 1 run kill @e[type=chicken]
@@ -37,17 +37,17 @@ execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_directi
 #完成小游戏
 execute if score chicken_all data matches 0 run kill @e[type=arrow]
 execute if score chicken_all data matches 0 run tp @a[x=8,y=75,z=166,dx=2,dy=2,dz=2] 34 82 147 facing 35 82 147
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b恭喜完成射鸡，你获得了一块木材！本次成绩为："},{"score":{"name":"timeline","objective":"time"}}]}
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned 40 83 147 run give @p aw:build1 1
-execute if score 7_fortress_boss data matches 2.. if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b额外奖励！你获得了一块彩岩！"}]}
-execute if score 7_fortress_boss data matches 2.. if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned 40 83 147 run give @p aw:build3 1
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run tellraw @a {"rawtext":[{"text":"§b恭喜！你刷新了纪录！"}]}
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run scoreboard players operation shoot data = timeline time
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/disable
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -218 33 -52
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -218 33 -52
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 41
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/play
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -218 33 -52 facing -218 33 -53
-execute if score quiver data matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 40 83 147 stone_button["button_pressed_bit"=false,"facing_direction"=1]
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b恭喜完成射鸡，你获得了一块木材！本次成绩为："},{"score":{"name":"timeline","objective":"time"}}]}
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned 40 83 147 run give @p aw:build1 1
+execute if score 7_fortress_boss data matches 2.. if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b额外奖励！你获得了一块彩岩！"}]}
+execute if score 7_fortress_boss data matches 2.. if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned 40 83 147 run give @p aw:build3 1
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run tellraw @a {"rawtext":[{"text":"§b恭喜！你刷新了纪录！"}]}
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run scoreboard players operation shoot data = timeline time
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/disable
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -218 33 -52
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -218 33 -52
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 41
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/play
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -218 33 -52 facing -218 33 -53
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 40 83 147 stone_button["button_pressed_bit"=false,"facing_direction"=1]

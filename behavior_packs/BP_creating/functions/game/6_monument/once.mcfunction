@@ -97,7 +97,7 @@ execute if score 6_monument_boss data matches 5 if entity @a[x=-169,y=-57,z=161,
 
 #从BOSS战离开（第一次离开时）
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
-execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/modify_states/timeline/enable_lock_camera
+execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/utils/start_dialogue
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set timeline active 48
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run spawnpoint @a -102 5 188
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run setworldspawn -102 5 188

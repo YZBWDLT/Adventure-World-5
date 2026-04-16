@@ -3,7 +3,7 @@
 # 将玩家传送回筑梦镇，并限制玩家的活动
 execute positioned -239 -9 177 facing -240 -9 177 run function game/village/enter
 title @a clear
-function lib/modify_states/timeline/enable_lock_camera
+function lib/utils/start_dialogue
 hud @a hide all
 
 # 控制时间线流逝
