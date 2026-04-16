@@ -1,6 +1,6 @@
 #拿到神镐和田萍对话-归还神镐开路
 
-execute if score timeline time matches 1 run scoreboard players set 8_pe_item data 0
+execute if score timeline time matches 1 run scoreboard players set emeraldPickaxe itemState 0
 execute if score timeline time matches 1 run setblock -257 -29 106 air
 execute if score timeline time matches 1 run music play solve_puzzle 1 0 play_once
 execute if score timeline time matches 1 run function music/play

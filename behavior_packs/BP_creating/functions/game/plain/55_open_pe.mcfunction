@@ -11,9 +11,9 @@ execute if score timeline time matches 240 run camera @a set minecraft:free pos 
 execute if score timeline time matches 240 run tp @e[type=aw:npc,x=-228,y=31,z=139,r=1] -77 31 30 facing -78 31 29
 execute if score timeline time matches 240 run event entity @e[type=aw:npc,x=-77,y=31,z=30,r=1] should_not_see_player
 execute if score timeline time matches 340 run tellraw @a {"rawtext":[{"text":"§f[田萍]这门好奇怪啊，但我相信我的神镐可以一战。"}]}
-execute if score timeline time matches 420 if score 8_pe_item data matches 0 run tellraw @a {"rawtext":[{"text":"§f[田萍]看我的吧！"}]}
-execute if score timeline time matches 420 if score 8_pe_item data matches 2 run tellraw @a {"rawtext":[{"text":"§f[田萍]把神镐给我，让我来试试！"}]}
-execute if score timeline time matches 420 if score 8_pe_item data matches 2 run scoreboard players set 8_pe_item data 0
+execute if score timeline time matches 420 if score emeraldPickaxe itemState matches 0 run tellraw @a {"rawtext":[{"text":"§f[田萍]看我的吧！"}]}
+execute if score timeline time matches 420 if score emeraldPickaxe itemState matches 2 run tellraw @a {"rawtext":[{"text":"§f[田萍]把神镐给我，让我来试试！"}]}
+execute if score timeline time matches 420 if score emeraldPickaxe itemState matches 2 run scoreboard players set emeraldPickaxe itemState 0
 execute if score timeline time matches 460 run replaceitem entity @e[type=aw:npc,x=-77,y=31,z=30,r=1] slot.weapon.mainhand 0 diamond_pickaxe
 execute if score timeline time matches 460 run music stop
 execute if score timeline time matches 460 run camera @a set minecraft:free ease 5 linear pos -79 33 32 facing -78 32 29

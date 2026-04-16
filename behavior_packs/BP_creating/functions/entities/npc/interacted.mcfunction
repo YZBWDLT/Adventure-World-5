@@ -117,8 +117,8 @@ execute if score timeline active matches 0 if entity @s[x=-190,y=31,z=128,r=1] i
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run function lib/modify_states/timeline/enable_time_lapse
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run function lib/modify_states/timeline/enable_lock_camera
 execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 5 run scoreboard players set timeline active 54
-execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 6 if score 8_pe_item data matches 0 run say §f神镐在我这里先保养一下，等你找到了地牢入口再说。
-execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 6 if score 8_pe_item data matches 2 run say §f神镐你先继续拿着吧，之后肯定用得上。
+execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 6 if score emeraldPickaxe itemState matches 0 run say §f神镐在我这里先保养一下，等你找到了地牢入口再说。
+execute if score timeline active matches 0 if entity @s[x=-228,y=31,z=139,r=1] if score progress data matches 6 if score emeraldPickaxe itemState matches 2 run say §f神镐你先继续拿着吧，之后肯定用得上。
 
 execute if score timeline active matches 0 if entity @s[x=-205,y=33,z=-36,r=1] run say §f嗯？林乐你去忙你的吧，我们这边没什么事。
 execute if score timeline active matches 0 if entity @s[x=-214,y=31,z=134,r=1] run say §f王予凡是个热心肠，一个人打了好几份工不说，几乎每次小镇活动都是他牵头组织的。我很感谢他。

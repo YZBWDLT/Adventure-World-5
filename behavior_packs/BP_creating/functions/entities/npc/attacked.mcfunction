@@ -103,8 +103,8 @@ execute if score timeline active matches 0 if entity @s[x=-284,y=31,z=76,r=1] ru
 execute if score timeline active matches 0 if block -276 31 84 air if entity @s[x=-283,y=31,z=90,r=1] run say §f拿到新染料后点一下那边的按钮就可以解锁无限染料了，染色需要上楼。
 execute if score timeline active matches 0 unless block -276 31 84 air if entity @s[x=-283,y=31,z=90,r=1] run say §f吕岩说之后染料供货由他负责，染坊经营不受影响。
 execute if score timeline active matches 0 if entity @s[x=-190,y=31,z=128,r=1] if score progress data matches 4 run say §f你投掷的物品，比如御风珠，穿过火焰之后也会被点燃。
-execute if score timeline active matches 0 if entity @s[x=14,y=60,z=94,r=1] if score 6_monument_boss data matches ..7 if score item_breath data matches 0 run say §f如果水下呼吸时间快结束了，一定要及时回到地面上啊！
-execute if score timeline active matches 0 if entity @s[x=14,y=60,z=94,r=1] if score 6_monument_boss data matches ..7 if score item_breath data matches 1 run say §f剩下的河豚先别扔，我会想办法利用的。
+execute if score timeline active matches 0 if entity @s[x=14,y=60,z=94,r=1] if score 6_monument_boss data matches ..7 if score shell itemState matches 0 run say §f如果水下呼吸时间快结束了，一定要及时回到地面上啊！
+execute if score timeline active matches 0 if entity @s[x=14,y=60,z=94,r=1] if score 6_monument_boss data matches ..7 if score shell itemState matches 1 run say §f剩下的河豚先别扔，我会想办法利用的。
 execute if score timeline active matches 0 if entity @s[x=14,y=60,z=94,r=1] if score 6_monument_boss data matches 8.. run say §f注意，如果在恢复药水生效期间喝治疗类药水，恢复效果会失效的。
 
 execute if score timeline active matches 0 if entity @s[x=-270,y=-49,z=54,r=1] run say §f把三层楼的三个篝火§d全部点燃或全部熄灭§f，就会触发整个要塞的机关。

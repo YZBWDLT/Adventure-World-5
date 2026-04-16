@@ -65,33 +65,33 @@ execute if entity @a[hasitem={item=carved_pumpkin,location=slot.armor.head}] if 
 execute unless entity @a[hasitem={item=carved_pumpkin,location=slot.armor.head}] if block -273 28 7 air run fill -274 28 7 -273 28 7 grass_block
 
 #前往林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a title §l§4林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a subtitle §4一层——正门
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set refreshArea data 0
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set position data 8
-execute unless score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run tp @a -256.5 -48.94 -12.5 facing -257.5 -48.94 -12.5
-execute unless score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a title §l§4林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a subtitle §4一层——西北楼梯（右上）
-execute unless score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run function game/5_mansion/refresh
-execute unless score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run tp @a -315 -45 -34 facing -315 -45 -33
-execute unless score 8_pe_item data matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a title §l§4林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a subtitle §4一层——西南楼梯（左上）
-execute unless score 8_pe_item data matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run function game/5_mansion/refresh
-execute unless score 8_pe_item data matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run tp @a -307 -45 15 facing -306 -45 15
-execute unless score 8_pe_item data matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a title §l§4林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a subtitle §4一层——东南楼梯（左下）
-execute unless score 8_pe_item data matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run function game/5_mansion/refresh
-execute unless score 8_pe_item data matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run tp @a -259 -45 7 facing -259 -45 6
-execute unless score 8_pe_item data matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a title §l§4林地府邸
-execute unless score 8_pe_item data matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a subtitle §4一层——东北楼梯（右下）
-execute unless score 8_pe_item data matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run function game/5_mansion/refresh
-execute unless score 8_pe_item data matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run tp @a -266 -45 -41 facing -267 -45 -41
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a title §l§4林地府邸
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a subtitle §4一层——正门
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set refreshArea data 0
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run scoreboard players set position data 8
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run tp @a -256.5 -48.94 -12.5 facing -257.5 -48.94 -12.5
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a title §l§4林地府邸
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a subtitle §4一层——西北楼梯（右上）
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run function game/5_mansion/refresh
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run tp @a -315 -45 -34 facing -315 -45 -33
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a title §l§4林地府邸
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a subtitle §4一层——西南楼梯（左上）
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run function game/5_mansion/refresh
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run tp @a -307 -45 15 facing -306 -45 15
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a title §l§4林地府邸
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a subtitle §4一层——东南楼梯（左下）
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run function game/5_mansion/refresh
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run tp @a -259 -45 7 facing -259 -45 6
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a title §l§4林地府邸
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a subtitle §4一层——东北楼梯（右下）
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run function game/5_mansion/refresh
+execute unless score emeraldPickaxe itemState matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run tp @a -266 -45 -41 facing -267 -45 -41
 
-execute if score 8_pe_item data matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
-execute if score 8_pe_item data matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
-execute if score 8_pe_item data matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
-execute if score 8_pe_item data matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
-execute if score 8_pe_item data matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if entity @a[x=-300.5,y=32,z=10.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if entity @a[x=-314.5,y=42,z=7.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if entity @a[x=-313.5,y=42,z=15.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if entity @a[x=-305.5,y=42,z=14.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if entity @a[x=-306.5,y=42,z=6.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
 
 #井下音乐
 execute if score music data matches 72 if entity @a[x=-317,y=25,z=-51,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1

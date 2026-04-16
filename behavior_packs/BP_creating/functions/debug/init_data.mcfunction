@@ -14,13 +14,6 @@ tickingarea add -160 0 80 63 0 191 "东侧小游戏区"
 tickingarea add -320 0 -64 -65 0 31 "岛北部256*96"
 execute in the_end run tickingarea add -64 0 -64 63 0 63 "末地" true
 
-# --- 记分板重置 ---
-scoreboard objectives add active dummy "激活状态"
-scoreboard objectives add data dummy "数据"
-scoreboard objectives add time dummy "时间"
-scoreboard objectives add deathState dummy "玩家死亡状态"
-scoreboard objectives add isOnline dummy "玩家在线"
-
 # --- 数据变量重置 ---
 
 ## 基础时间数据

@@ -4,8 +4,8 @@
         "name": "冒险世界：筑梦 资源包",
         "description": "作者：量筒&巴豆&文雨",
         "uuid":"161288ca-306d-4528-81f1-ec7d22d0b37b",
-        "version": [ 1, 0, 0 ],
-        "min_engine_version": [ 1, 20, 10 ]
+        "version": [ 1, 1, 0 ],
+        "min_engine_version": [ 1, 21, 50 ]
     },
     "modules": [
         {

@@ -11,8 +11,8 @@ execute if score sea_enemy3 data matches 0 if entity @a[x=-100,y=0,z=120,dx=34,d
 execute if entity @a[x=-138.5,y=31,z=166.5,r=1] positioned -143 31 166 facing -143 31 167 run function game/village/enter
 
 ## 进入海底神殿 | 需检查玩家神镐的获取状态
-execute if entity @a[x=-101.5,y=5,z=190.5,r=1] unless score 8_pe_item data matches 2 positioned -122 -48 142 facing -122 -48 143 run function game/6_monument/enter
-execute if entity @a[x=-101.5,y=5,z=190.5,r=1] if score 8_pe_item data matches 2 run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if entity @a[x=-101.5,y=5,z=190.5,r=1] unless score emeraldPickaxe itemState matches 2 positioned -122 -48 142 facing -122 -48 143 run function game/6_monument/enter
+execute if entity @a[x=-101.5,y=5,z=190.5,r=1] if score emeraldPickaxe itemState matches 2 run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
 
 # --- 场景重置 ---
 # 当玩家在出生点时重置场景

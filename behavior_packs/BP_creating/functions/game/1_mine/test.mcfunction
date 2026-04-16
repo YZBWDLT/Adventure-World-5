@@ -7,7 +7,7 @@ execute if score refreshArea data matches 0 if entity @a[x=-232.5,y=-29,z=103.5,
 execute if score timeline active matches 0 if entity @a[x=-232.5,y=-29,z=101.5,r=1] positioned -233 30 103 facing -233 30 104 run function game/village/enter
 
 #在归还神镐前如果搞丢了（没人携带）箱子里就会刷新，归还后失效
-execute if score 8_pe_item data matches 1 unless entity @a[hasitem={item=diamond_pickaxe}] if block -257 -31 106 chest if blocks -257 -29 106 -257 -29 106 -257 -31 106 all run clone -257 -32 106 -257 -32 106 -257 -29 106
+execute if score emeraldPickaxe itemState matches 1 unless entity @a[hasitem={item=diamond_pickaxe}] if block -257 -31 106 chest if blocks -257 -29 106 -257 -29 106 -257 -31 106 all run clone -257 -32 106 -257 -32 106 -257 -29 106
 
 #如果直接把神镐扔给田萍他会扔回来
 execute if entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] if entity @e[type=item,name="神镐",x=-232,y=-30,z=137,dx=4,dy=1,dz=4] run tellraw @a {"rawtext":[{"text":"§f[田萍]神镐不要直接扔，而是§d点击左键或攻击交给我！"}]}

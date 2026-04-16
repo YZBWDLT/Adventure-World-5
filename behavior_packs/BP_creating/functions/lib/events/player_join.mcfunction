@@ -11,8 +11,12 @@ difficulty normal
 # 对进入的玩家播放音乐
 function music/replay
 
-# 同步玩家的心心上限
-function lib/modify_data/game/change_heart
+# 同步玩家的心心上限，并设置心之碎片指示器
+function lib/utils/change_heart
+function lib/utils/set_heart_piece_indicator
+
+# 同步玩家的呼吸状态
+function lib/utils/change_breath_state
 
 # 执行各关卡进入游戏后的事件
 execute if score timeline active matches 62 run function game/the_end/events/player_join

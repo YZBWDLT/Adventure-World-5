@@ -48,10 +48,10 @@ execute if score quiver data matches 0 if entity @s[has_property={aw:bonus_item_
 execute if score quiver data matches 0 if entity @s[has_property={aw:bonus_item_type="quiver"}] run scoreboard players set quiver data 1
 
 #拿到贝壳
-execute if score item_breath data matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run tellraw @a {"rawtext":[{"text":"§e你拿到了贝壳！水下呼吸时间超大提升！"}]}
-execute if score item_breath data matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run event entity @a breath_yes
-execute if score item_breath data matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run scoreboard players set monument_prepare data 3
-execute if score item_breath data matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run scoreboard players set item_breath data 1
+execute if score shell itemState matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run tellraw @a {"rawtext":[{"text":"§e你拿到了贝壳！水下呼吸时间超大提升！"}]}
+execute if score shell itemState matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run event entity @a breath_yes
+execute if score shell itemState matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run scoreboard players set monument_prepare data 3
+execute if score shell itemState matches 0 if entity @s[has_property={aw:bonus_item_type="nautilus_shell"}] run scoreboard players set shell itemState 1
 
 #拿到白色彩陶
 execute if score 6_monument_item data matches 0 if entity @s[has_property={aw:bonus_item_type="white_glazed_terracotta"}] run tellraw @a {"rawtext":[{"text":"§e第三种方块！不用说你也知道怎么用！"}]}
@@ -62,5 +62,5 @@ execute if score 7_fortress_item data matches 0 if entity @s[has_property={aw:bo
 execute if score 7_fortress_item data matches 0 if entity @s[has_property={aw:bonus_item_type="water_gun"}] run scoreboard players set 7_fortress_item data 1 
 
 #拿到绿宝石镐
-execute if score 8_pe_item data matches 0 if entity @s[has_property={aw:bonus_item_type="emerald_pickaxe"}] run tellraw @a {"rawtext":[{"text":"§e田萍的神镐被神庙复活了！除了可以破坏黑曜石还能在水下挖掘！"}]}
-execute if score 8_pe_item data matches 0 if entity @s[has_property={aw:bonus_item_type="emerald_pickaxe"}] run scoreboard players set 8_pe_item data 3
+execute if score emeraldPickaxe itemState matches 0 if entity @s[has_property={aw:bonus_item_type="emerald_pickaxe"}] run tellraw @a {"rawtext":[{"text":"§e田萍的神镐被神庙复活了！除了可以破坏黑曜石还能在水下挖掘！"}]}
+execute if score emeraldPickaxe itemState matches 0 if entity @s[has_property={aw:bonus_item_type="emerald_pickaxe"}] run scoreboard players set emeraldPickaxe itemState 3

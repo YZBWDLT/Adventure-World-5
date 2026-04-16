@@ -1,32 +1,5 @@
 # ===== 游戏内常开的功能 =====
 
-#水下有挖掘疲劳，用钻镐没事
-#0:拿到钻镐就清除，1:无作用，2：有钻镐，但不能进府邸神殿要塞，3：有钻镐
-execute if score 8_pe_item data matches 0 run clear @a diamond_pickaxe
-execute if score 8_pe_item data matches 2..3 as @a[hasitem={item=diamond_pickaxe,quantity=0}] run give @s diamond_pickaxe 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3","aw:dig1","aw:dig2","aw:dig3","aw:dig4","aw:dig5","aw:dig6","aw:dig7","aw:dig8","aw:dig8drop","aw:dig9","gray_glazed_terracotta","silver_glazed_terracotta","white_glazed_terracotta","aw:old_cobblestone","aw:old_gold_block","aw:nether_reactor_core"]}}
-execute as @a at @s if block ~~~ water run effect @s[hasitem={item=diamond_pickaxe,quantity=0}] mining_fatigue 1 4 true
-execute as @a at @s if block ~~1~ water run effect @s[hasitem={item=diamond_pickaxe,quantity=0}] mining_fatigue 1 4 true
-
-#一颗恢复之心立刻恢复2颗心
-execute as @a[hasitem={item=aw:heart}] run effect @s instant_health 1 0 true
-execute as @a[hasitem={item=aw:heart}] run clear @s aw:heart 0 1
-
-#拿到心之碎片，心之容器后
-execute as @e[type=aw:heart_piece] at @s if entity @a[r=1] run function lib/modify_data/game/get_heart_piece
-execute as @e[type=aw:heart_container] at @s if entity @a[r=1] run function lib/modify_data/game/get_heart_container
-
-#饱和效果
-execute if score tick time matches 0 if score saturation data matches 1 run effect @a saturation 5 0 true
-
-#能挖掉的方块不要有掉落物
-scriptevent aw:removeItemEntity minecraft:gray_glazed_terracotta
-scriptevent aw:removeItemEntity minecraft:light_gray_glazed_terracotta
-scriptevent aw:removeItemEntity minecraft:white_glazed_terracotta
-scriptevent aw:removeItemEntity minecraft:string
-scriptevent aw:removeItemEntity minecraft:cactus
-scriptevent aw:removeItemEntity minecraft:oak_sign
-execute unless score position data matches 9 run scriptevent aw:removeItemEntity minecraft:obsidian
-
 #当武器工具坏掉后给予，剑还要附魔
 execute if score sword data matches 1 as @a[hasitem={item=diamond_sword,quantity=0}] run give @s diamond_sword 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["web","aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
 execute if score sword data matches 1 as @a[hasitem={item=diamond_sword,location=slot.weapon.mainhand}] run enchant @s sharpness 3
@@ -65,7 +38,7 @@ execute if score quiver data matches 1 as @a[tag=much_arrow] run give @s arrow 6
 tag @a remove much_arrow
 
 #获得贝壳
-execute if score item_breath data matches 1 as @a[hasitem={item=nautilus_shell,quantity=0}] run give @s nautilus_shell 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
+execute if score shell itemState matches 1 as @a[hasitem={item=nautilus_shell,quantity=0}] run give @s nautilus_shell 1 0 {"item_lock":{"mode":"lock_in_inventory"},"minecraft:can_destroy":{"blocks":["aw:decorated_pot_type1","aw:decorated_pot_type2","aw:decorated_pot_type3"]}}
 
 #限制钓竿
 execute as @e[type=fishing_hook] at @s if entity @e[family=no_hook,r=4] run kill @s

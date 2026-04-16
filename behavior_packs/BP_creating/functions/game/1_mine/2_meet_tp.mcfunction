@@ -1,6 +1,6 @@
 #到达矿洞相应位置-初次见到田萍
 
-execute if score timeline time matches 1 run scoreboard players set 8_pe_item data 1
+execute if score timeline time matches 1 run scoreboard players set emeraldPickaxe itemState 1
 execute if score timeline time matches 20 run tellraw @a {"rawtext":[{"text":"§f[田萍]救命啊，有人吗？我被困在这里了。"}]}
 execute if score timeline time matches 20 run event entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] aw:wave_hand
 execute if score timeline time matches 100 run tellraw @a {"rawtext":[{"text":"§a[我]啊！这里有人？"}]}

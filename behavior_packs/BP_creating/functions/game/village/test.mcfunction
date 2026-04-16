@@ -186,22 +186,22 @@ execute if block -227 -23 189 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -227 -23 189 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -227 -23 189 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #对话-借还神镐
-execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score 8_pe_item data matches 0 run tellraw @a {"rawtext":[{"text":"§f[田萍]神镐可以§d破坏黑曜石且能水下挖掘§f，不要把它带进那些神殿哦。"}]}
-execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score 8_pe_item data matches 0 run scoreboard players set 8_pe_item data 1
-execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score 8_pe_item data matches 2 run tellraw @a {"rawtext":[{"text":"§f[田萍]需要的时候再来找我借吧。"}]}
-execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score 8_pe_item data matches 2 run scoreboard players set 8_pe_item data 0
-execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score 8_pe_item data matches 1 run scoreboard players set 8_pe_item data 2
+execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score emeraldPickaxe itemState matches 0 run tellraw @a {"rawtext":[{"text":"§f[田萍]神镐可以§d破坏黑曜石且能水下挖掘§f，不要把它带进那些神殿哦。"}]}
+execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score emeraldPickaxe itemState matches 0 run scoreboard players set emeraldPickaxe itemState 1
+execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score emeraldPickaxe itemState matches 2 run tellraw @a {"rawtext":[{"text":"§f[田萍]需要的时候再来找我借吧。"}]}
+execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score emeraldPickaxe itemState matches 2 run scoreboard players set emeraldPickaxe itemState 0
+execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score emeraldPickaxe itemState matches 1 run scoreboard players set emeraldPickaxe itemState 2
 execute if block -234 -25 182 lapis_block if block -234 -23 182 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -234 -23 182 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #进入下界要塞
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run title @a title §l§c下界要塞
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run spawnpoint @a -316 -49 60
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run setworldspawn -316 -49 60
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set position data 12
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set refreshArea data 0
-execute unless score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run tp @a -316 -49 60 facing -315 -49 60
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run title @a title §l§c下界要塞
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run spawnpoint @a -316 -49 60
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run setworldspawn -316 -49 60
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set position data 12
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run scoreboard players set refreshArea data 0
+execute unless score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run tp @a -316 -49 60 facing -315 -49 60
 
-execute if score 8_pe_item data matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
+execute if score emeraldPickaxe itemState matches 2 if block -243 35 139 obsidian if entity @a[x=-242.5,y=32,z=139.5,r=1] run title @a actionbar §e别忘了田萍说的，神镐不能带进去哦
 
 #旅馆音乐
 execute if score music data matches 14 if entity @a[x=-224,y=31,z=129,dx=1,dy=2,dz=2] run scoreboard players set repmusic data 1

@@ -35,3 +35,8 @@ tile.aw:old_cobblestone.name=圆石
 tile.aw:old_gold_block.name=金块
 tile.aw:nether_reactor_core.name=下界反应核
 item.aw:postcard.name=明信片
+
+item.aw:heart_piece_0=心之碎片 §c0§7/4 | 只要集齐4个就能增加心心上限
+item.aw:heart_piece_1=心之碎片 §c1§7/4 | 只要集齐4个就能增加心心上限
+item.aw:heart_piece_2=心之碎片 §c2§7/4 | 只要集齐4个就能增加心心上限
+item.aw:heart_piece_3=心之碎片 §c3§7/4 | 只要集齐4个就能增加心心上限
