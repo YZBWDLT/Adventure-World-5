@@ -2,7 +2,7 @@
 
 execute if score timeline time matches 20 run camera @a fade time 1 1 2 color 200 200 255
 execute if score timeline time matches 20 run scoreboard players set music data 18
-execute if score timeline time matches 20 run function music/replay
+execute if score timeline time matches 20 run function lib/utils/music/replay
 execute if score timeline time matches 50 run tp @a -271 32 188 facing -271 32 189
 execute if score timeline time matches 50 run event entity @e[type=aw:npc,x=-233,y=31,z=144,r=1] should_not_see_player
 execute if score timeline time matches 50 run event entity @e[type=aw:npc,x=-233,y=31,z=144,r=1] aw:sit
@@ -43,6 +43,6 @@ execute if score timeline time matches 1799 run tp @e [type=aw:npc,x=-273,y=32,z
 execute if score timeline time matches 1799 run setblock -190 30 130 air
 execute if score timeline time matches 1799 run camera @a clear
 execute if score timeline time matches 1799 run scoreboard players set music data 14
-execute if score timeline time matches 1799 run function music/replay
+execute if score timeline time matches 1799 run function lib/utils/music/replay
 
 execute if score timeline time matches 1800 run function lib/modify_states/timeline/disable 

@@ -21,4 +21,4 @@ scoreboard players set 8_pe_enemy3 data 0
 
 #播放音乐
 scoreboard players set music data 131
-function music/replay
+function lib/utils/music/replay

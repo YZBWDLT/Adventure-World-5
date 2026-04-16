@@ -61,4 +61,4 @@ tag @a remove shield
 
 #播放音乐
 scoreboard players set music data 81
-function music/replay
+function lib/utils/music/replay

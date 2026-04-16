@@ -4,7 +4,7 @@
 
 # 播放音乐
 scoreboard players set music data 155
-function music/replay
+function lib/utils/music/replay
 
 # 清除场上的剩余怪物
 kill @e[family=monster]

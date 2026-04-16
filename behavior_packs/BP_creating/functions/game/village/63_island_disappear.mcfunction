@@ -31,7 +31,7 @@ execute if score timeline time matches 1320 as @e[type=aw:npc,x=-228,y=-14,z=194
 # [1380~2260] 白屏过渡，开始播放岛消失的音乐和动画，并移除华梦言
 execute if score timeline time matches 1380 run event entity @e[type=aw:npc,x=-228,y=-14,z=194,r=1] aw:remove_immediately
 execute if score timeline time matches 1380 run scoreboard players set music data 157
-execute if score timeline time matches 1380 run function music/replay
+execute if score timeline time matches 1380 run function lib/utils/music/replay
 execute if score timeline time matches 1380 run camera @a fade time 1 2 1 color 255 255 255
 
 # 王予凡镜头

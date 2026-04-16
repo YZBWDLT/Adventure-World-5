@@ -9,7 +9,7 @@ function lib/modify_data/init/gamerule
 difficulty normal
 
 # 对进入的玩家播放音乐
-function music/replay
+function lib/utils/music/replay
 
 # 同步玩家的心心上限，并设置心之碎片指示器
 function lib/utils/change_heart

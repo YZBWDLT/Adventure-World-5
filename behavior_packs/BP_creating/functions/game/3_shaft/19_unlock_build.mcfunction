@@ -7,7 +7,7 @@ execute if score timeline time matches 30 run tp @a -164 22 66 facing -164 22 65
 execute if score timeline time matches 35 run summon aw:npc -175 31 61 facing -175 31 62 skin_3 "吕岩"
 execute if score timeline time matches 35 run fill -168 24 61 -162 28 61 air replace iron_bars
 execute if score timeline time matches 60 run scoreboard players set music data 4
-execute if score timeline time matches 60 run function music/replay
+execute if score timeline time matches 60 run function lib/utils/music/replay
 execute if score timeline time matches 80 run tellraw @a {"rawtext":[{"text":"§a[我]这里已经全部清理完毕了！"}]}
 execute if score timeline time matches 120 run tp @a -203 23 138 facing -202 23 138
 

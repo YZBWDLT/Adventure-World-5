@@ -10,4 +10,4 @@ scoreboard players set badland_enemy2 data 0
 
 #播放音乐
 scoreboard players set music data 141
-function music/replay
+function lib/utils/music/replay

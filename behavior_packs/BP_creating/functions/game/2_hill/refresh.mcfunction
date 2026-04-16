@@ -24,4 +24,4 @@ kill @a[x=-296,y=-14,z=95,dx=18,dy=6,dz=18]
 
 #播放音乐
 scoreboard players set music data 31
-function music/replay
+function lib/utils/music/replay

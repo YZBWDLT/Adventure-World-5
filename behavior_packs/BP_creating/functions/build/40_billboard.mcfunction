@@ -14,7 +14,7 @@ execute if score timeline time matches 620 run tellraw @a {"rawtext":[{"text":"�
 
 execute if score timeline time matches 680 run camera @a set minecraft:free pos -199 33 121 facing -200 33 121
 execute if score timeline time matches 680 run scoreboard players set music data 6
-execute if score timeline time matches 680 run function music/replay
+execute if score timeline time matches 680 run function lib/utils/music/replay
 execute if score timeline time matches 692 run summon aw:npc -204 31 124 facing -203 31 124 skin_1 "王予凡"
 execute if score timeline time matches 712 run summon aw:npc -204 31 118 facing -203 31 118 skin_0 "田萍"
 
@@ -42,6 +42,6 @@ execute if score timeline time matches 878..950 run execute as @e[type=aw:npc,x=
 
 execute if score timeline time matches 950 run event entity @e[type=aw:npc,x=-204,y=31,z=135,r=2] aw:remove_immediately
 execute if score timeline time matches 950 run scoreboard players set music data 14
-execute if score timeline time matches 950 run function music/play
+execute if score timeline time matches 950 run function lib/utils/music/queue
 execute if score timeline time matches 950 run camera @a clear
 execute if score timeline time matches 950 run function lib/modify_states/timeline/disable 

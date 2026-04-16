@@ -3,13 +3,13 @@
 #拿到坐标笔记
 execute if score 3_shaft_book data matches 0 if block -133 -57 97 chest if blocks -133 -57 97 -133 -57 97 -133 -59 97 all run tellraw @a {"rawtext":[{"text":"§e你拿到了坐标笔记，可以查询所有宝箱的位置了！"}]}
 execute if score 3_shaft_book data matches 0 if block -133 -57 97 chest if blocks -133 -57 97 -133 -57 97 -133 -59 97 all run music play get_book 1 0 play_once
-execute if score 3_shaft_book data matches 0 if block -133 -57 97 chest if blocks -133 -57 97 -133 -57 97 -133 -59 97 all run function music/play
+execute if score 3_shaft_book data matches 0 if block -133 -57 97 chest if blocks -133 -57 97 -133 -57 97 -133 -59 97 all run function lib/utils/music/queue
 execute if score 3_shaft_book data matches 0 if block -133 -57 97 chest if blocks -133 -57 97 -133 -57 97 -133 -59 97 all run scoreboard players set 3_shaft_book data 1 
 
 #拿到BOSS钥匙
 execute if score 3_shaft_key data matches 0 if block -184 -41 57 chest if blocks -184 -41 57 -184 -41 57 -232 -9 177 all run tellraw @a {"rawtext":[{"text":"§e你拿到了BOSS钥匙，准备好最后的战斗吧！"}]}
 execute if score 3_shaft_key data matches 0 if block -184 -41 57 chest if blocks -184 -41 57 -184 -41 57 -232 -9 177 all run music play get_item 1 0 play_once
-execute if score 3_shaft_key data matches 0 if block -184 -41 57 chest if blocks -184 -41 57 -184 -41 57 -232 -9 177 all run function music/play
+execute if score 3_shaft_key data matches 0 if block -184 -41 57 chest if blocks -184 -41 57 -184 -41 57 -232 -9 177 all run function lib/utils/music/queue
 execute if score 3_shaft_key data matches 0 if block -184 -41 57 chest if blocks -184 -41 57 -184 -41 57 -232 -9 177 all run scoreboard players set 3_shaft_key data 1 
 
 #和吕岩对话
@@ -38,7 +38,7 @@ execute if score 3_shaft_enemy3 data matches 0 if entity @a[x=-118,y=-30,z=43,dx
 #破解谜题
 execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run tellraw @a {"rawtext":[{"text":"§e你天才般地破解了数学难题，箱子上的障碍清除了！"}]}
 execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run music play solve_puzzle 1 0 play_once
-execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run function music/play
+execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run function lib/utils/music/queue
 execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run setblock -95 -40 119 air
 execute if score 3_shaft_2 data matches 0 if block -95 -34 128 aw:dig1 if blocks -95 -38 128 -95 -34 130 -93 -38 128 all run scoreboard players set 3_shaft_2 data 1
 

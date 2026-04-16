@@ -5,5 +5,5 @@ spawnpoint @a ~~~
 setworldspawn ~~~
 scoreboard players set position data 0
 scoreboard players set music data 1
-function music/replay
+function lib/utils/music/replay
 tp @a ~~~ facing ^^^1

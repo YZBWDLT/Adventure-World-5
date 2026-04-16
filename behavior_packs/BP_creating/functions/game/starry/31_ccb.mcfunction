@@ -58,5 +58,5 @@ execute if score timeline time matches 1200 run event entity @e[type=aw:npc,x=-2
 execute if score timeline time matches 1200 run event entity @e[type=aw:npc,x=-283,y=31,z=90,r=1] aw:stand
 execute if score timeline time matches 1200 run camera @a clear
 execute if score timeline time matches 1200 run scoreboard players set music data 101
-execute if score timeline time matches 1200 run function music/replay
+execute if score timeline time matches 1200 run function lib/utils/music/replay
 execute if score timeline time matches 1200 run function lib/modify_states/timeline/disable

@@ -3,13 +3,13 @@
 #拿到坐标笔记
 execute if score 5_mansion_book data matches 0 if block -279 -23 11 chest if blocks -279 -23 11 -279 -23 11 -279 -25 11 all run tellraw @a {"rawtext":[{"text":"§e你拿到了坐标笔记，可以查询所有宝箱的位置了！"}]}
 execute if score 5_mansion_book data matches 0 if block -279 -23 11 chest if blocks -279 -23 11 -279 -23 11 -279 -25 11 all run music play get_book 1 0 play_once
-execute if score 5_mansion_book data matches 0 if block -279 -23 11 chest if blocks -279 -23 11 -279 -23 11 -279 -25 11 all run function music/play
+execute if score 5_mansion_book data matches 0 if block -279 -23 11 chest if blocks -279 -23 11 -279 -23 11 -279 -25 11 all run function lib/utils/music/queue
 execute if score 5_mansion_book data matches 0 if block -279 -23 11 chest if blocks -279 -23 11 -279 -23 11 -279 -25 11 all run scoreboard players set 5_mansion_book data 1 
 
 #拿到BOSS钥匙
 execute if score 5_mansion_key data matches 0 if block -279 -24 -34 chest if blocks -279 -24 -34 -279 -24 -34 -232 -9 179 all run tellraw @a {"rawtext":[{"text":"§e你拿到了BOSS钥匙，准备好最后的战斗吧！"}]}
 execute if score 5_mansion_key data matches 0 if block -279 -24 -34 chest if blocks -279 -24 -34 -279 -24 -34 -232 -9 179 all run music play get_item 1 0 play_once
-execute if score 5_mansion_key data matches 0 if block -279 -24 -34 chest if blocks -279 -24 -34 -279 -24 -34 -232 -9 179 all run function music/play
+execute if score 5_mansion_key data matches 0 if block -279 -24 -34 chest if blocks -279 -24 -34 -279 -24 -34 -232 -9 179 all run function lib/utils/music/queue
 execute if score 5_mansion_key data matches 0 if block -279 -24 -34 chest if blocks -279 -24 -34 -279 -24 -34 -232 -9 179 all run scoreboard players set 5_mansion_key data 1 
 
 #出现怪物1
@@ -63,5 +63,5 @@ execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set position data 7
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set music data 84
-execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function music/replay
+execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/utils/music/replay
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set 5_mansion_boss data 3

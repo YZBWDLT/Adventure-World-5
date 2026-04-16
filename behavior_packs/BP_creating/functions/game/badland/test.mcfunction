@@ -56,25 +56,25 @@ execute positioned -94 80 -47 if block ~~~ stone_button ["button_pressed_bit"=tr
 #五色山水流洞穴音乐
 execute if score music data matches 141 if entity @a[x=-97,y=23,z=-43,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-97,y=23,z=-43,dx=2,dy=2,dz=2] run scoreboard players set music data 2
-execute if score repmusic data matches 1 if entity @a[x=-97,y=23,z=-43,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-97,y=23,z=-43,dx=2,dy=2,dz=2] run function lib/utils/music/replay
 
 execute if score music data matches 2 if entity @a[x=-95,y=25,z=-39,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-95,y=25,z=-39,dx=2,dy=2,dz=2] run scoreboard players set music data 141
-execute if score repmusic data matches 1 if entity @a[x=-95,y=25,z=-39,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-95,y=25,z=-39,dx=2,dy=2,dz=2] run function lib/utils/music/replay
 
 #五色山药店通道音乐
 execute if score music data matches 141 if entity @a[x=-113,y=24,z=-47,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-47,dx=2,dy=2,dz=2] run scoreboard players set music data 3
-execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-47,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-47,dx=2,dy=2,dz=2] run function lib/utils/music/replay
 
 execute if score music data matches 141 if entity @a[x=-108,y=37,z=-45,dx=2,dy=1,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-108,y=37,z=-45,dx=2,dy=1,dz=2] run scoreboard players set music data 3
-execute if score repmusic data matches 1 if entity @a[x=-108,y=37,z=-45,dx=2,dy=1,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-108,y=37,z=-45,dx=2,dy=1,dz=2] run function lib/utils/music/replay
 
 execute if score music data matches 3 if entity @a[x=-113,y=24,z=-52,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-52,dx=2,dy=2,dz=2] run scoreboard players set music data 141
-execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-52,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-113,y=24,z=-52,dx=2,dy=2,dz=2] run function lib/utils/music/replay
 
 execute if score music data matches 3 if entity @a[x=-111,y=42,z=-43,dx=4,dy=1,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-111,y=42,z=-43,dx=4,dy=1,dz=2] run scoreboard players set music data 141
-execute if score repmusic data matches 1 if entity @a[x=-111,y=42,z=-43,dx=4,dy=1,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-111,y=42,z=-43,dx=4,dy=1,dz=2] run function lib/utils/music/replay

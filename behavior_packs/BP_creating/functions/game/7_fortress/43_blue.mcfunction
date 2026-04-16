@@ -20,7 +20,7 @@ execute if score timeline time matches 140 run fill -274 -32 88 -272 -32 90 warp
 execute if score timeline time matches 140 run fill -284 -31 29 -284 -29 31 warped_planks
 execute if score timeline time matches 140 run structure load other:blue_tree -285 -49 56
 execute if score timeline time matches 180 run music play solve_puzzle 1 0 play_once
-execute if score timeline time matches 180 run function music/play
+execute if score timeline time matches 180 run function lib/utils/music/queue
 
 execute if score timeline time matches 220 run camera @a clear
 execute if score timeline time matches 220 run function lib/modify_states/timeline/disable 

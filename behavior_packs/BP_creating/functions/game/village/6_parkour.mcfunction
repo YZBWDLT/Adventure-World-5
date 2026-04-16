@@ -6,7 +6,7 @@ execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direc
 execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -273 68 154
 execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -273 68 154
 execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 14
-execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -273 68 154 facing -273 68 155
 execute if block -63 68 183 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -63 68 183 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
@@ -22,6 +22,6 @@ execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direc
 execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -273 68 154
 execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once
 execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 14
-execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/play
+execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/queue
 execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -273 68 154 facing -273 68 155
 execute if block -17 75 151 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -17 75 151 stone_button["button_pressed_bit"=false,"facing_direction"=1]

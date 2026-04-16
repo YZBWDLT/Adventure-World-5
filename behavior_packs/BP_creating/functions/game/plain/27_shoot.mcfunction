@@ -30,7 +30,7 @@ execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_directi
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -218 33 -52
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -218 33 -52
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 41
-execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -218 33 -52 facing -218 33 -53
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 9 75 167 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
@@ -48,6 +48,6 @@ execute if score quiver itemState matches 1 if block 40 83 147 stone_button["but
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -218 33 -52
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 41
-execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/play
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/queue
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -218 33 -52 facing -218 33 -53
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 40 83 147 stone_button["button_pressed_bit"=false,"facing_direction"=1]

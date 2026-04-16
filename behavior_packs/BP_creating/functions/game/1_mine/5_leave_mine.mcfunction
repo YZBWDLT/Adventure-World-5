@@ -5,7 +5,7 @@ execute if score timeline time matches 20 run function area/village/refresh
 execute if score timeline time matches 20 run tp @a -215 31 137 facing -216 31 133
 execute if score timeline time matches 20 run camera @a set minecraft:free pos -210 34 132 facing -219 31 136
 execute if score timeline time matches 20 run scoreboard players set music data 4
-execute if score timeline time matches 20 run function music/replay
+execute if score timeline time matches 20 run function lib/utils/music/replay
 
 #此处插入刷新小镇场景
 execute if score timeline time matches 20 run event entity @e[type=aw:npc,x=-259,y=30,z=101,dx=118,dy=19,dz=90,name="王予凡"] aw:remove_immediately

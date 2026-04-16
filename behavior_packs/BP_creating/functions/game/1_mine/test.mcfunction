@@ -26,7 +26,7 @@ execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["
 execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run summon zombie -233 -49 118
 execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run title @a title §l§7无尽僵尸
 execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run scoreboard players set music data 22
-execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run function music/replay
+execute if score 1_mine_boss data matches 0 if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run function lib/utils/music/replay
 execute if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run tp @a -233 -49 101 facing -233 -49 102
 execute if block -233 -28 159 stone_button["button_pressed_bit"=true,"facing_direction"=2] run setblock -233 -28 159 stone_button["button_pressed_bit"=false,"facing_direction"=2]
 

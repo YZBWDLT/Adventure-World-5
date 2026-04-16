@@ -2,13 +2,13 @@
 
 #开局出门修改BGM
 execute if score village_start_music data matches 0 if entity @a[x=-197,y=30,z=128,dx=3,dy=3,dz=4] run scoreboard players set music data 12
-execute if score village_start_music data matches 0 if entity @a[x=-197,y=30,z=128,dx=3,dy=3,dz=4] run function music/replay
+execute if score village_start_music data matches 0 if entity @a[x=-197,y=30,z=128,dx=3,dy=3,dz=4] run function lib/utils/music/replay
 execute if score village_start_music data matches 0 if entity @a[x=-197,y=30,z=128,dx=3,dy=3,dz=4] run scoreboard players set village_start_music data 1
 
 #王予凡的馈赠玻璃瓶
 execute if score bottle1 data matches 0 if block -222 36 130 chest if blocks -222 36 130 -222 36 130 -232 -9 177 all run tellraw @a {"rawtext":[{"text":"§e你拿到了玻璃瓶，这是喝药的唯一容器，一定要好好保存！"}]}
 execute if score bottle1 data matches 0 if block -222 36 130 chest if blocks -222 36 130 -222 36 130 -232 -9 177 all run music play get_item 1 0 play_once
-execute if score bottle1 data matches 0 if block -222 36 130 chest if blocks -222 36 130 -222 36 130 -232 -9 177 all run function music/play
+execute if score bottle1 data matches 0 if block -222 36 130 chest if blocks -222 36 130 -222 36 130 -232 -9 177 all run function lib/utils/music/queue
 execute if score bottle1 data matches 0 if block -222 36 130 chest if blocks -222 36 130 -222 36 130 -232 -9 177 all run scoreboard players set bottle1 data 1
 
 #出现怪物1
@@ -35,7 +35,7 @@ execute if score progress data matches 2 if score village_goto_plain data matche
 
 #浮空山地洞开门
 execute if block -282 15 127 chiseled_stone_bricks if blocks -295 15 123 -286 16 132 -295 10 123 all run music play solve_puzzle 1 0 play_once
-execute if block -282 15 127 chiseled_stone_bricks if blocks -295 15 123 -286 16 132 -295 10 123 all run function music/play
+execute if block -282 15 127 chiseled_stone_bricks if blocks -295 15 123 -286 16 132 -295 10 123 all run function lib/utils/music/queue
 execute if block -282 15 127 chiseled_stone_bricks if blocks -295 15 123 -286 16 132 -295 10 123 all run fill -282 15 127 -282 17 128 air
 
 #搭建码头
@@ -110,7 +110,7 @@ execute if block -172 32 130 stone_button["button_pressed_bit"=true,"facing_dire
 
 #餐厅地下点蜡烛
 execute unless block -193 16 185 air if block -194 13 185 red_candle["candles"=3,"lit"=true] run music play solve_puzzle 1 0 play_once
-execute unless block -193 16 185 air if block -194 13 185 red_candle["candles"=3,"lit"=true] run function music/play
+execute unless block -193 16 185 air if block -194 13 185 red_candle["candles"=3,"lit"=true] run function lib/utils/music/queue
 execute unless block -193 16 185 air if block -194 13 185 red_candle["candles"=3,"lit"=true] run setblock -193 16 185 air
 
 #对话-提交蓝冰

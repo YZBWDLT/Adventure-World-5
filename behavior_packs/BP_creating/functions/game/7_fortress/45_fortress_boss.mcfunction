@@ -79,6 +79,6 @@ execute if score 7_fortress_boss_wave data matches 15 run fill -265 -50 66 -233 
 execute if score 7_fortress_boss_wave data matches 15 run fill -233 -49 82 -233 -48 82 air
 execute if score 7_fortress_boss_wave data matches 15 run music play boss_win_start 1 0 play_once
 execute if score 7_fortress_boss_wave data matches 15 run scoreboard players set music data 123
-execute if score 7_fortress_boss_wave data matches 15 run function music/play
+execute if score 7_fortress_boss_wave data matches 15 run function lib/utils/music/queue
 execute if score 7_fortress_boss_wave data matches 15 run scoreboard players set 7_fortress_boss data 1
 execute if score 7_fortress_boss_wave data matches 15 run function lib/modify_states/timeline/disable 

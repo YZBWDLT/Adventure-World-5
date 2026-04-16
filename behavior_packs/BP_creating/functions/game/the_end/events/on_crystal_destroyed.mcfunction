@@ -11,7 +11,7 @@ setblock 0 100 0 air
 
 # 更换音乐
 scoreboard players set music data 154
-function music/replay
+function lib/utils/music/replay
 
 # 启用时间线流逝
 function lib/modify_states/timeline/enable_time_lapse

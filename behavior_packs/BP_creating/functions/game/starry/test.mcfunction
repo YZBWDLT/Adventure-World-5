@@ -56,14 +56,14 @@ execute if block -290 36 93 stone_button["button_pressed_bit"=true,"facing_direc
 #前往雪原
 execute if block -313 32 92 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 24 60 98 facing 24 60 99
 execute if block -313 32 92 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 102
-execute if block -313 32 92 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if block -313 32 92 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if block -313 32 92 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -313 32 92 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #返回农场
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a -313 31 89 facing -313 31 88
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run effect @a clear water_breathing
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 101
-execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 24 61 96 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #在雪原酿造药水 | 在海底神殿结束前，立即获得水肺效果；结束后获得恢复药水
@@ -89,7 +89,7 @@ execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b灭火开始！有些无法达到的地方也要注意灭火哦！"}]}
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 103
-execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function music/replay
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a 36 67 114
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn 36 67 114
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tp @a 36 67 114 facing 37 67 114
@@ -99,25 +99,25 @@ execute if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direc
 #染坊音乐
 execute if block -280 32 84 stonebrick if score music data matches 101 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run scoreboard players set music data 5
-execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run function lib/utils/music/replay
 
 execute if block -280 32 84 stonebrick if score music data matches 5 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run scoreboard players set music data 101
-execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 
 execute if block -280 32 84 stonebrick if score music data matches 101 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run scoreboard players set music data 5
-execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 
 execute if block -280 32 84 stonebrick if score music data matches 5 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run scoreboard players set music data 101
-execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 
 #水下洞穴音乐
 execute if score music data matches 101 if entity @a[x=-293,y=27,z=30,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-293,y=27,z=30,dx=2,dy=2,dz=2] run scoreboard players set music data 2
-execute if score repmusic data matches 1 if entity @a[x=-293,y=27,z=30,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-293,y=27,z=30,dx=2,dy=2,dz=2] run function lib/utils/music/replay
 
 execute if score music data matches 2 if entity @a[x=-293,y=28,z=25,dx=2,dy=2,dz=2] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-293,y=28,z=25,dx=2,dy=2,dz=2] run scoreboard players set music data 101
-execute if score repmusic data matches 1 if entity @a[x=-293,y=28,z=25,dx=2,dy=2,dz=2] run function music/replay
+execute if score repmusic data matches 1 if entity @a[x=-293,y=28,z=25,dx=2,dy=2,dz=2] run function lib/utils/music/replay

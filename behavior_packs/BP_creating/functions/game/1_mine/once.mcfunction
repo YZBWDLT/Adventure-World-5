@@ -8,20 +8,20 @@ execute if score 1_mine_meettp data matches 0 if entity @a[x=-238,y=-29,z=125,dx
 #拿到坐标笔记
 execute if score 1_mine_book data matches 0 if block -236 -29 133 chest if blocks -236 -29 133 -236 -29 133 -236 -31 133 all run tellraw @a {"rawtext":[{"text":"§e你拿到了坐标笔记，可以查询所有宝箱的位置了！"}]}
 execute if score 1_mine_book data matches 0 if block -236 -29 133 chest if blocks -236 -29 133 -236 -29 133 -236 -31 133 all run music play get_book 1 0 play_once
-execute if score 1_mine_book data matches 0 if block -236 -29 133 chest if blocks -236 -29 133 -236 -29 133 -236 -31 133 all run function music/play
+execute if score 1_mine_book data matches 0 if block -236 -29 133 chest if blocks -236 -29 133 -236 -29 133 -236 -31 133 all run function lib/utils/music/queue
 execute if score 1_mine_book data matches 0 if block -236 -29 133 chest if blocks -236 -29 133 -236 -29 133 -236 -31 133 all run scoreboard players set 1_mine_book data 1 
 
 #拿到BOSS钥匙
 execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run tellraw @a {"rawtext":[{"text":"§e你拿到了BOSS钥匙，准备好最后的战斗吧！"}]}
 execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run music play get_item 1 0 play_once
-execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run function music/play
+execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run function lib/utils/music/queue
 execute if score 1_mine_key data matches 0 if block -223 -29 154 chest if blocks -223 -29 154 -223 -29 154 -232 -9 177 all run scoreboard players set 1_mine_key data 1 
 
 #获得镐附近检测方块开门
 execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run fill -209 -29 147 -209 -28 147 air
 execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run tellraw @a {"rawtext":[{"text":"§e你挖断了所有的岩石柱，障碍清除了！"}]}
 execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run music play solve_puzzle 1 0 play_once
-execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run function music/play
+execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run function lib/utils/music/queue
 execute if score pickaxe itemState matches 1 if block -204 -28 138 air if block -214 -28 138 air if block -204 -28 144 air if block -214 -28 144 air run scoreboard players set pickaxe itemState 2
 
 #拿到神镐
@@ -45,7 +45,7 @@ execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blo
 execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run kill @e[type=zombie]
 execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run music play boss_win_start 1 0 play_once
 execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run scoreboard players set music data 23
-execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run function music/play
+execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run function lib/utils/music/queue
 execute if score 1_mine_boss data matches 0 if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run scoreboard players set 1_mine_boss data 1
 execute if block -240 -39 121 aw:dig1 if blocks -250 -48 101 -216 -48 135 -250 -37 101 all run fill -233 -49 135 -233 -48 135 air
 

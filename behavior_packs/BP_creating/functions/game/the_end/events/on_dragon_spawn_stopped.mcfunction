@@ -7,7 +7,7 @@ function game/the_end/events/restrict_end_portal
 
 # 播放音乐
 scoreboard players set music data 151
-function music/replay
+function lib/utils/music/replay
 
 # 解除锁定视角
 function lib/utils/stop_dialogue

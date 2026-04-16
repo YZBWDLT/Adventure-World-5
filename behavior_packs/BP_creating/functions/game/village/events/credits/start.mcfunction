@@ -12,7 +12,7 @@ function lib/modify_states/timeline/enable_time_lapse
 
 # 播放音乐
 scoreboard players set music data 158
-function music/replay
+function lib/utils/music/replay
 
 # 控制相机
 camera @a clear

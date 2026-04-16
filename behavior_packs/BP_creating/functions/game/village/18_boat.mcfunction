@@ -38,7 +38,7 @@ execute if score timeline time matches 80 if score boat_progress data matches 9 
 execute if score timeline time matches 80 if score boat_progress data matches 9 run kill @e[type=boat]
 execute if score timeline time matches 80 if score boat_progress data matches 9 run music play finish_game 1 0 play_once
 execute if score timeline time matches 80 if score boat_progress data matches 9 run scoreboard players set music data 16
-execute if score timeline time matches 80 if score boat_progress data matches 9 run function music/play
+execute if score timeline time matches 80 if score boat_progress data matches 9 run function lib/utils/music/queue
 execute if score timeline time matches 80 if score boat_progress data matches 9 run function lib/modify_states/timeline/disable
 
 #退出划船
@@ -47,5 +47,5 @@ execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless 
 execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run spawnpoint @a -37 64 97
 execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run setworldspawn -37 64 97
 execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run scoreboard players set music data 16
-execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run function music/replay
+execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run function lib/utils/music/replay
 execute if block -41 67 101 ice if score boat_progress data matches 0..8 unless entity @e[type=boat] run tp @a -37 64 97 facing -36 64 97

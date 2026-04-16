@@ -3,7 +3,7 @@
 #拿到坐标笔记
 execute if score 8_pe_book data matches 0 if block -238 -55 48 chest if blocks -238 -55 48 -238 -55 48 -232 -9 179 all run tellraw @a {"rawtext":[{"text":"§e你拿到了坐标笔记，可以查询所有宝箱的位置了！"}]}
 execute if score 8_pe_book data matches 0 if block -238 -55 48 chest if blocks -238 -55 48 -238 -55 48 -232 -9 179 all run music play get_book 1 0 play_once
-execute if score 8_pe_book data matches 0 if block -238 -55 48 chest if blocks -238 -55 48 -238 -55 48 -232 -9 179 all run function music/play
+execute if score 8_pe_book data matches 0 if block -238 -55 48 chest if blocks -238 -55 48 -238 -55 48 -232 -9 179 all run function lib/utils/music/queue
 execute if score 8_pe_book data matches 0 if block -238 -55 48 chest if blocks -238 -55 48 -238 -55 48 -232 -9 179 all run scoreboard players set 8_pe_book data 1 
 
 #出现怪物1

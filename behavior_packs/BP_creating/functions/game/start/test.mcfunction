@@ -3,7 +3,7 @@
 #倪高志的馈赠玻璃瓶
 execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run tellraw @a {"rawtext":[{"text":"§e你拿到了玻璃瓶，这是你让地铁重新开通的奖励！"}]}
 execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run music play get_item 1 0 play_once
-execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run function music/play
+execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run function lib/utils/music/queue
 execute if score bottle2 data matches 0 if block -233 -15 183 chest if blocks -233 -15 183 -233 -15 183 -232 -9 179 all run scoreboard players set bottle2 data 1
 
 #地铁-买卖村
@@ -50,7 +50,7 @@ execute if block -229 -13 181 stone_button["button_pressed_bit"=true,"facing_dir
 
 #进入最终战前置房间
 execute if entity @a[x=-214.5,y=-15,z=184.0,r=1] if score 9_the_end_story data matches 0 run scoreboard players set music data 151
-execute if entity @a[x=-214.5,y=-15,z=184.0,r=1] if score 9_the_end_story data matches 0 run function music/replay
+execute if entity @a[x=-214.5,y=-15,z=184.0,r=1] if score 9_the_end_story data matches 0 run function lib/utils/music/replay
 execute if entity @a[x=-214.5,y=-15,z=184.0,r=1] if score 9_the_end_story data matches 0 run tp @a -202 -24 187 facing -202 -24 186
 execute if entity @a[x=-214.5,y=-15,z=184.0,r=1] if score 9_the_end_story data matches !0 in the_end run function game/the_end/enter
 

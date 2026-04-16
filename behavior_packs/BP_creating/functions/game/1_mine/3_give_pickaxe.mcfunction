@@ -3,7 +3,7 @@
 execute if score timeline time matches 1 run scoreboard players set emeraldPickaxe itemState 0
 execute if score timeline time matches 1 run setblock -257 -29 106 air
 execute if score timeline time matches 1 run music play solve_puzzle 1 0 play_once
-execute if score timeline time matches 1 run function music/play
+execute if score timeline time matches 1 run function lib/utils/music/queue
 execute if score timeline time matches 20 run tellraw @a {"rawtext":[{"text":"§f[田萍]谢谢！我终于可以出去了，你叫什么名字？"}]}
 execute if score timeline time matches 20 run event entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] aw:applause
 execute if score timeline time matches 100 run tellraw @a {"rawtext":[{"text":"§a[我]我叫林乐，为了寻找朋友而出海，遭遇风暴来到了岛上。"}]}

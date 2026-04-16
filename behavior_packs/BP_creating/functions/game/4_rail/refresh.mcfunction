@@ -16,4 +16,4 @@ clone -139 -49 -56 -139 -49 -56 -139 -46 -56
 
 #播放音乐
 scoreboard players set music data 61
-function music/replay
+function lib/utils/music/replay

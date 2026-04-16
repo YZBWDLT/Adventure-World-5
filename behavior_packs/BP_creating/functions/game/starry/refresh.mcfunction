@@ -10,4 +10,4 @@ fill -292 31 77 -288 31 77 aw:decorated_pot_type1
 
 #播放音乐
 scoreboard players set music data 101
-function music/replay
+function lib/utils/music/replay

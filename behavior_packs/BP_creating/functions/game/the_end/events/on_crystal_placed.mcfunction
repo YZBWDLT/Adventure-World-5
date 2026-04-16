@@ -4,7 +4,7 @@
 
 # 播放音乐
 scoreboard players set music data 152
-function music/replay
+function lib/utils/music/replay
 
 # 清除玩家的末地水晶
 clear @a end_crystal

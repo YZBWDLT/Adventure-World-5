@@ -4,7 +4,7 @@
 
 # 播放音乐
 scoreboard players set music data 153
-function music/replay
+function lib/utils/music/replay
 
 # 改变龙穴附近的方块
 fill 3 59 3 -3 63 -3 air replace structure_void

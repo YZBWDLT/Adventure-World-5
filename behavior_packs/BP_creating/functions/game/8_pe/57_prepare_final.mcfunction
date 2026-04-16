@@ -2,7 +2,7 @@
 
 execute if score timeline time matches 1 run camera @a fade time 1 2 1 color 0 0 0
 execute if score timeline time matches 20 run scoreboard players set music data 4
-execute if score timeline time matches 20 run function music/replay
+execute if score timeline time matches 20 run function lib/utils/music/replay
 execute if score timeline time matches 40 run camera @a set minecraft:free pos -274 44 74 facing -261 37 66
 execute if score timeline time matches 40 run event entity @e[type=aw:npc,x=-77,y=31,z=30,r=1,name="田萍"] aw:remove_immediately
 execute if score timeline time matches 40 run event entity @e[type=aw:npc,x=-190,y=31,z=128,r=1,name="王予凡"] aw:remove_immediately

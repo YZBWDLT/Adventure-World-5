@@ -173,7 +173,7 @@ execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_dir
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] run setblock -302 -39 -17 aw:decorated_pot_type2
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run title @a title §l§8骷髅之王
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run scoreboard players set music data 82
-execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run function music/replay
+execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run function lib/utils/music/replay
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run summon aw:skeleton_king -305 -39 -47 0 0 aw:arrow_m
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 run tag @e[type=aw:skeleton_king] add arrow_m
 execute if block -279 -48 -13 stone_button["button_pressed_bit"=true,"facing_direction"=5] if score 5_mansion_boss data matches 0 as @a[hasitem={item=shield}] run tag @s add shield
@@ -189,7 +189,7 @@ execute if score 5_mansion_boss data matches 1 if entity @e[type=aw:skeleton_kin
 execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] if block -305 -39 -16 dark_oak_planks run clone -307 -31 -13 -303 -27 -13 -307 -39 -16
 execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] run music play boss_win_start
 execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] run scoreboard players set music data 83
-execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] run function music/play
+execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] run function lib/utils/music/queue
 execute if score 5_mansion_boss data matches 1 if block -305 -34 -53 dark_oak_planks if entity @a[x=-318,y=-40,z=-52,dx=26,dy=10,dz=35] unless entity @e[type=aw:skeleton_king] run scoreboard players set 5_mansion_boss data 2
 
 #从BOSS战离开（第二次进入场地再离开时）

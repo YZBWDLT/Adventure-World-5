@@ -7,7 +7,7 @@ event entity @s aw:remove_immediately
 
 # 播放心之碎片的音效
 music play get_piece 1 0 play_once
-function music/play
+function lib/utils/music/queue
 
 # 为所有玩家回血
 effect @a instant_health 1 5 true

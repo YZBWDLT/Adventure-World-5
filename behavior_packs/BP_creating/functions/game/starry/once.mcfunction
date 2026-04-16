@@ -39,5 +39,5 @@ execute if score blue_ice data matches 2 if block 11 74 123 chest run setblock 1
 #吕岩的馈赠玻璃瓶
 execute if score bottle3 data matches 0 if block -276 31 84 chest if blocks -276 31 84 -276 31 84 -234 -9 177 all run tellraw @a {"rawtext":[{"text":"§e你拿到了玻璃瓶，真是千辛万苦啊！"}]}
 execute if score bottle3 data matches 0 if block -276 31 84 chest if blocks -276 31 84 -276 31 84 -234 -9 177 all run music play get_item 1 0 play_once
-execute if score bottle3 data matches 0 if block -276 31 84 chest if blocks -276 31 84 -276 31 84 -234 -9 177 all run function music/play
+execute if score bottle3 data matches 0 if block -276 31 84 chest if blocks -276 31 84 -276 31 84 -234 -9 177 all run function lib/utils/music/queue
 execute if score bottle3 data matches 0 if block -276 31 84 chest if blocks -276 31 84 -276 31 84 -234 -9 177 all run scoreboard players set bottle3 data 1

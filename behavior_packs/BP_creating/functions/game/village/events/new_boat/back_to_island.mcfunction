@@ -16,4 +16,4 @@ scoreboard players set 9_the_end_init data 0
 
 ## 播放音乐
 scoreboard players set music data 4
-function music/replay
+function lib/utils/music/replay

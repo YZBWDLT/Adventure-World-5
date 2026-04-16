@@ -28,4 +28,4 @@ execute if score 9_the_end_boss data matches 1 run scoreboard players set music 
 execute if score 9_the_end_boss data matches 2 run scoreboard players set music data 153
 execute if score 9_the_end_boss data matches 3 run scoreboard players set music data 154
 execute if score 9_the_end_boss data matches 4 run scoreboard players set music data 155
-function music/replay
+function lib/utils/music/replay

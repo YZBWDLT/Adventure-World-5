@@ -2,7 +2,7 @@
 
 execute if score timeline time matches 1 run camera @a fade time 1 2 1 color 0 0 0
 execute if score timeline time matches 1 run scoreboard players set music data 4
-execute if score timeline time matches 1 run function music/replay
+execute if score timeline time matches 1 run function lib/utils/music/replay
 execute if score timeline time matches 22 run tp @a -191.5 33.94 -40.5 facing -191.5 33.94 -41.5
 execute if score timeline time matches 22 run camera @a set minecraft:free pos -197 40 -44 facing -192 34 -39
 execute if score timeline time matches 60 run tellraw @a {"rawtext":[{"text":"§a[我]天呐，谁家好人把地铁控制室做成这样啊……"}]}

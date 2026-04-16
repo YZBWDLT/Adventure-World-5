@@ -6,14 +6,14 @@
 
 #拿到除剑外的物品播放音效
 execute unless entity @s[has_property={aw:bonus_item_type="sword"}] run music play get_tool 1 0 play_once
-execute unless entity @s[has_property={aw:bonus_item_type="sword"}] run function music/play
+execute unless entity @s[has_property={aw:bonus_item_type="sword"}] run function lib/utils/music/queue
 
 #拿到剑
 execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run tellraw @a {"rawtext":[{"text":"§a[我]找到我的剑了！不过……它为什么在这里？"}]}
 execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run tellraw @a {"rawtext":[{"text":"§e*道具坏掉了都会自动补充，随便用别担心"}]}
 execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run music play get_sword 1 0 play_once
 execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run scoreboard players set music data 3
-execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run function music/play
+execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run function lib/utils/music/queue
 execute if score sword itemState matches 0 if entity @s[has_property={aw:bonus_item_type="sword"}] run scoreboard players set sword itemState 1
 
 #拿到镐

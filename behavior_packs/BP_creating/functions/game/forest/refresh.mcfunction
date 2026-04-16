@@ -19,4 +19,4 @@ tag @a remove shield
 #播放音乐
 execute if entity @a[x=-264,y=31,z=-48,r=2] run scoreboard players set music data 71
 execute unless entity @a[x=-264,y=31,z=-48,r=2] run scoreboard players set music data 72
-function music/replay
+function lib/utils/music/replay

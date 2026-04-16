@@ -57,7 +57,7 @@ execute if block -281 -26 60 warped_stem if block -275 -48 31 soul_campfire["ext
 #进入BOSS战
 execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 run title @a title §l§c烈火生存
 execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 run scoreboard players set music data 122
-execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 run function music/replay
+execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 run function lib/utils/music/replay
 execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 as @a[hasitem={item=shield}] run tag @s add shield
 execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 as @a[hasitem={item=shield}] run clear @s shield
 execute if block -270 -30 60 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 7_fortress_boss data matches 0 run function lib/modify_states/timeline/enable_time_lapse

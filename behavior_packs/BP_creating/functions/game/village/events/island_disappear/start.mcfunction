@@ -13,7 +13,7 @@ tp @a -239 -9 177
 
 # 设置音乐
 scoreboard players set music data 156
-function music/replay
+function lib/utils/music/replay
 
 # 设置时间线
 scoreboard players set timeline active 63

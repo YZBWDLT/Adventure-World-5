@@ -39,6 +39,6 @@ execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133
 execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run tellraw @a {"rawtext":[{"text":"§e所有怪物都已消灭！"}]}
 execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run music play boss_win_start 1 0 play_once
 execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run scoreboard players set music data 53
-execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run function music/play
+execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run function lib/utils/music/queue
 execute if score timeline time matches 900 unless entity @e[type=skeleton,x=-133,y=-56,z=28,dx=38,dy=7,dz=38] run function lib/modify_states/timeline/disable 
 execute if score timeline time matches 900 run scoreboard players set timeline time 0

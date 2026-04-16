@@ -58,5 +58,5 @@ execute if score timeline time matches 750 run tellraw @a {"rawtext":[{"text":"Â
 execute if score timeline time matches 750 run event entity @e[type=aw:npc,x=-77,y=31,z=30,r=1] aw:sit
 
 execute if score timeline time matches 830 run camera @a clear
-execute if score timeline time matches 830 run function music/play
+execute if score timeline time matches 830 run function lib/utils/music/queue
 execute if score timeline time matches 830 run function lib/modify_states/timeline/disable

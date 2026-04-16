@@ -43,7 +43,7 @@ execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_dire
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] if block -287 -60 129 air run clone -287 -63 129 -287 -62 130 -287 -60 129
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] if score 2_hill_boss data matches 0 run title @a title §0连环机关
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] if score 2_hill_boss data matches 0 run scoreboard players set music data 32
-execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] if score 2_hill_boss data matches 0 run function music/replay
+execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] if score 2_hill_boss data matches 0 run function lib/utils/music/replay
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] run tp @a -287 -13 112 facing -287 -13 111
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] run clone -295 -7 97 -279 -4 112 -295 -14 97
 execute if block -287 -7 117 stone_button["button_pressed_bit"=true,"facing_direction"=3] run setblock -287 -7 117 stone_button["button_pressed_bit"=false,"facing_direction"=3]

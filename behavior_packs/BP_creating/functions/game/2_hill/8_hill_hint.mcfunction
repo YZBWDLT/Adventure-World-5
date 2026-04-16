@@ -9,7 +9,7 @@
 
 execute if score timeline time matches 1 run camera @a fade time 1 1 0 color 0 0 0
 execute if score timeline time matches 1 run scoreboard players set music data 34
-execute if score timeline time matches 1 run function music/replay
+execute if score timeline time matches 1 run function lib/utils/music/replay
 execute if score timeline time matches 100 run tellraw @a {"rawtext":[{"text":"§7耳边响起模糊的声音……"}]}
 execute if score timeline time matches 180 run tellraw @a {"rawtext":[{"text":"§9[？]林乐……再次……你……"}]}
 execute if score timeline time matches 260 run tellraw @a {"rawtext":[{"text":"§9[？]……恶魔……空间……幻化……"}]}

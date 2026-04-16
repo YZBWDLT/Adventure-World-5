@@ -29,7 +29,7 @@ execute if score timeline time matches 65 if score 6_monument_water data matches
 execute if score timeline time matches 70 if score 6_monument_water data matches 1 run fill -151 -59 143 -93 -49 189 water replace air
 
 execute if score timeline time matches 70 run music play solve_puzzle 1 0 play_once
-execute if score timeline time matches 70 run function music/play
+execute if score timeline time matches 70 run function lib/utils/music/queue
 execute if score timeline time matches 80 run scoreboard players add 6_monument_water data 1
 execute if score timeline time matches 80 if score 6_monument_water data matches 2 run scoreboard players set 6_monument_water data 0
 
