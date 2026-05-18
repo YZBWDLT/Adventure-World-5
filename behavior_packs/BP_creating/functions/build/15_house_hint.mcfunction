@@ -7,4 +7,5 @@ execute if score timeline time matches 80 run tp @a -155 31 164 facing -155 31 1
 execute if score timeline time matches 80 run playsound random.anvil_use @a
 execute if score timeline time matches 100 run structure load build:house_hint -160 30 142
 execute if score timeline time matches 100 run fill -155 30 159 -155 30 164 smooth_stone
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

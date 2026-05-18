@@ -66,10 +66,6 @@ execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_directi
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
 execute if block 24 61 96 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock 24 61 96 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
-#在雪原酿造药水 | 在海底神殿结束前，立即获得水肺效果；结束后获得恢复药水
-execute positioned 12 61 94 if block ~~~ stone_button ["button_pressed_bit"=true,"facing_direction"=1] as @p if score 6_monument_boss data matches ..7 run function game/starry/events/get_water_breathing_effect
-execute positioned 12 61 94 if block ~~~ stone_button ["button_pressed_bit"=true,"facing_direction"=1] as @p if score 6_monument_boss data matches 8.. run function game/starry/events/get_regeneration_potion
-
 #在提交蓝冰之前丢了（没人携带）箱子里就会刷新，归还后失效
 execute if score blue_ice data matches 1 unless entity @a[hasitem={item=blue_ice}] if block 11 74 123 chest if blocks 11 74 123 11 74 123 11 82 125 all run clone 11 81 125 11 81 125 11 74 123
 
@@ -86,7 +82,7 @@ execute if block -283 32 64 stone_button["button_pressed_bit"=true,"facing_direc
 #开始灭火
 execute if score waterGun itemState matches 0 if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b你缺少道具，还不能玩这个小游戏！"}]}
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set timeline active 51
-execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run tellraw @a {"rawtext":[{"text":"§b灭火开始！有些无法达到的地方也要注意灭火哦！"}]}
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set music data 103
 execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/music/replay
@@ -97,19 +93,19 @@ execute if score waterGun itemState matches 1.. if block -283 32 67 stone_button
 execute if block -283 32 67 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setblock -283 32 67 stone_button["button_pressed_bit"=false,"facing_direction"=1]
 
 #染坊音乐
-execute if block -280 32 84 stonebrick if score music data matches 101 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run scoreboard players set repmusic data 1
+execute if block -280 32 84 stone_bricks if score music data matches 101 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run scoreboard players set music data 5
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=88,dx=3,dy=2,dz=4] run function lib/utils/music/replay
 
-execute if block -280 32 84 stonebrick if score music data matches 5 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
+execute if block -280 32 84 stone_bricks if score music data matches 5 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run scoreboard players set music data 101
 execute if score repmusic data matches 1 if entity @a[x=-280,y=31,z=85,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 
-execute if block -280 32 84 stonebrick if score music data matches 101 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
+execute if block -280 32 84 stone_bricks if score music data matches 101 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run scoreboard players set music data 5
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=93,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 
-execute if block -280 32 84 stonebrick if score music data matches 5 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
+execute if block -280 32 84 stone_bricks if score music data matches 5 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run scoreboard players set repmusic data 1
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run scoreboard players set music data 101
 execute if score repmusic data matches 1 if entity @a[x=-285,y=35,z=90,dx=3,dy=2,dz=1] run function lib/utils/music/replay
 

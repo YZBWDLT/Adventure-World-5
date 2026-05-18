@@ -28,4 +28,5 @@ execute if score timeline time matches 900 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 980 run tellraw @a {"rawtext":[{"text":"§f[王予凡]这个嘛……就要你去小镇里仔细找找了。"}]}
 execute if score timeline time matches 980 run event entity @e[type=aw:npc,x=-283,y=31,z=90,r=1] aw:bad_smile
 execute if score timeline time matches 1080 run camera @a clear
-execute if score timeline time matches 1080 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 1080 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 1080 run function lib/modify_data/states/timeline/disable

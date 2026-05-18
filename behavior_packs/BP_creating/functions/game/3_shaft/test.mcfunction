@@ -52,7 +52,7 @@ execute if score tick time matches 0 if block -148 -32 57 air run setblock -149 
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] run tp @a -114 -54 47
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run title @a title §l§9骷髅箭网
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run scoreboard players set timeline active 11
-execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run function lib/modify_states/timeline/enable_time_lapse
+execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run function lib/modify_data/states/timeline/enable_time_lapse
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run summon skeleton -114 -54 30
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run summon skeleton -131 -54 47
 execute if block -136 -57 37 stone_button["button_pressed_bit"=true,"facing_direction"=4] if score 3_shaft_boss data matches 0 run summon skeleton -114 -54 64

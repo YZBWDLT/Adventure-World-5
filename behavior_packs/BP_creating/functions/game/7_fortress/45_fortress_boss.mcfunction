@@ -69,7 +69,8 @@ execute if entity @a[tag=!isAlive] if score tick time matches 4..7 run tellraw @
 execute if entity @a[tag=!isAlive] if score tick time matches 8..11 run tellraw @a {"rawtext":[{"text":"§e打输了，已成哀兵，而哀兵必胜！"}]}
 execute if entity @a[tag=!isAlive] if score tick time matches 12..15 run tellraw @a {"rawtext":[{"text":"§e在下一者为主公悲伤，二者给主公道喜。"}]}
 execute if entity @a[tag=!isAlive] if score tick time matches 16..19 run tellraw @a {"rawtext":[{"text":"§e不是怪物害了你，是这个乱世害了你啊！"}]}
-execute if entity @a[tag=!isAlive] run function lib/modify_states/timeline/disable 
+execute if entity @a[tag=!isAlive] run function lib/utils/stop_dialogue 
+execute if entity @a[tag=!isAlive] run function lib/modify_data/states/timeline/disable
 
 #到时间后通关
 execute if score 7_fortress_boss_wave data matches 15 run tp @e[family=monster] -296 -55 60
@@ -81,4 +82,5 @@ execute if score 7_fortress_boss_wave data matches 15 run music play boss_win_st
 execute if score 7_fortress_boss_wave data matches 15 run scoreboard players set music data 123
 execute if score 7_fortress_boss_wave data matches 15 run function lib/utils/music/queue
 execute if score 7_fortress_boss_wave data matches 15 run scoreboard players set 7_fortress_boss data 1
-execute if score 7_fortress_boss_wave data matches 15 run function lib/modify_states/timeline/disable 
+execute if score 7_fortress_boss_wave data matches 15 run function lib/utils/stop_dialogue 
+execute if score 7_fortress_boss_wave data matches 15 run function lib/modify_data/states/timeline/disable

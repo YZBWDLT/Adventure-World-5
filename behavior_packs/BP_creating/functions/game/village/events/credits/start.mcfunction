@@ -8,7 +8,7 @@ hud @a hide all
 
 # 控制时间线流逝
 scoreboard players set timeline active 64
-function lib/modify_states/timeline/enable_time_lapse
+function lib/modify_data/states/timeline/enable_time_lapse
 
 # 播放音乐
 scoreboard players set music data 158

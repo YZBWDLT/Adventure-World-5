@@ -19,4 +19,5 @@ execute if score timeline time matches 80 run particle minecraft:dragon_death_ex
 execute if score timeline time matches 100 run music play solve_puzzle 1 0 play_once
 execute if score timeline time matches 100 run function lib/utils/music/queue
 execute if score timeline time matches 140 run camera @a clear
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

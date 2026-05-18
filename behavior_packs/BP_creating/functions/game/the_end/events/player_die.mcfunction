@@ -2,9 +2,11 @@
 
 execute in overworld positioned -233 -15 189 facing -233 -15 188 run function game/start/enter
 scoreboard players set timeline active 0
-function lib/modify_states/timeline/disable_time_lapse
+function lib/modify_data/states/timeline/disable_time_lapse
+function lib/utils/stop_dialogue
 
 # 恢复生物破坏，并把末影龙吐的痰和怪物都鲨了
+# // mc-disable minecraft.commands.schedule.syntax
 kill @e[type=dragon_fireball]
 kill @e[family=monster]
 schedule delay add lib/modify_data/init/gamerule 3s

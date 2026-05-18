@@ -1,175 +1,271 @@
 {
-  "format_version":"1.1.0",
-  "aw:build1": { "textures": "build1", "sound": "stone" },
-  "aw:build2": { "textures": "build2", "sound": "stone" },
-  "aw:build3": { 
-    "sound" : "stone",
-    "textures" : {
-       "down" : "build3a",
-       "east" : "build3c",
-       "north" : "build3b",
-       "south" : "build3b",
-       "up" : "build3a",
-       "west" : "build3c"
-    }
-  },
-  "aw:dig1": { "textures": "dig1", "sound": "stone" },
-  "aw:dig2": { "textures": "dig2", "sound": "stone" },
-  "aw:dig3": { "textures": "dig3", "sound": "stone" },
-  "aw:dig4": { "textures": "dig4", "sound": "deepslate" },
-  "aw:dig5": { "textures": "dig5", "sound": "stone" },
-  "aw:dig6": { "textures": "dig6", "sound": "stone" },
-  "aw:dig7": { "textures": "dig7", "sound": "nether_brick" },
-  "aw:dig8": { "textures": "dig8", "sound": "stone" },
-  "aw:dig8drop": { "textures": "dig8", "sound": "stone" },
-  "aw:dig9": { 
-    "sound" : "stone",
-    "textures" : {
-       "up": "dig9top",
-       "down": "dig9top",
-       "side": "dig9side"
-    }
-  },
-  "aw:key1": { "textures": "key1", "sound": "stone" },
-  "aw:key2": { "textures": "key2", "sound": "stone" },
-  "aw:key3": { "textures": "key3", "sound": "stone" },
-  "aw:key4": { "textures": "key4", "sound": "deepslate" },
-  "aw:key5": { "textures": "key5", "sound": "stone" },
-  "aw:key6": { "textures": "key6", "sound": "stone" },
-  "aw:key7": { "textures": "key7", "sound": "nether_brick" },
-  "aw:keyboss1": { "textures": "keyboss1", "sound": "stone" },
-  "aw:keyboss2": { "textures": "keyboss2", "sound": "stone" },
-  "aw:keyboss3": { "textures": "keyboss3", "sound": "stone" },
-  "aw:keyboss4": { "textures": "keyboss4", "sound": "deepslate" },
-  "aw:keyboss5": { "textures": "keyboss5", "sound": "stone" },
-  "aw:keyboss6": { "textures": "keyboss6", "sound": "stone" },
-  "aw:keyboss7": { "textures": "keyboss7", "sound": "nether_brick" },
-  "aw:decorated_pot_type1": {"sound": "decorated_pot"},
-  "aw:decorated_pot_type2": {"sound": "decorated_pot"},
-  "aw:decorated_pot_type3": {"sound": "decorated_pot"},
+    "format_version": "1.21.40",
+    "aw:chest_build": { "sound": "wood" },
+    "aw:chest_key": { "sound": "wood" },
+    "aw:chest_others": { "sound": "wood" },
+    "aw:opened_chest_build": { "sound": "wood" },
+    "aw:opened_chest_key": { "sound": "wood" },
+    "aw:opened_chest_others": { "sound": "wood" },
 
-  "stained_glass" : { "sound" : "glass", "textures" : "stained_glass" },
-  "concretePowder" : { "sound" : "sand", "textures" : "concretePowder" },
-  "aw:old_cobblestone": { "textures": "old_cobblestone", "sound": "stone" },
-  "aw:old_gold_block": { "textures": "old_gold_block", "sound": "stone" },
-  "aw:old_gold_block_nodig": { "textures": "old_gold_block_nodig", "sound": "stone" },
-  "aw:old_diamond_block": { "textures": "old_diamond_block", "sound": "stone" },
-  "aw:old_emerald_block": { "textures": "old_emerald_block", "sound": "stone" },
-  "aw:old_netherrack": { "textures": "old_netherrack", "sound": "netherrack" },
-  "aw:nether_reactor_core": { "textures": "nether_reactor_core", "sound": "stone" },
-  "aw:initialized_nether_reactor_core": { "textures": "initialized_nether_reactor_core", "sound": "stone" },
-  "aw:glowing_obsidian": { "textures": "glowing_obsidian", "sound": "stone" },
-  "aw:old_obsidian": { "textures": "old_obsidian", "sound": "stone" },
-  "aw:jack1": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_face",
-       "north" : "jack_side",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "jack_side"
+    "aw:dig1": {
+        "textures": "dig1",
+        "sound": "stone"
+    },
+    "aw:dig2": {
+        "textures": "dig2",
+        "sound": "stone"
+    },
+    "aw:dig3": {
+        "textures": "dig3",
+        "sound": "stone"
+    },
+    "aw:dig4": {
+        "textures": "dig4",
+        "sound": "deepslate"
+    },
+    "aw:dig5": {
+        "textures": "dig5",
+        "sound": "stone"
+    },
+    "aw:dig6": {
+        "textures": "dig6",
+        "sound": "stone"
+    },
+    "aw:dig7": {
+        "textures": "dig7",
+        "sound": "nether_brick"
+    },
+    "aw:dig8": {
+        "textures": "dig8",
+        "sound": "stone"
+    },
+    "aw:dig8drop": {
+        "textures": "dig8",
+        "sound": "stone"
+    },
+    "aw:dig9": {
+        "sound": "stone",
+        "textures": {
+            "up": "dig9top",
+            "down": "dig9top",
+            "side": "dig9side"
+        }
+    },
+    "aw:key1": {
+        "textures": "key1",
+        "sound": "stone"
+    },
+    "aw:key2": {
+        "textures": "key2",
+        "sound": "stone"
+    },
+    "aw:key3": {
+        "textures": "key3",
+        "sound": "stone"
+    },
+    "aw:key4": {
+        "textures": "key4",
+        "sound": "deepslate"
+    },
+    "aw:key5": {
+        "textures": "key5",
+        "sound": "stone"
+    },
+    "aw:key6": {
+        "textures": "key6",
+        "sound": "stone"
+    },
+    "aw:key7": {
+        "textures": "key7",
+        "sound": "nether_brick"
+    },
+    "aw:keyboss1": {
+        "textures": "keyboss1",
+        "sound": "stone"
+    },
+    "aw:keyboss2": {
+        "textures": "keyboss2",
+        "sound": "stone"
+    },
+    "aw:keyboss3": {
+        "textures": "keyboss3",
+        "sound": "stone"
+    },
+    "aw:keyboss4": {
+        "textures": "keyboss4",
+        "sound": "deepslate"
+    },
+    "aw:keyboss5": {
+        "textures": "keyboss5",
+        "sound": "stone"
+    },
+    "aw:keyboss6": {
+        "textures": "keyboss6",
+        "sound": "stone"
+    },
+    "aw:keyboss7": {
+        "textures": "keyboss7",
+        "sound": "nether_brick"
+    },
+    "aw:decorated_pot_type1": {
+        "sound": "decorated_pot"
+    },
+    "aw:decorated_pot_type2": {
+        "sound": "decorated_pot"
+    },
+    "aw:decorated_pot_type3": {
+        "sound": "decorated_pot"
+    },
+    "aw:old_cobblestone": {
+        "textures": "old_cobblestone",
+        "sound": "stone"
+    },
+    "aw:old_gold_block": {
+        "textures": "old_gold_block",
+        "sound": "stone"
+    },
+    "aw:old_gold_block_nodig": {
+        "textures": "old_gold_block_nodig",
+        "sound": "stone"
+    },
+    "aw:old_diamond_block": {
+        "textures": "old_diamond_block",
+        "sound": "stone"
+    },
+    "aw:old_emerald_block": {
+        "textures": "old_emerald_block",
+        "sound": "stone"
+    },
+    "aw:old_netherrack": {
+        "textures": "old_netherrack",
+        "sound": "netherrack"
+    },
+    "aw:nether_reactor_core": {
+        "textures": "nether_reactor_core",
+        "sound": "stone"
+    },
+    "aw:initialized_nether_reactor_core": {
+        "textures": "initialized_nether_reactor_core",
+        "sound": "stone"
+    },
+    "aw:glowing_obsidian": {
+        "textures": "glowing_obsidian",
+        "sound": "stone"
+    },
+    "aw:old_obsidian": {
+        "textures": "old_obsidian",
+        "sound": "stone"
+    },
+    "aw:jack1": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_face",
+            "north": "jack_side",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:jack2": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "jack_face",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:jack3": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "jack_side",
+            "south": "jack_face",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:jack4": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "jack_side",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "jack_face"
+        }
+    },
+    "aw:pumpkin1": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "old_pumpkin_face",
+            "north": "jack_side",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:pumpkin2": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "old_pumpkin_face",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:pumpkin3": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "jack_side",
+            "south": "old_pumpkin_face",
+            "up": "jack_top",
+            "west": "jack_side"
+        }
+    },
+    "aw:pumpkin4": {
+        "sound": "wood",
+        "textures": {
+            "down": "jack_top",
+            "east": "jack_side",
+            "north": "jack_side",
+            "south": "jack_side",
+            "up": "jack_top",
+            "west": "old_pumpkin_face"
+        }
+    },
+    "aw:old_sandstone": {
+        "sound": "stone",
+        "textures": {
+            "up": "old_sandstone_top",
+            "down": "old_sandstone_bottom",
+            "side": "old_sandstone"
+        }
+    },
+    "aw:old_sandstone_smooth": {
+        "sound": "stone",
+        "textures": {
+            "up": "old_sandstone_top",
+            "down": "old_sandstone_top",
+            "side": "old_sandstone_smooth"
+        }
+    },
+    "aw:old_sandstone_carved": {
+        "sound": "stone",
+        "textures": {
+            "up": "old_sandstone_top",
+            "down": "old_sandstone_top",
+            "side": "old_sandstone_carved"
+        }
     }
-  },
-  "aw:jack2": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "jack_face",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "jack_side"
-    }
-  },
-  "aw:jack3": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "jack_side",
-       "south" : "jack_face",
-       "up" : "jack_top",
-       "west" : "jack_side"
-    }
-  },
-  "aw:jack4": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "jack_side",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "jack_face"
-    }
-  },
-    "aw:pumpkin1": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "old_pumpkin_face",
-       "north" : "jack_side",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "jack_side"
-    }
-  },
-  "aw:pumpkin2": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "old_pumpkin_face",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "jack_side"
-    }
-  },
-  "aw:pumpkin3": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "jack_side",
-       "south" : "old_pumpkin_face",
-       "up" : "jack_top",
-       "west" : "jack_side"
-    }
-  },
-  "aw:pumpkin4": { 
-    "sound" : "wood",
-    "textures" : {
-       "down" : "jack_top",
-       "east" : "jack_side",
-       "north" : "jack_side",
-       "south" : "jack_side",
-       "up" : "jack_top",
-       "west" : "old_pumpkin_face"
-    }
-  },
-  "aw:old_sandstone": { 
-    "sound" : "stone",
-    "textures" : {
-       "up": "old_sandstone_top",
-       "down": "old_sandstone_bottom",
-       "side": "old_sandstone"
-    }
-  },
-  "aw:old_sandstone_smooth": { 
-    "sound" : "stone",
-    "textures" : {
-       "up": "old_sandstone_top",
-       "down": "old_sandstone_top",
-       "side": "old_sandstone_smooth"
-    }
-  },
-  "aw:old_sandstone_carved": { 
-    "sound" : "stone",
-    "textures" : {
-       "up": "old_sandstone_top",
-       "down": "old_sandstone_top",
-       "side": "old_sandstone_carved"
-    }
-  }
 }

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.0",
+    "format_version": "1.21.50",
     "minecraft:entity": {
         "description": {
             "identifier": "aw:bonus_item",
@@ -44,7 +44,7 @@
         },
         "components": {
             "minecraft:physics": {},
-            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] },
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": "no" } ] },
             "minecraft:type_family": { "family": [ "bonus_item", "no_hook" ] }
         },
         "events": {

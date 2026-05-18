@@ -20,3 +20,8 @@
 - [MineBBS](https://www.minebbs.com/resources/15299/)
 - [MineBBS（皮肤包）](https://www.minebbs.com/resources/15303/)
 - [TITAIKE](https://www.titaike.cn/?p=8142)
+
+## Todo List
+
+- 将地图内的各药水替换为酿造台+对应玻璃的组合
+- 将地图内的各处箱子替换为自定义箱子

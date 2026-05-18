@@ -7,4 +7,5 @@ execute if score timeline time matches 320 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 400 run tellraw @a {"rawtext":[{"text":"§7§o[？？？]让我将你这不自量力的蝼蚁彻底撕碎吧！"}]}
 
 execute if score timeline time matches 480 run tp @a -202 -36 187 facing -202 -36 186
-execute if score timeline time matches 480 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 480 run function lib/utils/stop_dialogue
+execute if score timeline time matches 480 run function lib/modify_data/states/timeline/disable

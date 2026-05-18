@@ -44,4 +44,5 @@ execute if score timeline time matches 1120 run camera @a clear
 execute if score timeline time matches 1120 run tellraw @a {"rawtext":[{"text":"§f[田萍]说多了，现在还有一场艰巨的挑战呢，做好准备吧！"}]}
 
 execute if score timeline time matches 1200 run function game/starry/refresh
-execute if score timeline time matches 1200 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 1200 run function lib/utils/stop_dialogue
+execute if score timeline time matches 1200 run function lib/modify_data/states/timeline/disable

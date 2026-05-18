@@ -45,6 +45,6 @@ execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.
 execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set position data 1
 execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set progress data 4
 execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set timeline active 23
-execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run function lib/utils/start_dialogue
 execute if score 4_rail_boss data matches 2 if entity @a[x=-152.5,y=-33.00,z=-3.5,r=1] run scoreboard players set 4_rail_boss data 3

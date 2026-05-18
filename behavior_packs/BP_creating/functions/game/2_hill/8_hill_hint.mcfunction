@@ -34,4 +34,5 @@ execute if score timeline time matches 580 run setworldspawn -286.50 55.50 135.5
 execute if score timeline time matches 580 run scoreboard players set position data 1
 execute if score timeline time matches 580 run scoreboard players set refreshArea data 0
 execute if score timeline time matches 580 run tp @a -286.50 55.50 135.50 facing -286.50 55.50 136.50
-execute if score timeline time matches 580 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 580 run function lib/utils/stop_dialogue
+execute if score timeline time matches 580 run function lib/modify_data/states/timeline/disable

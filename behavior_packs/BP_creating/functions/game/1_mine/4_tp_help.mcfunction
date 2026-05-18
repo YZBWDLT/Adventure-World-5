@@ -18,4 +18,5 @@ execute if score timeline time matches 640 run event entity @e[type=aw:npc,x=-23
 execute if score timeline time matches 720 unless entity @e[type=aw:heart_container,x=-233,y=-49,z=142,r=1] run tellraw @a {"rawtext":[{"text":"§f[田萍]咦？你已经拿了啊，那咱们走吧！"}]}
 execute if score timeline time matches 720 unless entity @e[type=aw:heart_container,x=-233,y=-49,z=142,r=1] run event entity @e[type=aw:npc,x=-234,y=-49,z=139,r=1] aw:confuse
 execute if score timeline time matches 720 run scoreboard players set 1_mine_boss data 2
-execute if score timeline time matches 720 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 720 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 720 run function lib/modify_data/states/timeline/disable

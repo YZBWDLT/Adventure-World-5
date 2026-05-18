@@ -34,7 +34,8 @@ execute if score 7_fortress_boss data matches 2.. if block -49 72 134 stone_butt
 execute if score 7_fortress_boss data matches 2.. if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned -141 32 65 run give @p aw:build2 1
 execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= dig data run tellraw @a {"rawtext":[{"text":"§b恭喜！你刷新了纪录！"}]}
 execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= dig data run scoreboard players operation dig data = timeline time
-execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/disable
+execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/stop_dialogue
+execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_data/states/timeline/disable
 execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -146 31 65
 execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -146 31 65
 execute if block -49 72 134 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once

@@ -96,7 +96,7 @@ execute if score 6_monument_boss data matches 5 if entity @a[x=-169,y=-57,z=161,
 execute if score 6_monument_boss data matches 5 if entity @a[x=-169,y=-57,z=161,dx=16,dy=12,dz=16] if block -161 -58 169 sea_lantern unless entity @e[type=drowned,x=-169,y=-57,z=161,dx=16,dy=12,dz=16] run scoreboard players set 6_monument_boss data 6
 
 #从BOSS战离开（第一次离开时）
-execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run function lib/utils/start_dialogue
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run scoreboard players set timeline active 48
 execute if score 6_monument_boss data matches ..6 if entity @a[x=-160.5,y=-57,z=185.5,r=1] run spawnpoint @a -102 5 188

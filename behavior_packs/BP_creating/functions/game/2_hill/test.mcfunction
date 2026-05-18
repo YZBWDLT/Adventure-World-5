@@ -55,5 +55,5 @@ execute if entity @a[x=-295,y=-13,z=96,dx=16,dy=4,dz=16] if score 2_hill_boss da
 
 #从BOSS战离开
 execute if entity @a[x=-286.5,y=-13,z=90,r=1] run scoreboard players set timeline active 8
-execute if entity @a[x=-286.5,y=-13,z=90,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if entity @a[x=-286.5,y=-13,z=90,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if entity @a[x=-286.5,y=-13,z=90,r=1] run tp @a -238.5 -9 177.5

@@ -32,4 +32,5 @@ execute if score timeline time matches 1120 run event entity @e[type=aw:npc,x=-2
 
 execute if score timeline time matches 1200 run event entity @e[type=aw:npc,x=-228,y=31,z=137,r=1] aw:remove_immediately
 execute if score timeline time matches 1200 run camera @a clear
-execute if score timeline time matches 1200 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 1200 run function lib/utils/stop_dialogue
+execute if score timeline time matches 1200 run function lib/modify_data/states/timeline/disable

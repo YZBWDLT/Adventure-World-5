@@ -48,4 +48,5 @@ execute if score timeline time matches 720 run camera @a clear
 execute if score timeline time matches 720 run title @a title §o§a逍遥平原
 execute if score timeline time matches 720 run scoreboard players set refreshArea data 0
 
-execute if score timeline time matches 720 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 720 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 720 run function lib/modify_data/states/timeline/disable

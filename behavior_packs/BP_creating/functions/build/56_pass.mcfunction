@@ -6,4 +6,5 @@ execute if score timeline time matches 40 run camera @a fade time 1 3 1 color 0 
 execute if score timeline time matches 80 run tp @a -99 16 5 facing -99 16 6
 execute if score timeline time matches 80 run playsound random.anvil_use @a
 execute if score timeline time matches 100 run structure load build:pass -101 16 8
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

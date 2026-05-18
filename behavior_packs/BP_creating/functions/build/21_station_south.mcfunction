@@ -12,4 +12,5 @@ execute if score timeline time matches 100 run clone -232 -15 179 -232 -14 179 -
 execute if score timeline time matches 140 run tellraw @a {"rawtext":[{"text":"§a[我]天呐，这么大？"}]}
 execute if score timeline time matches 220 run tellraw @a {"rawtext":[{"text":"§f[吕岩]没错，而且我还在楼上准备了一些对你有用的§d附魔§f。"}]}
 execute if score timeline time matches 300 run camera @a clear
-execute if score timeline time matches 300 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 300 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 300 run function lib/modify_data/states/timeline/disable

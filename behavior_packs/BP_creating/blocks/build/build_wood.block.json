@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "aw:build1",
+            "menu_category": { "category": "construction" }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:geometry": "geometry.full_block",
+            "minecraft:material_instances": {
+                "*": { "texture": "oak_planks" }
+            }
+        }
+    }
+}

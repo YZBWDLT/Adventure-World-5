@@ -59,4 +59,5 @@ execute if score timeline time matches 750 run event entity @e[type=aw:npc,x=-77
 
 execute if score timeline time matches 830 run camera @a clear
 execute if score timeline time matches 830 run function lib/utils/music/queue
-execute if score timeline time matches 830 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 830 run function lib/utils/stop_dialogue
+execute if score timeline time matches 830 run function lib/modify_data/states/timeline/disable

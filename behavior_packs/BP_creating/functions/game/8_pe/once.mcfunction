@@ -41,7 +41,7 @@ execute if block -217 -24 59 aw:old_diamond_block unless block -218 -24 59 air r
 execute if block -243 -24 -5 aw:old_emerald_block unless block -243 -24 -4 air run setblock -243 -24 -5 aw:old_obsidian
 
 #完成反应堆搭建
-execute if score 8_pe_boss data matches 1 if block -226 -54 -24 aw:nether_reactor_core if blocks -227 -59 -25 -225 -57 -23 -227 -55 -25 all run function lib/modify_states/timeline/enable_time_lapse
+execute if score 8_pe_boss data matches 1 if block -226 -54 -24 aw:nether_reactor_core if blocks -227 -59 -25 -225 -57 -23 -227 -55 -25 all run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score 8_pe_boss data matches 1 if block -226 -54 -24 aw:nether_reactor_core if blocks -227 -59 -25 -225 -57 -23 -227 -55 -25 all run scoreboard players set timeline active 53
 execute if score 8_pe_boss data matches 1 if block -226 -54 -24 aw:nether_reactor_core if blocks -227 -59 -25 -225 -57 -23 -227 -55 -25 all run scoreboard players set 8_pe_boss data 2
 
@@ -51,6 +51,6 @@ execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set position data 10
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set refreshArea data 0
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set timeline active 57
-execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run function lib/utils/start_dialogue
 execute if score 8_pe_boss data matches 2 if entity @a[x=-223.5,y=-22,z=-12.5,r=1] run scoreboard players set 8_pe_boss data 3

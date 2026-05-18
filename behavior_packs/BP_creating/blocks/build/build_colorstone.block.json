@@ -1,0 +1,20 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "aw:build3",
+            "menu_category": { "category": "construction" }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:geometry": "geometry.full_block",
+            "minecraft:material_instances": {
+                "*": { "texture": "granite" },
+                "north": { "texture": "andesite" },
+                "south": { "texture": "andesite" },
+                "west": { "texture": "diorite" },
+                "east": { "texture": "diorite" }
+            }
+        }
+    }
+}

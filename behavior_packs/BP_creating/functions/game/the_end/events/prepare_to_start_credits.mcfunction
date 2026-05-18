@@ -6,5 +6,5 @@ execute in overworld positioned -231 -8 190 facing -231 -8 187 run function game
 title @a clear
 
 ## 关闭时间线
-scoreboard players set timeline active 0
-function lib/modify_states/timeline/disable_time_lapse
+function lib/modify_data/states/timeline/disable
+function lib/utils/stop_dialogue

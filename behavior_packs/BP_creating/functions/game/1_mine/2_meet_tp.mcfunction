@@ -10,4 +10,5 @@ execute if score timeline time matches 260 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 260 run event entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] aw:confuse
 execute if score timeline time matches 340 run tellraw @a {"rawtext":[{"text":"§f[田萍]啊，之后再聊这些，先帮我找找我的神镐吧，拿到后点击左键或攻击交给我！"}]}
 execute if score timeline time matches 340 run event entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] aw:point
-execute if score timeline time matches 340 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 340 run function lib/utils/stop_dialogue
+execute if score timeline time matches 340 run function lib/modify_data/states/timeline/disable

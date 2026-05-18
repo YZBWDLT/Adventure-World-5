@@ -23,7 +23,8 @@ execute positioned 40 90 0 run fill ~-3~-3~-3~3~3~3 air replace white_glazed_ter
 setblock 0 100 0 air
 
 # 阻止时间流逝
-function lib/modify_states/timeline/disable_time_lapse
+function lib/modify_data/states/timeline/disable_time_lapse
+function lib/utils/stop_dialogue
 
 # 将 BOSS 阶段改为开战前
 scoreboard players set 9_the_end_boss data 0

@@ -72,20 +72,20 @@ execute if entity @a[x=-195.5,y=-60,z=183.5,r=1] run tp @a -202 -60 187 facing -
 
 #房间1剧情
 execute if entity @a[x=-207.5,y=-24,z=183.5,r=1] run scoreboard players set timeline active 58
-execute if entity @a[x=-207.5,y=-24,z=183.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if entity @a[x=-207.5,y=-24,z=183.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if entity @a[x=-207.5,y=-24,z=183.5,r=1] run tp @a -238.5 -9 177.5
 
 #房间2剧情
 execute if entity @a[x=-207.5,y=-36,z=183.5,r=1] run scoreboard players set timeline active 59
-execute if entity @a[x=-207.5,y=-36,z=183.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if entity @a[x=-207.5,y=-36,z=183.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if entity @a[x=-207.5,y=-36,z=183.5,r=1] run tp @a -238.5 -9 177.5
 
 #房间3剧情
 execute if entity @a[x=-195.5,y=-48,z=183.5,r=1] run scoreboard players set timeline active 60
-execute if entity @a[x=-195.5,y=-48,z=183.5,r=1] run function lib/modify_states/timeline/enable_time_lapse 
+execute if entity @a[x=-195.5,y=-48,z=183.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse 
 execute if entity @a[x=-195.5,y=-48,z=183.5,r=1] run tp @a -238.5 -9 177.5
 
 #房间4剧情
 execute if entity @a[x=-207.5,y=-60,z=183.5,r=1] run scoreboard players set timeline active 61
-execute if entity @a[x=-207.5,y=-60,z=183.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if entity @a[x=-207.5,y=-60,z=183.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if entity @a[x=-207.5,y=-60,z=183.5,r=1] run tp @a -238.5 -9 177.5

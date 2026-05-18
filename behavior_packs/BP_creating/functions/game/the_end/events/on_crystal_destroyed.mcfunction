@@ -14,7 +14,7 @@ scoreboard players set music data 154
 function lib/utils/music/replay
 
 # 启用时间线流逝
-function lib/modify_states/timeline/enable_time_lapse
+function lib/modify_data/states/timeline/enable_time_lapse
 
 # 添加一个追踪末影龙位置的标记实体，便于在结束后播放镜头动画
 summon aw:marker "enderDragonPosition" 0 80 0

@@ -17,4 +17,5 @@ execute if score timeline time matches 950 run structure load other:broken_nethe
 execute if score timeline time matches 950 run music play boss_win_start 1 0 play_once
 execute if score timeline time matches 950 run scoreboard players set music data 134
 execute if score timeline time matches 950 run function lib/utils/music/queue
-execute if score timeline time matches 950 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 950 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 950 run function lib/modify_data/states/timeline/disable

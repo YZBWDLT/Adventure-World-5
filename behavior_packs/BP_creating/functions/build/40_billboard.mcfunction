@@ -44,4 +44,5 @@ execute if score timeline time matches 950 run event entity @e[type=aw:npc,x=-20
 execute if score timeline time matches 950 run scoreboard players set music data 14
 execute if score timeline time matches 950 run function lib/utils/music/queue
 execute if score timeline time matches 950 run camera @a clear
-execute if score timeline time matches 950 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 950 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 950 run function lib/modify_data/states/timeline/disable

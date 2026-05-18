@@ -35,4 +35,5 @@ execute if score timeline time matches 80 if score 6_monument_water data matches
 
 execute if score timeline time matches 100 run setblock -122 -47 172 stone_button ["button_pressed_bit"=false,"facing_direction"=1]
 execute if score timeline time matches 100 run camera @a clear
-execute if score timeline time matches 100 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 100 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 100 run function lib/modify_data/states/timeline/disable

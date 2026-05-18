@@ -7,4 +7,5 @@ execute if score timeline time matches 80 run playsound random.anvil_use @a
 execute if score timeline time matches 100 run structure load build:house_potion -178 29 145
 execute if score timeline time matches 100 run fill -175 30 158 -175 30 164 smooth_stone
 execute if score timeline time matches 140 run tellraw @a {"rawtext":[{"text":"§f[邹鹭遥]啊，我终于有自己的房子了！谢谢你们，真是辛苦了。我在楼上准备了新的药水，你有需要可以随时取用。"}]}
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

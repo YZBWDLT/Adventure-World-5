@@ -25,7 +25,8 @@ setblock -114 -52 30 deepslate
 clone -133 -60 97 -133 -60 97 -133 -57 97
 
 #刷新怪物
-function lib/modify_states/timeline/disable 
+function lib/modify_data/states/timeline/disable
+function lib/utils/stop_dialogue 
 kill @e[family=monster]
 kill @e[type=arrow]
 scoreboard players set 3_shaft_enemy1 data 0

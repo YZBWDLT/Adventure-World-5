@@ -7,4 +7,5 @@ execute if score timeline time matches 80 run playsound random.anvil_use @a
 execute if score timeline time matches 100 run structure load build:portal -244 31 136
 execute if score timeline time matches 100 run fill -241 30 138 -235 30 140 smooth_stone
 execute if score timeline time matches 100 run scoreboard players set fortress_prepare data 3
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

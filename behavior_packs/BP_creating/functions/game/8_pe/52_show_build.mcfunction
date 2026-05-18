@@ -12,4 +12,5 @@ execute if score timeline time matches 260 run fill -227 -55 -25 -225 -53 -23 ai
 execute if score timeline time matches 260 run tellraw @a {"rawtext":[{"text":"§e你获得了足够搭建的圆石！"}]}
 execute if score timeline time matches 260 run camera @a clear
 execute if score timeline time matches 260 run setblock -226 -54 -35 stone_button["button_pressed_bit"=false,"facing_direction"=1]
-execute if score timeline time matches 260 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 260 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 260 run function lib/modify_data/states/timeline/disable

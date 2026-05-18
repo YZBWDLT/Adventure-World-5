@@ -17,7 +17,7 @@ function lib/utils/music/replay
 
 # 设置时间线
 scoreboard players set timeline active 63
-function lib/modify_states/timeline/enable_time_lapse
+function lib/modify_data/states/timeline/enable_time_lapse
 
 # 允许搭建屠龙纪念塔 | 仅当屠龙纪念塔还没有搭建时重置
 execute unless block -172 32 130 redstone_block run function unlock/tower

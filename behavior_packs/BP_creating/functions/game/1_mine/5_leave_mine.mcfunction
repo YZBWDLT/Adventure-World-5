@@ -44,4 +44,5 @@ execute if score timeline time matches 1380 run tellraw @a {"rawtext":[{"text":"
 execute if score timeline time matches 1420 as @a at @s anchored eyes run camera @a set minecraft:free ease 3 in_out_quad pos ^^^0.3 facing ^^^1
 execute if score timeline time matches 1480 run camera @a clear
 
-execute if score timeline time matches 1480 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 1480 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 1480 run function lib/modify_data/states/timeline/disable

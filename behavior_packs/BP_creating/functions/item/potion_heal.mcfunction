@@ -1,0 +1,3 @@
+# ===== 使用治疗药水 =====
+
+effect @s instant_health 1 2 true

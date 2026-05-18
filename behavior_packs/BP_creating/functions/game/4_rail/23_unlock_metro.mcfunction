@@ -48,4 +48,5 @@ execute if score timeline time matches 900 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 980 run tellraw @a {"rawtext":[{"text":"§f[田萍]我和王予凡负责后勤支持，有问题就问我们吧！"}]}
 execute if score timeline time matches 1000 run camera @a clear
 
-execute if score timeline time matches 1000 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 1000 run function lib/utils/stop_dialogue
+execute if score timeline time matches 1000 run function lib/modify_data/states/timeline/disable

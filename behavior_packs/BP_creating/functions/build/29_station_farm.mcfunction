@@ -6,4 +6,5 @@ execute if score timeline time matches 80 run tp @a -298 31 81 facing -298 31 82
 execute if score timeline time matches 80 run playsound random.anvil_use @a
 execute if score timeline time matches 100 run structure load build:station_farm -306 30 83
 execute if score timeline time matches 100 run clone -232 -15 179 -232 -14 179 -238 -15 184
-execute if score timeline time matches 140 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 140 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 140 run function lib/modify_data/states/timeline/disable

@@ -28,7 +28,8 @@ scoreboard players set 7_fortress_enemy2 data 0
 scoreboard players set 7_fortress_enemy3 data 0
 scoreboard players set 7_fortress_enemy4 data 0
 scoreboard players set 7_fortress_boss_wave data 0
-function lib/modify_states/timeline/disable 
+function lib/modify_data/states/timeline/disable
+function lib/utils/stop_dialogue 
 
 #如果播放切换动画时死掉，会导致动画中断，恢复判定方块以保证动画重新播放
 clone -281 -27 60 -281 -27 60 -281 -26 60

@@ -13,4 +13,5 @@ execute if score timeline time matches 260 run event entity @e[type=aw:npc,x=-23
 execute if score timeline time matches 340 run fill -233 -29 136 -233 -28 136 air destroy
 execute if score timeline time matches 340 run event entity @e[type=aw:npc,x=-230,y=-29,z=138,r=1] aw:remove_immediately
 execute if score timeline time matches 420 run tellraw @a {"rawtext":[{"text":"§a[我]深处好像还能走？看看那里还有什么。"}]}
-execute if score timeline time matches 420 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 420 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 420 run function lib/modify_data/states/timeline/disable

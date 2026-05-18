@@ -7,4 +7,5 @@ execute if score timeline time matches 320 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 400 run tellraw @a {"rawtext":[{"text":"§9[？]再从沙漠进入时间神庙，开启最后的道路，消灭镇守梦境的魔物就可以出去了。"}]}
 
 execute if score timeline time matches 480 run tp @a -202 -60 187 facing -202 -60 186
-execute if score timeline time matches 480 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 480 run function lib/utils/stop_dialogue
+execute if score timeline time matches 480 run function lib/modify_data/states/timeline/disable

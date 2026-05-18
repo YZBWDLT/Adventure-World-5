@@ -6,8 +6,7 @@
 scoreboard players add tick time 1
 execute unless score tick time matches 0..19 run scoreboard players set tick time 0
 ## time.timeline
-execute if score timeline active matches 1.. if score timeLapse data matches 1.. run scoreboard players add timeline time 1
-execute if score timeLapse data matches 1.. run scoreboard players add timeline time 1
+execute if score timeline active matches 1.. if score timeLapse data matches 1.. run scoreboard players operation timeline time += timeLapse data
 
 # --- 时间线 ---
 
@@ -143,7 +142,9 @@ execute if score client data matches 1 if entity @e[type=bee] run kill @e[type=b
 # 6 繁星农场 | 7 溟海 | 8 五色山 | 9 结束
 
 execute if score position data matches 0 run function area/start/timeline
+execute if score position data matches 1 run function area/village/timeline
 execute if score position data matches 9 run function game/sea/timeline
+execute if score position data matches -1 run function dungeon/mine/timeline
 
 #游戏内一直开的功能
 function system/test

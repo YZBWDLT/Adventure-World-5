@@ -23,7 +23,8 @@ scoreboard players operation chicken_all data += amount data
 titleraw @a actionbar {"rawtext":[{"text":"§l§e剩余鸡：§r"},{"score":{"name":"chicken_all","objective":"data"}},{"text":"  §l§b用时：§r"},{"score":{"name":"timeline","objective":"time"}}]}
 
 #退出小游戏
-execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/disable
+execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/utils/stop_dialogue
+execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_data/states/timeline/disable
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set chicken data 0
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run scoreboard players set chicken_all data 0
 execute if block 9 75 167 stone_button["button_pressed_bit"=true,"facing_direction"=1] run kill @e[type=chicken]
@@ -43,7 +44,8 @@ execute if score 7_fortress_boss data matches 2.. if score quiver itemState matc
 execute if score 7_fortress_boss data matches 2.. if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] positioned 40 83 147 run give @p aw:build3 1
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run tellraw @a {"rawtext":[{"text":"§b恭喜！你刷新了纪录！"}]}
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] if score timeline time <= shoot data run scoreboard players operation shoot data = timeline time
-execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_states/timeline/disable
+execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run function lib/modify_data/states/timeline/disable
+# (和上文使用相同条件) function lib/utils/stop_dialogue
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run spawnpoint @a -218 33 -52
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run setworldspawn -218 33 -52
 execute if score quiver itemState matches 1 if block 40 83 147 stone_button["button_pressed_bit"=true,"facing_direction"=1] run music play finish_game 1 0 play_once

@@ -18,4 +18,5 @@ execute if score timeline time matches 860 run camera @a fade time 0.5 1 0.5 col
 execute if score timeline time matches 880 run tp @e[type=aw:npc,x=-265,y=-49,z=61,r=1] -270 -49 54 facing -271 -49 54
 execute if score timeline time matches 880 run tp @e[type=aw:npc,x=-263,y=-49,z=59,r=1] -270 -49 52 facing -271 -49 52
 execute if score timeline time matches 880 run clone -266 -49 52 -265 -48 54 -274 -49 52
-execute if score timeline time matches 900 run function lib/modify_states/timeline/disable 
+execute if score timeline time matches 900 run function lib/utils/stop_dialogue 
+execute if score timeline time matches 900 run function lib/modify_data/states/timeline/disable

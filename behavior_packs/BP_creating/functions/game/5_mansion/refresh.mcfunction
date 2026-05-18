@@ -48,7 +48,8 @@ scoreboard players set 5_mansion_enemy1 data 0
 scoreboard players set 5_mansion_enemy2 data 0
 scoreboard players set 5_mansion_enemy3 data 0
 scoreboard players set 5_mansion_enemy4 data 0
-function lib/modify_states/timeline/disable 
+function lib/modify_data/states/timeline/disable
+function lib/utils/stop_dialogue 
 execute if score 5_mansion_boss data matches 0 run fill -306 -39 -16 -304 -36 -16 dark_oak_planks
 execute if score 5_mansion_boss data matches 2 run clone -307 -31 -13 -303 -27 -13 -307 -39 -16
 

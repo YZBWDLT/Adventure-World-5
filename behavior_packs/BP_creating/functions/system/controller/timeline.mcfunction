@@ -1,18 +1,12 @@
 # ===== 时间线控制器 =====
 # <!> 注意：该函数仅当时间线启用后执行
 
-# --- 时间值流逝 ---
-# 当data.timeLapse > 0时，会导致time.timeline每游戏刻自加
-execute if score timeLapse data matches 1.. run scoreboard players add timeline time 1
-
 # --- 需要启用的时间线文件 ---
-execute if score timeline active matches 1 run function game/start/1_ship_accident
 execute if score timeline active matches 2 run function game/1_mine/2_meet_tp
 execute if score timeline active matches 3 run function game/1_mine/3_give_pickaxe
 execute if score timeline active matches 4 run function game/1_mine/4_tp_help
 execute if score timeline active matches 5 run function game/1_mine/5_leave_mine
 execute if score timeline active matches 6 run function game/village/6_parkour
-execute if score timeline active matches 7 run function game/village/7_escape_guitar
 execute if score timeline active matches 8 run function game/2_hill/8_hill_hint
 execute if score timeline active matches 9 run function game/village/9_goto_plain
 execute if score timeline active matches 10 run function game/plain/10_dig

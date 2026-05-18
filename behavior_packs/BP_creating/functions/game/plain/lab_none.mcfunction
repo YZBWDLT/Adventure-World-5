@@ -8,7 +8,7 @@ setblock -234 18 6 redstone_ore
 setblock -234 18 10 deepslate_gold_ore
 setblock -242 18 6 deepslate
 setblock -242 18 10 stone
-execute if block -234 20 15 stonebrick run setblock -234 20 15 aw:dig3
+execute if block -234 20 15 stone_bricks run setblock -234 20 15 aw:dig3
 fill -227 20 14 -227 22 14 air
 fill -220 20 13 -220 22 13 air
 fill -223 20 12 -223 22 12 air
@@ -24,6 +24,6 @@ fill -232 20 7 -232 22 7 red_wool
 fill -226 20 7 -226 22 7 red_wool
 fill -232 20 5 -232 22 5 red_wool
 setblock -220 19 -9 coal_ore
-setblock -221 20 -14 stonebrick
-setblock -221 20 -10 stonebrick
+setblock -221 20 -14 stone_bricks
+setblock -221 20 -10 stone_bricks
 setblock -233 20 -8 air

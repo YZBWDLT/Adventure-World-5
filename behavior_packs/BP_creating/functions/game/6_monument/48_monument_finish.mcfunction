@@ -17,4 +17,5 @@ execute if score timeline time matches 640 run tellraw @a {"rawtext":[{"text":"�
 execute if score timeline time matches 800 run tellraw @a {"rawtext":[{"text":"§a[我]完成海底神殿了！我要把这个好消息§d告诉邹鹭遥！"}]}
 execute if score timeline time matches 800 run title @a title §l§9溟海
 execute if score timeline time matches 800 run tp @a -102 5 188 facing -102 5 187
-execute if score timeline time matches 800 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 800 run function lib/utils/stop_dialogue
+execute if score timeline time matches 800 run function lib/modify_data/states/timeline/disable

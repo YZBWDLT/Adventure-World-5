@@ -50,12 +50,13 @@ execute if entity @e[family=monster,x=-286,y=-24,z=-28,dx=14,dy=9,dz=14] unless 
 execute unless entity @e[family=monster,x=-286,y=-24,z=-28,dx=14,dy=9,dz=14] if block -279 -24 -29 stone run fill -279 -24 -29 -279 -23 -29 air
 
 #进入通关结算场地，视为通关
-execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,dx=6,dy=6,dz=6] run function lib/modify_states/timeline/disable 
+execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,dx=6,dy=6,dz=6] run function lib/utils/stop_dialogue 
+execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,dx=6,dy=6,dz=6] run function lib/modify_data/states/timeline/disable
 execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,dx=6,dy=6,dz=6] run scoreboard players set repmark data 0
 execute if score 5_mansion_boss data matches 1 if entity @a[x=-308,y=-39,z=-15,dx=6,dy=6,dz=6] run scoreboard players set 5_mansion_boss data 2
 
 #从BOSS战离开（第一次离开时）
-execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/modify_states/timeline/enable_time_lapse
+execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/modify_data/states/timeline/enable_time_lapse
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run function lib/utils/start_dialogue
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run scoreboard players set timeline active 46
 execute if score 5_mansion_boss data matches 2 if entity @a[x=-304.5,y=-39,z=-8.5,r=1] run spawnpoint @a -299 31 10

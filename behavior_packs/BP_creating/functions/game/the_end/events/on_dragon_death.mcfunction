@@ -18,7 +18,7 @@ event entity @e[type=aw:marker,name="enderDragonPosition"] aw:remove_immediately
 effect @a resistance infinite 9 true
 
 # 启用时间线流逝
-function lib/modify_states/timeline/enable_time_lapse
+function lib/modify_data/states/timeline/enable_time_lapse
 
 # 标记 BOSS 已通过，之后再来打 BOSS 会有快速通关按钮
 scoreboard players set 9_the_end_boss_finished data 1

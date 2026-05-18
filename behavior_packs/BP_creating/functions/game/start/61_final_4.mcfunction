@@ -14,4 +14,5 @@ execute if score timeline time matches 800 run tellraw @a {"rawtext":[{"text":"�
 #此处还要增加前往末地，准备最终BOSS战的内容
 execute if score timeline time matches 880 run scoreboard players set 9_the_end_story data 1
 execute if score timeline time matches 880 in the_end run function game/the_end/enter
-execute if score timeline time matches 880 run function lib/modify_states/timeline/disable
+execute if score timeline time matches 880 run function lib/utils/stop_dialogue
+execute if score timeline time matches 880 run function lib/modify_data/states/timeline/disable
